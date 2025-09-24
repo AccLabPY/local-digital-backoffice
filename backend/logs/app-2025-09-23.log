@@ -1,0 +1,107 @@
+{"timestamp":"2025-09-23T22:27:44.508Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:28:06.132Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:28:17.116Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:28:25.876Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:28:46.621Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:28:59.548Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:33:06.682Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:33:37.038Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:34:25.814Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:36:40.984Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:37:37.725Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:37:38.564Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T22:37:38.565Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T22:37:38.709Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T22:38:05.823Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:38:05.828Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:38:05.829Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:38:06.019Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T22:38:06.021Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:38:06.047Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:38:06.072Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:38:28.613Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:38:29.093Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T22:38:29.094Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T22:38:29.151Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T22:39:23.852Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:39:23.858Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:23.859Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:23.931Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T22:39:23.932Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:23.942Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:23.952Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:39:44.183Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.234Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.244Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.359Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:39:45.366Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.424Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.426Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.506Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.508Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.519Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:39:45.538Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:39:59.395Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:40:00.675Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T22:40:00.677Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T22:40:00.764Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T22:40:23.270Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:40:24.057Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T22:40:24.059Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T22:40:24.134Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T22:40:25.333Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1"}}
+{"timestamp":"2025-09-23T22:40:25.341Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:40:25.343Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:40:25.474Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T22:40:25.477Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:40:25.489Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:40:25.510Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-23T22:40:39.854Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T22:40:40.782Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T22:40:40.784Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T22:40:40.849Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T22:43:28.637Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-23T22:43:28.645Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:43:28.649Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:43:28.883Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T22:43:28.884Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:43:28.917Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T22:43:28.965Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-23T23:11:16.090Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T23:11:17.944Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T23:11:17.947Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T23:11:18.184Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T23:11:53.522Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T23:11:54.413Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T23:11:54.414Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T23:11:54.523Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T23:12:48.582Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T23:12:49.469Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T23:12:49.470Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T23:12:49.544Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T23:13:33.215Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T23:13:33.685Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T23:13:33.687Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T23:13:33.744Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T23:14:12.629Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-23T23:14:12.637Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:12.641Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:12.889Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T23:14:12.894Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:12.930Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:12.966Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-23T23:14:29.750Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-23T23:14:29.754Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:29.759Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:29.850Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-23T23:14:29.851Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:29.872Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-23T23:14:29.899Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-23T23:16:05.774Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T23:16:08.217Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T23:16:08.219Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T23:16:08.763Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-23T23:16:34.224Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-23T23:16:36.584Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-23T23:16:36.586Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-23T23:16:36.725Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}

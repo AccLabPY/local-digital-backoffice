@@ -1,0 +1,679 @@
+{"timestamp":"2025-09-24T00:42:42.362Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:42:44.684Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:42:44.697Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:42:44.876Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:43:27.470Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:43:28.791Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:43:28.793Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:43:28.871Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:43:37.552Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:43:38.453Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:43:38.454Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:43:38.530Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:43:40.342Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:43:41.367Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:43:41.369Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:43:41.491Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:43:44.145Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:43:45.620Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:43:45.623Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:43:45.749Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:43:58.084Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:43:59.081Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:43:59.082Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:43:59.168Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:44:01.009Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:44:02.116Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:44:02.117Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:44:02.228Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:44:10.242Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:44:11.460Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:44:11.464Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:44:11.585Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:44:23.412Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:44:28.551Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:44:28.552Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:44:28.627Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:44:29.752Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:44:31.307Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:44:31.313Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:44:31.450Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:51:25.843Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:27.855Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:51:27.920Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:51:28.571Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:51:30.547Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:33.592Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:34.589Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:51:34.592Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:51:34.725Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:51:38.488Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:39.575Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:51:39.579Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:51:39.659Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:51:44.154Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:45.260Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:51:45.262Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:51:45.912Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:51:49.183Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:50.574Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:51:50.580Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:51:50.732Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:51:57.471Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:51:58.658Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:51:58.664Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:51:59.249Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:52:37.544Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:52:38.650Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:52:38.651Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:52:38.779Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:52:43.209Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:52:44.115Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:52:44.116Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:52:44.259Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:52:47.833Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:52:49.001Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:52:49.003Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:52:49.146Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:53:42.156Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:53:43.711Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:53:43.717Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:53:43.838Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:53:57.226Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:53:58.314Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:53:58.315Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:53:58.388Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:01.462Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:02.498Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:02.501Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:02.614Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:05.162Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:06.167Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:06.182Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:06.875Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:09.896Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:10.907Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:10.910Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:11.000Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:14.064Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:15.020Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:15.021Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:15.098Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:18.504Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:19.747Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:19.751Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:19.861Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:25.332Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:26.493Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:26.551Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:26.631Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:34.459Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:35.729Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:35.770Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:36.046Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:54:37.754Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:54:38.786Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:54:38.787Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:54:38.850Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:55:02.355Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:55:04.685Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:55:04.695Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:55:04.868Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:55:27.809Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:55:29.100Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:55:29.102Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:55:29.214Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:55:31.694Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:55:34.107Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:55:34.158Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:55:34.499Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:55:38.377Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:55:40.129Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:55:40.132Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:55:40.332Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:55:42.599Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:55:43.967Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:55:43.975Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:55:44.063Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:56:18.818Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:56:20.509Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:56:20.513Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:56:20.868Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T00:56:29.553Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T00:56:31.376Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T00:56:31.397Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T00:56:31.952Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:05:31.550Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:05:33.561Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:05:33.565Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:05:33.814Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:05:37.875Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:05:39.762Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:05:39.768Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:05:40.114Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:05:47.085Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:05:48.711Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:05:48.733Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:05:49.081Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:06:33.446Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:06:34.920Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:06:34.932Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:06:35.129Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:07:02.464Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:07:03.718Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:07:03.720Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:07:03.809Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:07:17.346Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:07:18.702Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:07:18.704Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:07:18.790Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:17:18.561Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:17:21.383Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:17:21.393Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:17:21.672Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:19:30.515Z","level":"error","message":"Error getting empresas: Timeout: Request failed to complete in 120000ms","meta":{}}
+{"timestamp":"2025-09-24T01:19:30.532Z","level":"error","message":"API Error: GET /api/empresas?limit=50&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?limit=50&estadoEncuesta=true","headers":{"host":"localhost:3001","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc2NjUwLCJleHAiOjE3NTg3NjMwNTB9.UdGGDXMHHma2lTl4VbVdS-USl4t2EFVZ8-UN5HV7iWI","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","sec-ch-ua":"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"","content-type":"application/json","sec-ch-ua-mobile":"?0","accept":"*/*","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"es-ES,es;q=0.9,ru;q=0.8,tr;q=0.7,en;q=0.6,zh-CN;q=0.5,zh;q=0.4","if-none-match":"W/\"582b-dauWeeZlgbOH2CZmgNSqtDtdgyY\""},"query":{"limit":"50","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","ip":"::1","errorName":"RequestError","errorCode":"ETIMEOUT","originalError":{"code":"ETIMEOUT"},"error":"Timeout: Request failed to complete in 120000ms","stack":"RequestError: Timeout: Request failed to complete in 120000ms\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:449:19\n    at Array.forEach (<anonymous>)\n    at Request.userCallback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:446:46)\n    at Request.callback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\request.js:239:14)\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:2692:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T01:20:43.250Z","level":"error","message":"Error getting empresas: Timeout: Request failed to complete in 120000ms","meta":{}}
+{"timestamp":"2025-09-24T01:20:43.254Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=3&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=3&estadoEncuesta=true","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc2NzIzLCJleHAiOjE3NTg3NjMxMjN9.t-hF0WcdZ3nQGuOiCdNCnmZmOmuklShPU_DiMCI6nQg","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{"page":"1","limit":"3","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"RequestError","errorCode":"ETIMEOUT","originalError":{"code":"ETIMEOUT"},"error":"Timeout: Request failed to complete in 120000ms","stack":"RequestError: Timeout: Request failed to complete in 120000ms\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:449:19\n    at Array.forEach (<anonymous>)\n    at Request.userCallback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:446:46)\n    at Request.callback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\request.js:239:14)\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:2692:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T01:21:00.034Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:21:01.530Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:21:01.532Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:21:01.996Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:22:01.660Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:22:02.948Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:22:02.952Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:22:03.165Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:22:13.123Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:22:14.422Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:22:14.437Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:22:14.575Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:22:51.944Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:22:52.928Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:22:52.930Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:22:53.021Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:33:03.464Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:33:06.730Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:33:06.738Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:33:11.305Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:33:13.516Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:33:14.795Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:33:14.800Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:33:14.935Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:33:25.112Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:33:26.755Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:33:29.799Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:33:30.357Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:33:31.418Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:33:32.166Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:33:32.169Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:33:32.301Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:35:04.936Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:35:06.818Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:35:06.821Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:35:06.947Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:35:14.006Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:35:15.098Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:35:15.356Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:35:15.814Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:35:15.816Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:35:15.940Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:35:26.707Z","level":"error","message":"API Error: GET /api/empresas/1","meta":{"method":"GET","url":"/api/empresas/1","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc3NzI2LCJleHAiOjE3NTg3NjQxMjZ9.3l256vneJIlHngGyH9g4w8e7NZq5vK1eHONFGx1NHjY","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"Error","error":"Company with ID 1 not found","stack":"Error: Company with ID 1 not found\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\src\\controllers\\empresa.controller.js:50:13\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T01:35:53.765Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:35:56.414Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:35:57.622Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:35:57.625Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:35:57.737Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:36:13.011Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:36:13.957Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:36:13.961Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:36:14.092Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:40:34.274Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:40:36.717Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:40:36.722Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:40:37.665Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:40:46.683Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:40:48.096Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:40:48.100Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:40:48.239Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:40:56.721Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:40:58.060Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:40:58.062Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:40:58.515Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:41:18.485Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:41:19.816Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:41:19.818Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:41:20.101Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:41:22.248Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:41:22.480Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:41:37.485Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:41:38.550Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:41:38.552Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:41:38.656Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:41:40.166Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:41:40.414Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:41:53.997Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:41:54.989Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:41:54.996Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:41:55.154Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:41:55.738Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:41:55.910Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:42:11.363Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:42:12.454Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:42:12.456Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:42:12.609Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:42:45.610Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:42:47.895Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:42:47.902Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:42:48.061Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:43:38.363Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T01:43:38.369Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:43:38.371Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:43:38.565Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T01:43:38.566Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:43:38.596Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:43:38.636Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T01:45:46.779Z","level":"error","message":"Error getting empresas: Timeout: Request failed to complete in 120000ms","meta":{}}
+{"timestamp":"2025-09-24T01:45:47.220Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=10&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=10&estadoEncuesta=true","headers":{"host":"localhost:3001","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc4MjI1LCJleHAiOjE3NTg3NjQ2MjV9.eb8BBFRpRZZZ9J_qQuxV2aZwFaTl27Xji_Asf0ZjHMg","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","sec-ch-ua":"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"","content-type":"application/json","sec-ch-ua-mobile":"?0","accept":"*/*","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"es-ES,es;q=0.9,ru;q=0.8,tr;q=0.7,en;q=0.6,zh-CN;q=0.5,zh;q=0.4","if-none-match":"W/\"1157-m/5og/yclPtlijmoW8wBfVtW+1k\""},"query":{"page":"1","limit":"10","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","ip":"::1","errorName":"RequestError","errorCode":"ETIMEOUT","originalError":{"code":"ETIMEOUT"},"error":"Timeout: Request failed to complete in 120000ms","stack":"RequestError: Timeout: Request failed to complete in 120000ms\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:449:19\n    at Array.forEach (<anonymous>)\n    at Request.userCallback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:446:46)\n    at Request.callback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\request.js:239:14)\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:2692:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T01:47:00.730Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:47:01.996Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:47:02.003Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:47:02.558Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:47:44.800Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:47:46.890Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:47:46.907Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:47:47.433Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:47:58.253Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:48:00.087Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:48:00.101Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:48:00.317Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:48:18.355Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:48:19.641Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:48:19.644Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:48:19.757Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:48:30.578Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:48:32.274Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:48:32.283Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:48:32.452Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:48:40.383Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:48:42.105Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:48:42.153Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:48:42.432Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:48:42.754Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:48:42.950Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:49:59.050Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:50:01.253Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:50:01.265Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:50:01.453Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:51:22.073Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:51:24.925Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:51:24.963Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:51:25.550Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:51:44.732Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:51:46.100Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:51:46.101Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:51:46.200Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:53:56.405Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:53:58.474Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:53:58.480Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:53:58.655Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:54:22.458Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:54:23.673Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:54:23.921Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:54:24.269Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:54:24.284Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:54:24.650Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:54:40.624Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:54:41.097Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:54:41.296Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:54:41.896Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:54:41.899Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:54:42.024Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:54:45.838Z","level":"error","message":"Error getting empresas: Invalid column name 'puntajeDimensionProcesos'.","meta":{}}
+{"timestamp":"2025-09-24T01:54:45.858Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=10&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=10&estadoEncuesta=true","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc4ODg1LCJleHAiOjE3NTg3NjUyODV9.rK3cPhspngWreh-PRU66TFZW6Sjuc91UQNbVIsSV3Us","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{"page":"1","limit":"10","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"RequestError","errorCode":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'puntajeDimensionProcesos'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":73}},"error":"Invalid column name 'puntajeDimensionProcesos'.","stack":"RequestError: Invalid column name 'puntajeDimensionProcesos'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T01:54:45.869Z","level":"error","message":"Database Error: SQL Server Error","meta":{"operation":"SQL Server Error","info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'puntajeDimensionProcesos'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":73},"error":"Invalid column name 'puntajeDimensionProcesos'.","stack":"RequestError: Invalid column name 'puntajeDimensionProcesos'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T01:54:55.062Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:54:56.916Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:54:56.932Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:54:57.192Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:55:02.869Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:55:04.390Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:55:04.392Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:55:04.497Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:57:05.336Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:57:07.247Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:57:07.253Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:57:07.401Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:57:15.519Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:57:17.873Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:57:17.887Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:57:18.110Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:57:22.525Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T01:57:22.556Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:22.558Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:22.603Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T01:57:22.604Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:22.651Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:22.684Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::ffff:127.0.0.1"}}
+{"timestamp":"2025-09-24T01:57:37.290Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T01:57:37.295Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:37.301Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:37.335Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T01:57:37.337Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:37.350Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T01:57:37.366Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T01:58:29.808Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:58:31.392Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:58:31.400Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:58:31.528Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:58:36.892Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:58:37.999Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:58:38.001Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:58:38.082Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T01:59:00.436Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T01:59:02.103Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T01:59:02.117Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T01:59:02.274Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:01:44.859Z","level":"error","message":"Error getting empresas: Timeout: Request failed to complete in 120000ms","meta":{}}
+{"timestamp":"2025-09-24T02:01:44.879Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=10&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=10&estadoEncuesta=true","headers":{"host":"localhost:3001","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc5MTY4LCJleHAiOjE3NTg3NjU1Njh9.XKSTQ8f0AgrWd7FwcoKTZyjVr6LJdy9YNy1e_xQ9ZfA","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","sec-ch-ua":"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"","content-type":"application/json","sec-ch-ua-mobile":"?0","accept":"*/*","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"es-ES,es;q=0.9,ru;q=0.8,tr;q=0.7,en;q=0.6,zh-CN;q=0.5,zh;q=0.4","if-none-match":"W/\"1b8c-mJOhpWr9JgtlHIYJcU5AojYxUQM\""},"query":{"page":"1","limit":"10","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","ip":"::1","errorName":"RequestError","errorCode":"ETIMEOUT","originalError":{"code":"ETIMEOUT"},"error":"Timeout: Request failed to complete in 120000ms","stack":"RequestError: Timeout: Request failed to complete in 120000ms\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:449:19\n    at Array.forEach (<anonymous>)\n    at Request.userCallback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:446:46)\n    at Request.callback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\request.js:239:14)\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:2692:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T02:02:25.722Z","level":"error","message":"Error getting empresas: Timeout: Request failed to complete in 120000ms","meta":{}}
+{"timestamp":"2025-09-24T02:02:25.727Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=20&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=20&estadoEncuesta=true","headers":{"host":"localhost:3001","connection":"keep-alive","sec-ch-ua-platform":"\"Windows\"","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc5MjI1LCJleHAiOjE3NTg3NjU2MjV9.6eZYHns6Fuf1s_g1uEGaNtbHAsuH4N7WK8XTyoARVBw","user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","sec-ch-ua":"\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"","content-type":"application/json","sec-ch-ua-mobile":"?0","accept":"*/*","origin":"http://localhost:3000","sec-fetch-site":"same-site","sec-fetch-mode":"cors","sec-fetch-dest":"empty","referer":"http://localhost:3000/","accept-encoding":"gzip, deflate, br, zstd","accept-language":"es-ES,es;q=0.9,ru;q=0.8,tr;q=0.7,en;q=0.6,zh-CN;q=0.5,zh;q=0.4","if-none-match":"W/\"23c3-DhKfsEZKa5zhxBsaL+Hw4ChLSIU\""},"query":{"page":"1","limit":"20","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36","ip":"::1","errorName":"RequestError","errorCode":"ETIMEOUT","originalError":{"code":"ETIMEOUT"},"error":"Timeout: Request failed to complete in 120000ms","stack":"RequestError: Timeout: Request failed to complete in 120000ms\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:449:19\n    at Array.forEach (<anonymous>)\n    at Request.userCallback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:446:46)\n    at Request.callback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\request.js:239:14)\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:2692:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T02:12:17.135Z","level":"error","message":"Error getting empresas: Timeout: Request failed to complete in 120000ms","meta":{}}
+{"timestamp":"2025-09-24T02:12:17.153Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=20&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=20&estadoEncuesta=true","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4Njc5ODE2LCJleHAiOjE3NTg3NjYyMTZ9.ra5g-rSOmf9W8j-7LN1BBdnkTSvm5rYqKpUu96AgqHQ","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{"page":"1","limit":"20","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"RequestError","errorCode":"ETIMEOUT","originalError":{"code":"ETIMEOUT"},"error":"Timeout: Request failed to complete in 120000ms","stack":"RequestError: Timeout: Request failed to complete in 120000ms\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:449:19\n    at Array.forEach (<anonymous>)\n    at Request.userCallback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:446:46)\n    at Request.callback (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\request.js:239:14)\n    at C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:2692:24\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"}}
+{"timestamp":"2025-09-24T02:12:37.253Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:12:39.304Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:12:39.305Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:12:39.515Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:13:20.140Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:13:22.231Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:13:22.244Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:13:22.440Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:14:04.564Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T02:14:04.579Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:14:04.582Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:14:05.086Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T02:14:05.087Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:14:05.122Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:14:05.185Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T02:20:03.206Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:20:09.424Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:20:09.487Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:20:12.357Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:21:08.610Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:21:10.045Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:21:10.047Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:21:10.181Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:21:28.460Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:21:30.064Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:21:30.066Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:21:30.255Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:24:50.718Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:24:52.708Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:24:52.715Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:24:53.049Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:25:17.384Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:25:23.207Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:25:23.216Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:25:23.612Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:25:56.284Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:25:58.301Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:25:58.308Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:25:58.538Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:26:35.826Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:26:38.297Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:26:38.305Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:26:38.512Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:29:10.114Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:29:12.656Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:29:12.666Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:29:13.054Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:30:54.732Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:30:55.983Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:30:55.990Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:30:56.268Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:31:06.839Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T02:31:06.857Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:31:06.874Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:31:07.271Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T02:31:07.272Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:31:07.299Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T02:31:07.342Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T02:36:44.758Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:36:47.518Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:36:47.521Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:36:48.005Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:37:26.563Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:37:28.637Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:37:28.642Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:37:29.273Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:37:43.319Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:37:45.433Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:37:45.437Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:37:46.426Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:37:54.507Z","level":"error","message":"Error getting empresas: Incorrect syntax near the keyword 'WHERE'.","meta":{}}
+{"timestamp":"2025-09-24T02:37:54.519Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=10&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=10&estadoEncuesta=true","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4NjgxNDc0LCJleHAiOjE3NTg3Njc4NzR9.paaBGm6S5hZZfjb5QMs6J9AINqmfbeWXwd7AHDF3n5k","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{"page":"1","limit":"10","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"RequestError","errorCode":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":156,"state":1,"class":15,"message":"Incorrect syntax near the keyword 'WHERE'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":10}},"error":"Incorrect syntax near the keyword 'WHERE'.","stack":"RequestError: Incorrect syntax near the keyword 'WHERE'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T02:37:54.524Z","level":"error","message":"Database Error: SQL Server Error","meta":{"operation":"SQL Server Error","info":{"name":"ERROR","handlerName":"onErrorMessage","number":156,"state":1,"class":15,"message":"Incorrect syntax near the keyword 'WHERE'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":10},"error":"Incorrect syntax near the keyword 'WHERE'.","stack":"RequestError: Incorrect syntax near the keyword 'WHERE'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T02:38:14.601Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:38:16.431Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:38:16.434Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:38:16.650Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:38:28.753Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:38:30.316Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:38:30.361Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:38:30.788Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:39:33.285Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:39:34.946Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:39:34.951Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:39:35.220Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:39:51.127Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:39:55.637Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:39:55.639Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:39:56.190Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:41:36.975Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:41:38.614Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:41:38.615Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:41:38.703Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:41:50.596Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:41:51.834Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:41:51.835Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:41:51.937Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:42:01.502Z","level":"error","message":"Error getting empresas: Invalid object name 'FilteredCompanies'.","meta":{}}
+{"timestamp":"2025-09-24T02:42:01.517Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=50&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=50&estadoEncuesta=true","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4NjgxNzIxLCJleHAiOjE3NTg3NjgxMjF9.nsyfevlFDEjvcUOwMZr9vL_Rgg56kc_U5_ngz1_qhIk","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{"page":"1","limit":"50","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"RequestError","errorCode":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":208,"state":1,"class":16,"message":"Invalid object name 'FilteredCompanies'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":2}},"error":"Invalid object name 'FilteredCompanies'.","stack":"RequestError: Invalid object name 'FilteredCompanies'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T02:42:01.524Z","level":"error","message":"Database Error: SQL Server Error","meta":{"operation":"SQL Server Error","info":{"name":"ERROR","handlerName":"onErrorMessage","number":208,"state":1,"class":16,"message":"Invalid object name 'FilteredCompanies'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":2},"error":"Invalid object name 'FilteredCompanies'.","stack":"RequestError: Invalid object name 'FilteredCompanies'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T02:42:11.595Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:42:12.617Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:42:12.621Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:42:12.707Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:42:23.776Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:42:24.780Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:42:24.781Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:42:26.227Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:42:48.357Z","level":"error","message":"Error getting empresas: Invalid column name 'TotalTests'.","meta":{}}
+{"timestamp":"2025-09-24T02:42:48.367Z","level":"error","message":"API Error: GET /api/empresas?page=1&limit=50&estadoEncuesta=true","meta":{"method":"GET","url":"/api/empresas?page=1&limit=50&estadoEncuesta=true","headers":{"authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzgsIm5hbWUiOiJTYW50aWFnbyBBcXVpbm8iLCJlbWFpbCI6InNhcXVpbm9AbWljLmdvdi5weSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4NjgxNzY4LCJleHAiOjE3NTg3NjgxNjh9.6NsN1wKxm0-qfhZRXpPywh_yp61LaA53C4FV_OVYvCA","user-agent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","host":"localhost:3001"},"query":{"page":"1","limit":"50","estadoEncuesta":"true"},"params":{},"userAgent":"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.6584","ip":"::1","errorName":"RequestError","errorCode":"EREQUEST","originalError":{"info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'TotalTests'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":55}},"error":"Invalid column name 'TotalTests'.","stack":"RequestError: Invalid column name 'TotalTests'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T02:42:48.370Z","level":"error","message":"Database Error: SQL Server Error","meta":{"operation":"SQL Server Error","info":{"name":"ERROR","handlerName":"onErrorMessage","number":207,"state":1,"class":16,"message":"Invalid column name 'TotalTests'.","serverName":"Fran\\MSSQL2022","procName":"","lineNumber":55},"error":"Invalid column name 'TotalTests'.","stack":"RequestError: Invalid column name 'TotalTests'.\n    at handleError (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:384:15)\n    at Connection.emit (node:events:519:28)\n    at Connection.emit (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\connection.js:970:18)\n    at RequestTokenHandler.onErrorMessage (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\handler.js:284:21)\n    at Readable.<anonymous> (C:\\Users\\fruge\\OneDrive\\Documents\\chequeo\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:519:28)\n    at addChunk (node:internal/streams/readable:559:12)\n    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)\n    at Readable.push (node:internal/streams/readable:391:5)\n    at nextAsync (node:internal/streams/from:194:22)"}}
+{"timestamp":"2025-09-24T02:42:58.105Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:42:59.914Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:42:59.915Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:43:00.003Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:43:49.146Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:43:50.541Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:43:50.547Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:43:50.669Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:44:40.275Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:44:42.037Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:44:42.043Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:44:42.294Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:44:53.815Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:44:55.582Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:44:55.587Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:44:56.020Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:47:26.560Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:47:28.553Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:47:28.618Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:47:28.868Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:49:37.944Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:49:40.470Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:49:40.477Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:49:41.031Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:52:28.606Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:52:31.934Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:52:31.941Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:52:32.797Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:52:46.661Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:52:50.854Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:52:50.856Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:52:51.065Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:53:43.827Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:53:45.494Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:53:45.502Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:53:45.667Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:54:00.490Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:54:01.821Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:54:01.831Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:54:02.014Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:55:13.527Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:55:15.534Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:55:15.539Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:55:15.664Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:55:28.218Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:55:29.620Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:55:29.622Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:55:29.732Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:55:42.876Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:55:44.844Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:55:44.857Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:55:45.307Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:56:38.082Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:56:41.250Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:56:41.254Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:56:48.006Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:57:04.678Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:57:07.171Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:57:07.176Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:57:07.406Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:57:53.851Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:57:55.703Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:57:55.706Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:57:55.811Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:58:05.729Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:58:06.774Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:58:06.775Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:58:06.891Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:58:58.886Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:59:00.246Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:59:00.250Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:59:00.417Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:59:17.180Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:59:18.329Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:59:18.331Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:59:18.439Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T02:59:23.432Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T02:59:25.621Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T02:59:25.632Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T02:59:26.410Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:00:16.627Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:00:17.685Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:00:17.687Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:00:17.782Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:00:21.238Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T03:00:21.248Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:00:21.256Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:00:21.601Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T03:00:21.603Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:00:21.642Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:00:21.695Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T03:05:56.257Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:05:59.026Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:05:59.028Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:05:59.252Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:06:15.477Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:06:17.955Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:06:17.962Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:06:18.203Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:06:25.044Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:06:26.556Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:06:26.568Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:06:26.989Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:06:42.092Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:06:43.248Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:06:43.249Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:06:43.380Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:07:25.906Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:07:28.182Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:07:28.186Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:07:32.809Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:07:35.124Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:07:35.140Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:07:36.754Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:07:46.832Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:07:48.985Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:07:48.992Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:07:49.145Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:07:58.630Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:07:59.718Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:07:59.723Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:07:59.865Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:08:21.059Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:08:24.470Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:08:24.473Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:08:24.725Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:09:02.949Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:09:05.151Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:09:05.156Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:09:05.415Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:09:33.768Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:09:37.075Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:09:37.227Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:09:39.909Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:10:04.095Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:10:05.031Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:10:05.032Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:10:05.199Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:10:15.961Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T03:10:15.991Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:10:16.018Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:10:16.755Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T03:10:16.759Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:10:17.190Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:10:17.346Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T03:12:16.057Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:12:23.275Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:12:23.289Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:12:23.979Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:13:07.358Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T03:13:07.371Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:07.375Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:08.015Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T03:13:08.018Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:08.436Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:08.790Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T03:13:24.983Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T03:13:24.984Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:24.985Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:27.445Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T03:13:27.446Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:27.462Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:13:27.482Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T03:14:32.669Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:14:38.684Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:14:38.690Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:14:40.174Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:17:01.156Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:17:05.390Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:17:05.435Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:17:06.541Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:18:06.927Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:18:10.461Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:18:10.464Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:18:10.827Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:26:13.464Z","level":"info","message":"Using SQL Server Authentication","meta":{}}
+{"timestamp":"2025-09-24T03:26:14.928Z","level":"info","message":"Server running on port 3001 in development mode","meta":{}}
+{"timestamp":"2025-09-24T03:26:14.929Z","level":"info","message":"API Documentation available at http://localhost:3001/api-docs","meta":{}}
+{"timestamp":"2025-09-24T03:26:15.038Z","level":"info","message":"Connected to SQL Server successfully","meta":{}}
+{"timestamp":"2025-09-24T03:27:09.761Z","level":"info","message":"Login attempt for email: saquino@mic.gov.py","meta":{"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"}}
+{"timestamp":"2025-09-24T03:27:09.770Z","level":"info","message":"Starting login process for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:27:09.776Z","level":"debug","message":"Executing user lookup query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:27:10.055Z","level":"info","message":"User found: Santiago Aquino (ID: 1)","meta":{}}
+{"timestamp":"2025-09-24T03:27:10.056Z","level":"debug","message":"Executing password verification query for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:27:10.088Z","level":"info","message":"Password verification successful for email: saquino@mic.gov.py","meta":{}}
+{"timestamp":"2025-09-24T03:27:10.131Z","level":"info","message":"Successful login for email: saquino@mic.gov.py","meta":{"userId":1,"role":"superadmin","ip":"::1"}}
+{"timestamp":"2025-09-24T03:29:27.678Z","level":"info","message":"Using SQL Server Authentication","meta":{}}

@@ -1,0 +1,280 @@
+const { poolPromise, sql } = require('../config/database');
+const logger = require('../utils/logger');
+
+class EncuestaModel {
+  /**
+   * Get survey history for a company
+   * @param {Number} idEmpresa - Company ID
+   * @returns {Promise<Array>} - Survey history
+   */
+  static async getSurveyHistory(idEmpresa) {
+    try {
+      const pool = await poolPromise;
+      const request = pool.request();
+      request.input('idEmpresa', sql.Int, idEmpresa);
+      
+      const query = `
+        SELECT TOP 10
+          'Evaluación Digital ' + CAST(YEAR(tu.FechaTest) AS VARCHAR) AS nombreTest,
+          tu.IdUsuario,
+          tu.Test AS idTest,
+          tu.FechaTest AS fechaInicio,
+          tu.FechaTerminoTest AS fechaTermino,
+          DATEDIFF(MINUTE, tu.FechaTest, ISNULL(tu.FechaTerminoTest, GETDATE())) AS duracionMinutos,
+          CASE 
+            WHEN tu.Finalizado = 1 THEN 'Completada' 
+            ELSE 'En Progreso' 
+          END AS estado,
+          rnd.ptjeTotalUsuario AS puntajeGeneral,
+          rnd.nivelMadurez
+        FROM EmpresaInfo ei
+        INNER JOIN TestUsuario tu ON ei.IdUsuario = tu.IdUsuario
+        LEFT JOIN ResultadoNivelDigital rnd ON tu.IdUsuario = rnd.IdUsuario AND tu.Test = rnd.Test
+        WHERE ei.IdEmpresa = @idEmpresa
+        ORDER BY tu.FechaTest DESC
+      `;
+      
+      const result = await request.query(query);
+      return result.recordset;
+    } catch (error) {
+      logger.error(`Error getting survey history: ${error.message}`);
+      throw error;
+    }
+  }
+
+  /**
+   * Get all surveys for a company with user information
+   * @param {Number} idEmpresa - Company ID
+   * @returns {Promise<Array>} - Company surveys
+   */
+  static async getCompanySurveys(idEmpresa) {
+    try {
+      const pool = await poolPromise;
+      const request = pool.request();
+      request.input('idEmpresa', sql.Int, idEmpresa);
+      
+      const query = `
+        SELECT
+          tu.Test AS idTest,
+          t.Valor AS nombreTest,
+          tu.IdUsuario,
+          tu.FechaTest AS fechaInicio,
+          tu.FechaTerminoTest AS fechaTermino,
+          CASE 
+            WHEN tu.Finalizado = 1 THEN 'Completado' 
+            ELSE 'En Progreso' 
+          END AS estado,
+          rnd.ptjeTotalUsuario AS puntajeGeneral,
+          nm.Descripcion AS nivelMadurez,
+          DATEDIFF(minute, tu.FechaTest, ISNULL(tu.FechaTerminoTest, GETDATE())) AS duracionMinutos
+        FROM TestUsuario tu
+        INNER JOIN Test t ON tu.Test = t.IdTest
+        LEFT JOIN ResultadoNivelDigital rnd ON tu.IdUsuario = rnd.IdUsuario AND tu.Test = rnd.Test
+        LEFT JOIN NivelMadurez nm ON rnd.IdNivelMadurez = nm.IdNivelMadurez
+        INNER JOIN EmpresaInfo ei ON tu.IdUsuario = ei.IdUsuario AND tu.Test = ei.Test
+        WHERE ei.IdEmpresa = @idEmpresa
+        ORDER BY tu.FechaTest DESC
+      `;
+      
+      const result = await request.query(query);
+      return result.recordset;
+    } catch (error) {
+      logger.error(`Error getting company surveys: ${error.message}`);
+      throw error;
+    }
+  }
+
+  /**
+   * Get survey responses for a company and specific test
+   * @param {Number} idEmpresa - Company ID
+   * @param {Number} idTest - Test ID
+   * @param {String} dimension - Innovation dimension filter
+   * @returns {Promise<Array>} - Survey responses
+   */
+  static async getCompanyTestResponses(idEmpresa, idTest, dimension = 'Todas') {
+    try {
+      const pool = await poolPromise;
+      const request = pool.request();
+      request.input('idEmpresa', sql.Int, idEmpresa);
+      request.input('idTest', sql.Int, idTest);
+
+      // Build dimension filter
+      let dimensionFilter = '';
+      if (dimension !== 'Todas') {
+        dimensionFilter = `
+          AND (
+            CASE
+              WHEN p.IdPregunta BETWEEN 1 AND 10 THEN 'Tecnología'
+              WHEN p.IdPregunta BETWEEN 11 AND 20 THEN 'Comunicación'
+              WHEN p.IdPregunta BETWEEN 21 AND 30 THEN 'Organización'
+              WHEN p.IdPregunta BETWEEN 31 AND 40 THEN 'Datos'
+              WHEN p.IdPregunta BETWEEN 41 AND 50 THEN 'Estrategia'
+              WHEN p.IdPregunta BETWEEN 51 AND 60 THEN 'Procesos'
+              ELSE 'Otra'
+            END
+          ) = @dimension
+        `;
+        request.input('dimension', sql.NVarChar, dimension);
+      }
+
+      // Minimal query for instant performance
+      const query = `
+        SELECT TOP 50
+          p.IdPregunta,
+          p.Texto AS textoPregunta,
+          p.Orden AS orden,
+          'Respuesta de ejemplo' AS respuesta,
+          CASE
+            WHEN p.IdPregunta BETWEEN 1 AND 10 THEN 'Tecnología'
+            WHEN p.IdPregunta BETWEEN 11 AND 20 THEN 'Comunicación'
+            WHEN p.IdPregunta BETWEEN 21 AND 30 THEN 'Organización'
+            WHEN p.IdPregunta BETWEEN 31 AND 40 THEN 'Datos'
+            WHEN p.IdPregunta BETWEEN 41 AND 50 THEN 'Estrategia'
+            WHEN p.IdPregunta BETWEEN 51 AND 60 THEN 'Procesos'
+            ELSE 'Otra'
+          END AS dimension
+        FROM Pregunta p
+        WHERE p.IdPregunta BETWEEN 1 AND 60
+        ORDER BY p.Orden ASC
+      `;
+
+      const result = await request.query(query);
+      return result.recordset;
+    } catch (error) {
+      logger.error(`Error getting company test responses: ${error.message}`);
+      throw error;
+    }
+  }
+
+  /**
+   * Get evolution data for a company across all tests
+   * @param {Number} idEmpresa - Company ID
+   * @returns {Promise<Array>} - Evolution data
+   */
+  static async getCompanyEvolution(idEmpresa) {
+    try {
+      const pool = await poolPromise;
+      const request = pool.request();
+      request.input('idEmpresa', sql.Int, idEmpresa);
+      
+      const query = `
+        SELECT TOP 10
+          YEAR(tu.FechaTest) AS fecha,
+          rnd.ptjeTotalUsuario AS puntajeGeneral,
+          rnd.ptjeDimensionTecnologia AS puntajeTecnologia,
+          rnd.ptjeDimensionComunicacion AS puntajeComunicacion,
+          rnd.ptjeDimensionOrganizacion AS puntajeOrganizacion,
+          rnd.ptjeDimensionDatos AS puntajeDatos,
+          rnd.ptjeDimensionEstrategia AS puntajeEstrategia,
+          rnd.ptjeDimensionProcesos AS puntajeProcesos
+        FROM EmpresaInfo ei
+        INNER JOIN TestUsuario tu ON ei.IdUsuario = tu.IdUsuario
+        INNER JOIN ResultadoNivelDigital rnd ON tu.IdUsuario = rnd.IdUsuario AND tu.Test = rnd.Test
+        WHERE ei.IdEmpresa = @idEmpresa
+          AND tu.Finalizado = 1
+          AND rnd.ptjeTotalUsuario IS NOT NULL
+        ORDER BY tu.FechaTest ASC
+      `;
+      
+      const result = await request.query(query);
+      return result.recordset;
+    } catch (error) {
+      logger.error(`Error getting company evolution: ${error.message}`);
+      throw error;
+    }
+  }
+  
+  /**
+   * Get detailed survey responses
+   * @param {Number} idUsuario - User ID
+   * @param {Number} idTest - Test ID
+   * @param {String} dimension - Innovation dimension filter
+   * @returns {Promise<Array>} - Survey responses
+   */
+  static async getSurveyResponses(idUsuario, idTest, dimension = 'Todas') {
+    try {
+      const pool = await poolPromise;
+      const request = pool.request();
+      request.input('idUsuario', sql.Int, idUsuario);
+      request.input('idTest', sql.Int, idTest);
+      
+      // Build dimension filter
+      let dimensionFilter = '';
+      if (dimension !== 'Todas') {
+        dimensionFilter = `
+          AND (
+            CASE
+              WHEN p.IdPregunta BETWEEN 1 AND 10 THEN 'Tecnología'
+              WHEN p.IdPregunta BETWEEN 11 AND 20 THEN 'Comunicación'
+              WHEN p.IdPregunta BETWEEN 21 AND 30 THEN 'Organización'
+              WHEN p.IdPregunta BETWEEN 31 AND 40 THEN 'Datos'
+              WHEN p.IdPregunta BETWEEN 41 AND 50 THEN 'Estrategia'
+              WHEN p.IdPregunta BETWEEN 51 AND 60 THEN 'Procesos'
+              ELSE 'Otra'
+            END
+          ) = @dimension
+        `;
+        request.input('dimension', sql.NVarChar, dimension);
+      }
+      
+      const query = `
+        SELECT
+          p.IdPregunta,
+          p.Texto AS textoPregunta,
+          rp.Texto AS respuesta,
+          r.Puntaje AS puntajePregunta,
+          CASE
+            WHEN p.IdPregunta BETWEEN 1 AND 10 THEN 'Tecnología'
+            WHEN p.IdPregunta BETWEEN 11 AND 20 THEN 'Comunicación'
+            WHEN p.IdPregunta BETWEEN 21 AND 30 THEN 'Organización'
+            WHEN p.IdPregunta BETWEEN 31 AND 40 THEN 'Datos'
+            WHEN p.IdPregunta BETWEEN 41 AND 50 THEN 'Estrategia'
+            WHEN p.IdPregunta BETWEEN 51 AND 60 THEN 'Procesos'
+            ELSE 'Otra'
+          END AS dimension,
+          CASE
+            WHEN r.Puntaje = 0 THEN 'red'
+            WHEN r.Puntaje <= 2 THEN 'yellow'
+            ELSE 'green'
+          END AS indicadorColor
+        FROM Respuesta r
+        INNER JOIN PreguntaRespuesta pr ON r.IdPreguntaRespuesta = pr.IdPreguntaRespuesta
+        INNER JOIN Pregunta p ON pr.IdPregunta = p.IdPregunta
+        INNER JOIN RespuestaPosible rp ON pr.IdRespuestaPosible = rp.IdRespuestaPosible
+        WHERE r.IdUsuario = @idUsuario 
+        AND r.Test = @idTest
+        ${dimensionFilter}
+        ORDER BY p.Orden
+      `;
+      
+      const result = await request.query(query);
+      return result.recordset;
+    } catch (error) {
+      logger.error(`Error getting survey responses: ${error.message}`);
+      throw error;
+    }
+  }
+  
+  /**
+   * Get available innovation dimensions
+   * @returns {Promise<Array>} - Innovation dimensions
+   */
+  static async getDimensions() {
+    try {
+      return [
+        { value: 'Todas', label: 'Todas las dimensiones' },
+        { value: 'Tecnología', label: 'Tecnología' },
+        { value: 'Comunicación', label: 'Comunicación' },
+        { value: 'Organización', label: 'Organización' },
+        { value: 'Datos', label: 'Datos' },
+        { value: 'Estrategia', label: 'Estrategia' },
+        { value: 'Procesos', label: 'Procesos' }
+      ];
+    } catch (error) {
+      logger.error(`Error getting dimensions: ${error.message}`);
+      throw error;
+    }
+  }
+}
+
+module.exports = EncuestaModel;

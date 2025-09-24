@@ -1,0 +1,87 @@
+2025-09-23 11:24:06 error: Error: Authentication token is required
+2025-09-23 11:24:46 error: Error: Authentication token is required
+2025-09-23 11:26:45 error: Registration error: Invalid object name 'Usuarios'.
+2025-09-23 11:26:45 error: RequestError: Invalid object name 'Usuarios'.
+2025-09-23 11:30:10 error: Error getting empresas: Invalid object name 'Distritos'.
+2025-09-23 11:30:10 error: RequestError: Invalid object name 'Distritos'.
+2025-09-23 11:30:10 error: Error getting filter options: Cannot access 'sectorActividadResult' before initialization
+2025-09-23 11:30:10 error: ReferenceError: Cannot access 'sectorActividadResult' before initialization
+2025-09-23 11:30:10 error: unhandledRejection: Invalid object name 'Distritos'.
+RequestError: Invalid object name 'Distritos'.
+    at handleError (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\tedious\request.js:384:15)
+    at Connection.emit (node:events:519:28)
+    at Connection.emit (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\tedious\lib\connection.js:970:18)
+    at RequestTokenHandler.onErrorMessage (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\tedious\lib\token\handler.js:284:21)
+    at Readable.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\tedious\lib\token\token-stream-parser.js:19:33)
+    at Readable.emit (node:events:519:28)
+    at addChunk (node:internal/streams/readable:559:12)
+    at readableAddChunkPushObjectMode (node:internal/streams/readable:536:3)
+    at Readable.push (node:internal/streams/readable:391:5)
+    at nextAsync (node:internal/streams/from:194:22)
+2025-09-23 11:36:46 error: Error getting empresas: Timeout: Request failed to complete in 30000ms
+2025-09-23 11:36:46 error: RequestError: Timeout: Request failed to complete in 30000ms
+2025-09-23 11:36:46 error: Error getting filter options: ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+2025-09-23 11:36:46 error: RequestError: ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+2025-09-23 12:03:30 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:03:30 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:04:02 error: Error: Authentication token is required
+2025-09-23 12:04:30 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:04:30 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:04:44 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:04:44 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:04:53 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:04:53 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:05:09 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:05:09 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:05:19 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:05:19 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:05:54 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:05:54 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:06:07 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:06:07 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:06:22 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:06:23 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:06:50 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:06:50 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:07:08 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:07:08 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:07:41 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:07:41 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:08:18 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:08:18 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:08:47 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:08:47 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:09:10 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:09:10 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:09:24 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:09:24 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:09:38 error: Error getting empresa by ID: Invalid column name 'Liderazgo'.
+2025-09-23 12:09:38 error: RequestError: Invalid column name 'Liderazgo'.
+2025-09-23 12:11:35 error: Error getting empresa by ID: Invalid column name 'Email'.
+2025-09-23 12:11:35 error: RequestError: Invalid column name 'Email'.
+2025-09-23 12:12:53 error: Error getting empresa by ID: Invalid column name 'Cargo'.
+2025-09-23 12:12:53 error: RequestError: Invalid column name 'Cargo'.
+2025-09-23 12:13:20 error: Error getting empresa by ID: Invalid column name 'NombreContacto'.
+2025-09-23 12:13:20 error: RequestError: Invalid column name 'NombreContacto'.
+2025-09-23 12:13:43 error: Error getting empresa by ID: Invalid column name 'FechaCreacion'.
+2025-09-23 12:13:43 error: RequestError: Invalid column name 'FechaCreacion'.
+2025-09-23 12:13:58 error: Error: Company with ID 1338 not found
+2025-09-23 12:27:01 error: Error: Company with ID 1338 not found
+2025-09-23 12:27:12 error: Error: Company with ID 1338 not found
+2025-09-23 13:10:00 error: Error getting company surveys: Invalid column name 'FechaInicio'.
+2025-09-23 13:10:00 error: RequestError: Invalid column name 'FechaInicio'.
+2025-09-23 17:19:55 error: Error getting company test responses: Timeout: Request failed to complete in 30000ms
+2025-09-23 17:19:55 error: RequestError: Timeout: Request failed to complete in 30000ms
+2025-09-23 17:28:51 error: Error getting company test responses: Incorrect syntax near the keyword 'AS'.
+2025-09-23 17:28:51 error: RequestError: Incorrect syntax near the keyword 'AS'.
+2025-09-23 17:39:37 error: Error getting company test responses: Timeout: Request failed to complete in 120000ms
+2025-09-23 17:39:37 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-09-23 17:39:57 error: Error getting company test responses: Timeout: Request failed to complete in 120000ms
+2025-09-23 17:39:57 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-09-23 23:42:05 error: Error getting company test responses: Timeout: Request failed to complete in 120000ms
+2025-09-23 23:42:05 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-09-23 23:42:25 error: Error getting company test responses: Timeout: Request failed to complete in 120000ms
+2025-09-23 23:42:25 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-09-23 23:54:52 error: Error: Not Found - /api/api/encuestas/empresas/1338/history
+2025-09-23 23:55:20 error: Error: Not Found - /api/api/encuestas/empresas/1338/tests/1/responses?dimension=Todas
+2025-09-24 01:00:39 error: Error getting empresas: Incorrect syntax near the keyword 'AS'.
