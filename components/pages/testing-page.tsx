@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { authService } from "../services/auth-service"
+import { getAuthToken } from "@/lib/api-client"
 
 export function TestingPage() {
   const [token, setToken] = useState("")
@@ -19,7 +19,7 @@ export function TestingPage() {
   const handleAutoLogin = async () => {
     setLoading(true)
     try {
-      const token = await authService.getValidToken()
+      const token = getAuthToken()
       if (token) {
         setToken(token)
         // Load data automatically

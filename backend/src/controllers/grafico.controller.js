@@ -21,8 +21,9 @@ const graficoController = {
    */
   getDimensionEvolution: catchAsync(async (req, res) => {
     const idEmpresa = parseInt(req.params.idEmpresa);
+    const idTestUsuario = req.query.idTestUsuario ? parseInt(req.query.idTestUsuario) : null;
     
-    const dimensionData = await GraficoModel.getDimensionEvolution(idEmpresa);
+    const dimensionData = await GraficoModel.getDimensionEvolution(idEmpresa, idTestUsuario);
     
     res.status(200).json(dimensionData);
   })

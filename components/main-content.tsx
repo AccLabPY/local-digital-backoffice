@@ -8,6 +8,8 @@ import { BusinessDetailPage } from "@/components/pages/business-detail-page"
 import { SurveyResponsesPage } from "@/components/pages/survey-responses-page"
 import { LookerDashboardPage } from "@/components/pages/looker-dashboard-page"
 import { TestingPage } from "@/components/pages/testing-page"
+import { RechequeosPage } from "@/components/pages/rechequeos-page"
+import { UserManagementPage } from "@/components/pages/user-management-page"
 
 export function MainContent() {
   const pathname = usePathname()
@@ -18,6 +20,10 @@ export function MainContent() {
         return <HomePage />
       case "/empresas":
         return <BusinessListPage />
+      case "/rechequeos":
+        return <RechequeosPage />
+      case "/usuarios":
+        return <UserManagementPage />
       case "/dashboard":
         return <LookerDashboardPage />
       case "/testing":

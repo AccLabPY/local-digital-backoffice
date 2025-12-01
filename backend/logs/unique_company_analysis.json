@@ -1,0 +1,90 @@
+{
+  "uniqueCounts": [
+    {
+      "DepartamentoMostrado": null,
+      "CompanyCount": 55
+    },
+    {
+      "DepartamentoMostrado": "Alto Paraguay",
+      "CompanyCount": 16
+    },
+    {
+      "DepartamentoMostrado": "Alto Paraná",
+      "CompanyCount": 5360
+    },
+    {
+      "DepartamentoMostrado": "Amambay",
+      "CompanyCount": 8
+    },
+    {
+      "DepartamentoMostrado": "Boquerón",
+      "CompanyCount": 64
+    },
+    {
+      "DepartamentoMostrado": "Caaguazú",
+      "CompanyCount": 144
+    },
+    {
+      "DepartamentoMostrado": "Canindeyú",
+      "CompanyCount": 16
+    },
+    {
+      "DepartamentoMostrado": "Capital",
+      "CompanyCount": 1280
+    },
+    {
+      "DepartamentoMostrado": "Central",
+      "CompanyCount": 5456
+    },
+    {
+      "DepartamentoMostrado": "Concepción",
+      "CompanyCount": 2656
+    },
+    {
+      "DepartamentoMostrado": "Cordillera",
+      "CompanyCount": 456
+    },
+    {
+      "DepartamentoMostrado": "Guairá",
+      "CompanyCount": 720
+    },
+    {
+      "DepartamentoMostrado": "Itapúa",
+      "CompanyCount": 20312
+    },
+    {
+      "DepartamentoMostrado": "Ñeembucú",
+      "CompanyCount": 6672
+    },
+    {
+      "DepartamentoMostrado": "Paraguarí",
+      "CompanyCount": 264
+    },
+    {
+      "DepartamentoMostrado": "San Pedro",
+      "CompanyCount": 8
+    }
+  ],
+  "uniqueCapitalCount": 488,
+  "uniqueNullDepCount": 99,
+  "detailedCapitalRecords": [],
+  "comparison": {
+    "expectedCounts": {
+      "Capital": 104,
+      "CENTRAL": 163,
+      "ALTO PARANÁ": 140,
+      "AMAMBAY": 1,
+      "BOQUERÓN": 1,
+      "CAAGUAZÚ": 10,
+      "CONCEPCIÓN": 136,
+      "CORDILLERA": 7,
+      "GUAIRÁ": 60,
+      "ITAPÚA": 359,
+      "MISIONES": 1,
+      "PARAGUARÍ": 6,
+      "SAN PEDRO": 1,
+      "ÑEEMBUCÚ": 134
+    },
+    "totalDifference": 1176
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "empresasCapital": [
+    {
+      "conteoActualCapital": 89
+    }
+  ],
+  "empresasNullNull": [
+    {
+      "conteoNullNull": 0
+    }
+  ],
+  "muestraEmpresasNull": [],
+  "totalCapital": [
+    {
+      "totalPosibleCapital": 89,
+      "totalEsperadoCapital": 104
+    }
+  ],
+  "departamentosDiscrepancias": [
+    {
+      "Departamento": "Concepción",
+      "ConteoActual": 190,
+      "ConteoEsperado": 136,
+      "Diferencia": 54
+    },
+    {
+      "Departamento": "Guairá",
+      "ConteoActual": 64,
+      "ConteoEsperado": 60,
+      "Diferencia": 4
+    },
+    {
+      "Departamento": "Itapúa",
+      "ConteoActual": 398,
+      "ConteoEsperado": 359,
+      "Diferencia": 39
+    },
+    {
+      "Departamento": "Ñeembucú",
+      "ConteoActual": 144,
+      "ConteoEsperado": 134,
+      "Diferencia": 10
+    }
+  ]
+}

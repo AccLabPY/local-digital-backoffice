@@ -9,14 +9,17 @@ import { Input } from "@/components/ui/input"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Switch } from "@/components/ui/switch"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Building2, MapPin, Calendar, BarChart3, Eye, Search, Users, Award, Target, Loader2, CheckCircle, Clock } from "lucide-react"
-import { authService } from "./services/auth-service"
+import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "@/components/ui/alert-dialog"
+import { Building2, MapPin, Calendar, BarChart3, Eye, Search, Users, Award, Target, Loader2, CheckCircle, Clock, Trash2, RefreshCw } from "lucide-react"
+import { getAuthToken } from "@/lib/api-client"
+import { ReassignChequeoDialog } from "./reassign-chequeo-dialog"
 
 interface BusinessListProps {
   filters: any
+  dateRange?: any
 }
 
-export function BusinessList({ filters }: BusinessListProps) {
+export function BusinessList({ filters, dateRange }: BusinessListProps) {
   const [searchTerm, setSearchTerm] = useState("")
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState("")
   const [isSearching, setIsSearching] = useState(false)
@@ -30,16 +33,26 @@ export function BusinessList({ filters }: BusinessListProps) {
   const [pageSize, setPageSize] = useState(50) // Por defecto 50 registros
   const [totalCount, setTotalCount] = useState(0)
   const [totalPages, setTotalPages] = useState(0)
+  
+  // Estados para el diálogo de confirmación de eliminación
+  const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false)
+  const [selectedBusiness, setSelectedBusiness] = useState<any>(null)
+  const [deleteType, setDeleteType] = useState<'test' | 'user' | 'complete' | null>(null)
+  const [deleteInProgress, setDeleteInProgress] = useState(false)
+  
+  // Estados para el diálogo de reasignación
+  const [isReassignDialogOpen, setIsReassignDialogOpen] = useState(false)
+  const [businessToReassign, setBusinessToReassign] = useState<any>(null)
+  
   const router = useRouter()
 
-  // Función para obtener token de autenticación usando el servicio singleton
-  const getAuthToken = async () => {
-    try {
-      return await authService.getValidToken()
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
+  // Función para convertir puntaje en nivel de madurez
+  const getMaturityLevel = (puntaje: number) => {
+    if (!puntaje) return "Sin evaluar"
+    if (puntaje < 30) return "Inicial"
+    if (puntaje < 60) return "Novato"
+    if (puntaje < 80) return "Competente"
+    return "Avanzado"
   }
 
   // Cargar datos desde la API
@@ -74,7 +87,7 @@ export function BusinessList({ filters }: BusinessListProps) {
       }
       
       try {
-        const token = await getAuthToken()
+        const token = getAuthToken() // Use imported synchronous function
         if (!token) {
           setError("No se pudo obtener el token de autenticación")
           return
@@ -89,10 +102,32 @@ export function BusinessList({ filters }: BusinessListProps) {
         });
         
         // Agregar filtros si existen
-        if (filters?.departamento)    params.set('departamento',    filters.departamento);
-        if (filters?.distrito)        params.set('distrito',        filters.distrito);
-        if (filters?.nivelInnovacion) params.set('nivelInnovacion', filters.nivelInnovacion);
-        if (filters?.sectorActividad) params.set('sectorActividad', filters.sectorActividad);
+        if (filters?.departamento && filters.departamento.length > 0) {
+          filters.departamento.forEach((dep: string) => params.append('departamento', dep));
+        }
+        if (filters?.distrito && filters.distrito.length > 0) {
+          filters.distrito.forEach((dist: string) => params.append('distrito', dist));
+        }
+        if (filters?.nivelInnovacion && filters.nivelInnovacion.length > 0) {
+          filters.nivelInnovacion.forEach((nivel: string) => params.append('nivelInnovacion', nivel));
+        }
+        if (filters?.sectorActividad && filters.sectorActividad.length > 0) {
+          filters.sectorActividad.forEach((sector: string) => params.append('sectorActividad', sector));
+        }
+        if (filters?.subSectorActividad && filters.subSectorActividad.length > 0) {
+          filters.subSectorActividad.forEach((subsector: string) => params.append('subSectorActividad', subsector));
+        }
+        if (filters?.tamanoEmpresa && filters.tamanoEmpresa.length > 0) {
+          filters.tamanoEmpresa.forEach((tamano: string) => params.append('tamanoEmpresa', tamano));
+        }
+        
+        // Agregar rango de fechas
+        if (dateRange?.fechaIni) {
+          params.append('fechaIni', dateRange.fechaIni);
+        }
+        if (dateRange?.fechaFin) {
+          params.append('fechaFin', dateRange.fechaFin);
+        }
 
         // Cargar empresas con filtro de finalizados, paginación y búsqueda del servidor
         const empresasUrl = `http://localhost:3001/api/empresas?${params.toString()}`
@@ -145,17 +180,189 @@ export function BusinessList({ filters }: BusinessListProps) {
     }
 
     loadData()
-  }, [filters, showOnlyFinalized, currentPage, pageSize, debouncedSearchTerm]) // Recargar cuando cambien los filtros, estado de finalizados, página, tamaño de página o término de búsqueda debounced
+  }, [filters, showOnlyFinalized, currentPage, pageSize, debouncedSearchTerm, dateRange]) // Recargar cuando cambien los filtros, estado de finalizados, página, tamaño de página, término de búsqueda debounced o rango de fechas
 
   // Ya no necesitamos filtrar localmente porque la búsqueda se hace en el servidor
   const filteredBusinesses = businesses
 
   const handleBusinessSelect = (business: any) => {
-    router.push(`/empresas/${business.IdEmpresa}`)
+    // Pasar IdTestUsuario para identificar el test específico del usuario
+    router.push(`/empresas/${business.IdEmpresa}?idTestUsuario=${business.IdTestUsuario}`)
   }
 
   const handleDashboardView = () => {
     router.push("/dashboard")
+  }
+  
+  // Manejo de eliminación
+  const handleOpenDeleteDialog = (business: any) => {
+    setSelectedBusiness(business)
+    setIsDeleteDialogOpen(true)
+    setDeleteType(null) // Resetear el tipo de eliminación
+  }
+
+  const handleCloseDeleteDialog = () => {
+    setIsDeleteDialogOpen(false)
+    setSelectedBusiness(null)
+    setDeleteType(null)
+  }
+
+  // Manejo de reasignación
+  const handleOpenReassignDialog = (business: any) => {
+    setBusinessToReassign(business)
+    setIsReassignDialogOpen(true)
+  }
+
+  const handleCloseReassignDialog = () => {
+    setIsReassignDialogOpen(false)
+    setBusinessToReassign(null)
+  }
+
+  const handleReassignSuccess = async () => {
+    // Recargar la lista de empresas después de una reasignación exitosa
+    try {
+      const token = getAuthToken()
+      if (!token) {
+        setError("No se pudo obtener el token de autenticación")
+        return
+      }
+
+      const params = new URLSearchParams({
+        page: String(currentPage),
+        limit: String(pageSize),
+        finalizado: showOnlyFinalized ? '1' : '0',
+        searchTerm: debouncedSearchTerm || ''
+      });
+      
+      if (filters?.departamento && filters.departamento.length > 0) {
+        filters.departamento.forEach((dep: string) => params.append('departamento', dep));
+      }
+      if (filters?.distrito && filters.distrito.length > 0) {
+        filters.distrito.forEach((dist: string) => params.append('distrito', dist));
+      }
+      if (filters?.nivelInnovacion && filters.nivelInnovacion.length > 0) {
+        filters.nivelInnovacion.forEach((nivel: string) => params.append('nivelInnovacion', nivel));
+      }
+      if (filters?.sectorActividad && filters.sectorActividad.length > 0) {
+        filters.sectorActividad.forEach((sector: string) => params.append('sectorActividad', sector));
+      }
+      if (filters?.subSectorActividad && filters.subSectorActividad.length > 0) {
+        filters.subSectorActividad.forEach((subsector: string) => params.append('subSectorActividad', subsector));
+      }
+      if (filters?.tamanoEmpresa && filters.tamanoEmpresa.length > 0) {
+        filters.tamanoEmpresa.forEach((tamano: string) => params.append('tamanoEmpresa', tamano));
+      }
+
+      const empresasUrl = `http://localhost:3001/api/empresas?${params.toString()}`
+      const empresasResponse = await fetch(empresasUrl, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      })
+      
+      if (empresasResponse.ok) {
+        const empresasData = await empresasResponse.json()
+        const uniqueByTest = new Map()
+        for (const row of empresasData.data || []) {
+          if (!uniqueByTest.has(row.IdTestUsuario)) {
+            uniqueByTest.set(row.IdTestUsuario, row)
+          }
+        }
+        setBusinesses([...uniqueByTest.values()])
+        setTotalCount(empresasData.pagination?.total || 0)
+        setTotalPages(empresasData.pagination?.totalPages || 0)
+      }
+    } catch (error) {
+      console.error('Error reloading data:', error)
+    }
+  }
+
+  const handleSetDeleteType = (type: 'test' | 'user' | 'complete') => {
+    setDeleteType(type)
+  }
+
+  const handleDeleteConfirm = async () => {
+    if (!selectedBusiness || !deleteType) return
+    
+    try {
+      setDeleteInProgress(true)
+      const token = getAuthToken()
+      if (!token) {
+        throw new Error("No se pudo obtener el token de autenticación")
+      }
+
+      const endpoint = `http://localhost:3001/api/empresas/${selectedBusiness.IdTestUsuario}/delete`
+      const response = await fetch(endpoint, {
+        method: 'DELETE',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          type: deleteType,
+          idTestUsuario: selectedBusiness.IdTestUsuario,
+          idUsuario: selectedBusiness.IdUsuario,
+          idEmpresa: selectedBusiness.IdEmpresa
+        })
+      })
+
+      if (!response.ok) {
+        throw new Error(`Error ${response.status}: ${response.statusText}`)
+      }
+
+      // Éxito - eliminar de la lista local y cerrar el diálogo
+      setBusinesses(prevBusinesses => 
+        prevBusinesses.filter(b => b.IdTestUsuario !== selectedBusiness.IdTestUsuario)
+      )
+      
+      // Actualizar KPIs
+      const kpiParams = new URLSearchParams({
+        finalizado: showOnlyFinalized ? '1' : '0'
+      })
+      
+      if (filters?.departamento && filters.departamento.length > 0) {
+        filters.departamento.forEach((dep: string) => kpiParams.append('departamento', dep));
+      }
+      if (filters?.distrito && filters.distrito.length > 0) {
+        filters.distrito.forEach((dist: string) => kpiParams.append('distrito', dist));
+      }
+      if (filters?.nivelInnovacion && filters.nivelInnovacion.length > 0) {
+        filters.nivelInnovacion.forEach((nivel: string) => kpiParams.append('nivelInnovacion', nivel));
+      }
+      if (filters?.sectorActividad && filters.sectorActividad.length > 0) {
+        filters.sectorActividad.forEach((sector: string) => kpiParams.append('sectorActividad', sector));
+      }
+      if (filters?.subSectorActividad && filters.subSectorActividad.length > 0) {
+        filters.subSectorActividad.forEach((subsector: string) => kpiParams.append('subSectorActividad', subsector));
+      }
+      if (filters?.tamanoEmpresa && filters.tamanoEmpresa.length > 0) {
+        filters.tamanoEmpresa.forEach((tamano: string) => kpiParams.append('tamanoEmpresa', tamano));
+      }
+
+      const kpisUrl = `http://localhost:3001/api/empresas/kpis?${kpiParams.toString()}`
+      const kpisResponse = await fetch(kpisUrl, {
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Content-Type': 'application/json',
+        },
+      })
+      
+      if (kpisResponse.ok) {
+        const kpisData = await kpisResponse.json()
+        setKpis(kpisData)
+      }
+
+      setIsDeleteDialogOpen(false)
+      setSelectedBusiness(null)
+      setDeleteType(null)
+      
+    } catch (error) {
+      console.error('Error al eliminar:', error)
+      setError(`Error al eliminar: ${error instanceof Error ? error.message : 'Error desconocido'}`)
+    } finally {
+      setDeleteInProgress(false)
+    }
   }
 
   // Funciones de paginación
@@ -187,29 +394,17 @@ export function BusinessList({ filters }: BusinessListProps) {
   }
 
 
-  const getMaturityLevel = (puntaje: number) => {
-    if (!puntaje) return "Sin evaluar"
-    if (puntaje < 30) return "Inicial"
-    if (puntaje < 60) return "Básico"
-    if (puntaje < 80) return "Intermedio"
-    return "Avanzado"
+  // Usar directamente los niveles que vienen del backend
+  const colorByNivel: Record<string, string> = {
+    'Inicial': 'bg-red-100 text-red-800 border-red-200',
+    'Novato': 'bg-amber-100 text-amber-800 border-amber-200',
+    'Competente': 'bg-blue-100 text-blue-800 border-blue-200',
+    'Avanzado': 'bg-emerald-100 text-emerald-800 border-emerald-200',
+    'Experto': 'bg-purple-100 text-purple-800 border-purple-200'
   }
 
-  const getMaturityLevelFromPercentage = (percentage: number) => {
-    if (!percentage) return "Sin evaluar"
-    if (percentage < 30) return "Inicial"
-    if (percentage < 60) return "Básico"
-    if (percentage < 80) return "Competente"
-    if (percentage < 100) return "Avanzado"
-    return "Experto"
-  }
-
-  const getMaturityColor = (puntaje: number) => {
-    if (!puntaje) return "bg-gray-100 text-gray-800 border-gray-200"
-    if (puntaje < 30) return "bg-red-100 text-red-800 border-red-200"
-    if (puntaje < 60) return "bg-yellow-100 text-yellow-800 border-yellow-200"
-    if (puntaje < 80) return "bg-blue-100 text-blue-800 border-blue-200"
-    return "bg-green-100 text-green-800 border-green-200"
+  const getNivelColor = (nivel: string) => {
+    return colorByNivel[nivel] || "bg-gray-100 text-gray-800 border-gray-200"
   }
 
   if (loading) {
@@ -263,9 +458,8 @@ export function BusinessList({ filters }: BusinessListProps) {
           </CardHeader>
           <CardContent>
               <div className="text-2xl font-bold text-[#f5592b]">{kpis.nivelGeneral}%</div>
-              <p className="text-xs text-gray-600 mt-1">Promedio de madurez</p>
               <p className="text-xs font-medium text-[#150773] mt-1">
-                Nivel: {getMaturityLevelFromPercentage(parseFloat(kpis.nivelGeneral || '0'))}
+                Madurez: {getMaturityLevel(kpis.nivelGeneral)}
               </p>
           </CardContent>
         </Card>
@@ -373,6 +567,7 @@ export function BusinessList({ filters }: BusinessListProps) {
                 <TableHead className="text-[#150773] font-semibold">Sector</TableHead>
                 <TableHead className="text-[#150773] font-semibold">Empleados</TableHead>
                 <TableHead className="text-[#150773] font-semibold">Fecha Test</TableHead>
+                <TableHead className="text-[#150773] font-semibold">Puntaje</TableHead>
                 <TableHead className="text-[#150773] font-semibold">Madurez</TableHead>
                 <TableHead className="text-[#150773] font-semibold">Acciones</TableHead>
               </TableRow>
@@ -413,19 +608,50 @@ export function BusinessList({ filters }: BusinessListProps) {
                     </div>
                   </TableCell>
                   <TableCell>
-                    <Badge className={`${getMaturityColor(business.puntajeNivelDeMadurezGeneral)} font-medium`}>
-                      {getMaturityLevel(business.puntajeNivelDeMadurezGeneral)}
+                    <div className="text-center">
+                      <div className="text-sm font-semibold text-[#f5592b]">
+                        {business.puntajeNivelDeMadurezGeneral !== null && business.puntajeNivelDeMadurezGeneral !== undefined 
+                          ? `${Number(business.puntajeNivelDeMadurezGeneral).toFixed(2)}%` 
+                          : 'N/A'}
+                      </div>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <Badge className={`${getNivelColor(business.nivelDeMadurezGeneral)} font-medium`}>
+                      {business.nivelDeMadurezGeneral}
                     </Badge>
                   </TableCell>
                   <TableCell>
-                    <Button
-                      className="bg-[#f5592b] hover:bg-[#e04a1f] text-white border-0"
-                      size="sm"
-                      onClick={() => handleBusinessSelect(business)}
-                    >
-                      <Eye className="h-4 w-4 mr-1" />
-                      Ver Detalles
-                    </Button>
+                    <div className="flex space-x-2">
+                      <Button
+                        className="bg-[#f5592b] hover:bg-[#e04a1f] text-white border-0"
+                        size="icon"
+                        title="Ver detalles"
+                        onClick={() => handleBusinessSelect(business)}
+                      >
+                        <Eye className="h-4 w-4" />
+                      </Button>
+                      
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        title="Reasignar chequeo"
+                        className="border-[#150773]/20 hover:bg-[#150773]/10 hover:text-[#150773]"
+                        onClick={() => handleOpenReassignDialog(business)}
+                      >
+                        <RefreshCw className="h-4 w-4 text-[#150773]" />
+                      </Button>
+                      
+                      <Button
+                        variant="outline"
+                        size="icon"
+                        title="Eliminar registro"
+                        className="border-red-200 hover:bg-red-100 hover:text-red-700"
+                        onClick={() => handleOpenDeleteDialog(business)}
+                      >
+                        <Trash2 className="h-4 w-4 text-red-500" />
+                      </Button>
+                    </div>
                   </TableCell>
                 </TableRow>
               ))}
@@ -516,6 +742,107 @@ export function BusinessList({ filters }: BusinessListProps) {
           </div>
         )}
       </Card>
+      
+      {/* Diálogo de reasignación */}
+      {businessToReassign && (
+        <ReassignChequeoDialog
+          isOpen={isReassignDialogOpen}
+          onClose={handleCloseReassignDialog}
+          business={businessToReassign}
+          onSuccess={handleReassignSuccess}
+        />
+      )}
+      
+      {/* Diálogo de confirmación para eliminar */}
+      <AlertDialog open={isDeleteDialogOpen} onOpenChange={setIsDeleteDialogOpen}>
+        <AlertDialogContent className="max-w-[500px]">
+          <AlertDialogHeader>
+            <AlertDialogTitle className="text-lg font-bold text-[#150773]">
+              ¿Eliminar registro de chequeo?
+            </AlertDialogTitle>
+            <AlertDialogDescription asChild>
+              <div className="text-base">
+                {selectedBusiness && (
+                  <div className="space-y-4">
+                    <p className="font-medium text-gray-800">
+                      Está a punto de eliminar el chequeo para: <span className="text-[#f5592b]">{selectedBusiness.empresa}</span>
+                    </p>
+                    
+                    <div className="bg-yellow-50 p-3 rounded-md border border-yellow-200 mb-4">
+                      <p className="font-semibold text-yellow-800 mb-2 text-sm">Seleccione el tipo de eliminación:</p>
+                      <div className="space-y-2">
+                        <div 
+                          className={`p-2 rounded-md cursor-pointer border ${deleteType === 'test' ? 'border-blue-500 bg-blue-50' : 'border-gray-200'}`}
+                          onClick={() => handleSetDeleteType('test')}
+                        >
+                          <h4 className="text-xs font-bold text-gray-800">1. Borrar el chequeo</h4>
+                          <p className="text-xs text-gray-600">
+                            Se eliminará solo el chequeo (IdTestUsuario: {selectedBusiness.IdTestUsuario}) y sus respuestas.
+                          </p>
+                        </div>
+                        
+                        <div 
+                          className={`p-2 rounded-md cursor-pointer border ${deleteType === 'user' ? 'border-orange-500 bg-orange-50' : 'border-gray-200'}`}
+                          onClick={() => handleSetDeleteType('user')}
+                        >
+                          <h4 className="text-xs font-bold text-gray-800">2. Borrar el chequeo y el usuario</h4>
+                          <p className="text-xs text-gray-600">
+                            Se eliminará el chequeo (IdTestUsuario: {selectedBusiness.IdTestUsuario}) y el usuario (IdUsuario: {selectedBusiness.IdUsuario}) con todos sus chequeos.
+                          </p>
+                        </div>
+                        
+                        <div 
+                          className={`p-2 rounded-md cursor-pointer border ${deleteType === 'complete' ? 'border-red-500 bg-red-50' : 'border-gray-200'}`}
+                          onClick={() => handleSetDeleteType('complete')}
+                        >
+                          <h4 className="text-xs font-bold text-gray-800">3. Borrar todo</h4>
+                          <p className="text-xs text-gray-600">
+                            Se eliminará el chequeo (IdTestUsuario: {selectedBusiness.IdTestUsuario}), la empresa (IdEmpresa: {selectedBusiness.IdEmpresa}), el usuario (IdUsuario: {selectedBusiness.IdUsuario}) y todos los datos relacionados.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="bg-gray-50 p-4 rounded-md border border-gray-200">
+                      <p className="text-sm text-gray-700 mb-2">
+                        <span className="font-bold">Importante:</span> Esta acción no se puede deshacer.
+                      </p>
+                      <p className="text-sm text-gray-700">
+                        El borrado se realizará siguiendo los procedimientos de seguridad establecidos.
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter className="gap-2 sm:gap-0">
+            <AlertDialogCancel disabled={deleteInProgress}>Cancelar</AlertDialogCancel>
+            <AlertDialogAction
+              onClick={(e) => {
+                e.preventDefault()
+                handleDeleteConfirm()
+              }}
+              disabled={!deleteType || deleteInProgress}
+              className={`${
+                deleteType === 'complete' ? 'bg-red-600 hover:bg-red-700' : 
+                deleteType === 'user' ? 'bg-orange-600 hover:bg-orange-700' : 
+                deleteType === 'test' ? 'bg-[#f5592b] hover:bg-[#e04a1f]' : 
+                'bg-gray-400'
+              } text-white`}
+            >
+              {deleteInProgress ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin mr-2" />
+                  Eliminando...
+                </>
+              ) : (
+                'Confirmar eliminación'
+              )}
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
     </div>
   )
 }

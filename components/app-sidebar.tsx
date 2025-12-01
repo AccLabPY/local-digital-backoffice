@@ -1,18 +1,21 @@
 "use client"
 
-import { Building2, BarChart3, Settings, Home, TestTube } from "lucide-react"
+import { Building2, BarChart3, Settings, Home, TestTube, RotateCcw, Users, Shield, UserCog } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
+import { useAuth } from "@/contexts/auth-context"
 
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
+  SidebarGroupLabel,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarHeader,
   SidebarFooter,
+  SidebarSeparator,
 } from "@/components/ui/sidebar"
 
 const menuItems = [
@@ -27,6 +30,11 @@ const menuItems = [
     icon: Building2,
   },
   {
+    title: "Rechequeos",
+    path: "/rechequeos",
+    icon: RotateCcw,
+  },
+  {
     title: "Dashboard Looker",
     path: "/dashboard",
     icon: BarChart3,
@@ -38,8 +46,32 @@ const menuItems = [
   },
 ]
 
+const adminMenuItems = [
+  {
+    title: "Usuarios Sistema",
+    path: "/usuarios-sistema",
+    icon: UserCog,
+    description: "Gestionar usuarios del sistema"
+  },
+  {
+    title: "Usuarios Empresas",
+    path: "/usuarios",
+    icon: Users,
+    description: "Gestionar usuarios de empresas"
+  },
+  {
+    title: "Roles y Permisos",
+    path: "/roles",
+    icon: Shield,
+    description: "Gestionar roles y recursos"
+  },
+]
+
 export function AppSidebar() {
   const pathname = usePathname()
+  const { user } = useAuth()
+
+  const isSuperadmin = user?.role === 'superadmin'
 
   return (
     <Sidebar collapsible="icon" className="border-r">
@@ -63,6 +95,7 @@ export function AppSidebar() {
       </SidebarHeader>
 
       <SidebarContent>
+        {/* Menú principal */}
         <SidebarGroup>
           <SidebarMenu>
             {menuItems.map((item) => (
@@ -82,6 +115,35 @@ export function AppSidebar() {
             ))}
           </SidebarMenu>
         </SidebarGroup>
+
+        {/* Menú de administración (solo superadmin) */}
+        {isSuperadmin && (
+          <>
+            <SidebarSeparator />
+            <SidebarGroup>
+              <SidebarGroupLabel className="text-xs text-gray-500">
+                Administración
+              </SidebarGroupLabel>
+              <SidebarMenu>
+                {adminMenuItems.map((item) => (
+                  <SidebarMenuItem key={item.title}>
+                    <SidebarMenuButton
+                      tooltip={item.description}
+                      isActive={pathname === item.path}
+                      className="hover:bg-blue-50 data-[active=true]:bg-[#150773] data-[active=true]:text-white cursor-pointer"
+                      asChild
+                    >
+                      <Link href={item.path}>
+                        <item.icon />
+                        <span>{item.title}</span>
+                      </Link>
+                    </SidebarMenuButton>
+                  </SidebarMenuItem>
+                ))}
+              </SidebarMenu>
+            </SidebarGroup>
+          </>
+        )}
       </SidebarContent>
 
       <SidebarFooter>

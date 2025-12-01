@@ -74,29 +74,61 @@ class GraficoModel {
   /**
    * Get dimension evolution data for a company
    * @param {Number} idEmpresa - Company ID
+   * @param {Number} idTestUsuario - Optional TestUsuario ID to filter by specific user
    * @returns {Promise<Array>} - Evolution data by dimension
    */
-  static async getDimensionEvolution(idEmpresa) {
+  static async getDimensionEvolution(idEmpresa, idTestUsuario = null) {
     try {
       const pool = await poolPromise;
       const request = pool.request();
       request.input('idEmpresa', sql.Int, idEmpresa);
       
-      const query = `
-        SELECT
-          CONVERT(VARCHAR(10), tu.FechaTest, 120) AS fecha,
-          rnd.ptjeDimensionTecnologia AS tecnologia,
-          rnd.ptjeDimensionComunicacion AS comunicacion,
-          rnd.ptjeDimensionOrganizacion AS organizacion,
-          rnd.ptjeDimensionDatos AS datos,
-          rnd.ptjeDimensionEstrategia AS estrategia,
-          rnd.ptjeDimensionProcesos AS procesos
-        FROM TestUsuario tu
-        INNER JOIN ResultadoNivelDigital rnd ON tu.IdUsuario = rnd.IdUsuario AND tu.Test = rnd.Test
-        INNER JOIN EmpresaInfo ei ON tu.IdUsuario = ei.IdUsuario AND tu.Test = ei.Test
-        WHERE ei.IdEmpresa = @idEmpresa AND tu.Finalizado = 1
-        ORDER BY tu.FechaTest ASC
-      `;
+      let query;
+      
+      if (idTestUsuario) {
+        // Si se proporciona idTestUsuario, obtener solo los tests de ese usuario específico
+        request.input('idTestUsuario', sql.Int, idTestUsuario);
+        
+        query = `
+          -- Obtener el IdUsuario del TestUsuario especificado
+          DECLARE @targetUserId INT;
+          SELECT @targetUserId = IdUsuario FROM TestUsuario WHERE IdTestUsuario = @idTestUsuario;
+          
+          -- Obtener todos los tests de ese usuario para esta empresa
+          SELECT
+            CONVERT(VARCHAR(10), tu.FechaTest, 120) AS fecha,
+            rnd.ptjeDimensionTecnologia AS tecnologia,
+            rnd.ptjeDimensionComunicacion AS comunicacion,
+            rnd.ptjeDimensionOrganizacion AS organizacion,
+            rnd.ptjeDimensionDatos AS datos,
+            rnd.ptjeDimensionEstrategia AS estrategia,
+            rnd.ptjeDimensionProcesos AS procesos
+          FROM TestUsuario tu
+          INNER JOIN ResultadoNivelDigital rnd ON tu.IdUsuario = rnd.IdUsuario AND tu.Test = rnd.Test
+          INNER JOIN EmpresaInfo ei ON tu.IdUsuario = ei.IdUsuario AND tu.Test = ei.Test
+          WHERE ei.IdEmpresa = @idEmpresa 
+            AND tu.IdUsuario = @targetUserId
+            AND tu.Finalizado = 1
+          ORDER BY tu.FechaTest ASC, tu.Test ASC
+        `;
+      } else {
+        // Sin idTestUsuario, obtener todos los tests de la empresa (comportamiento anterior)
+        query = `
+          SELECT
+            CONVERT(VARCHAR(10), tu.FechaTest, 120) AS fecha,
+            rnd.ptjeDimensionTecnologia AS tecnologia,
+            rnd.ptjeDimensionComunicacion AS comunicacion,
+            rnd.ptjeDimensionOrganizacion AS organizacion,
+            rnd.ptjeDimensionDatos AS datos,
+            rnd.ptjeDimensionEstrategia AS estrategia,
+            rnd.ptjeDimensionProcesos AS procesos
+          FROM TestUsuario tu
+          INNER JOIN ResultadoNivelDigital rnd ON tu.IdUsuario = rnd.IdUsuario AND tu.Test = rnd.Test
+          INNER JOIN EmpresaInfo ei ON tu.IdUsuario = ei.IdUsuario AND tu.Test = ei.Test
+          WHERE ei.IdEmpresa = @idEmpresa AND tu.Finalizado = 1
+          ORDER BY tu.FechaTest ASC, tu.Test ASC
+        `;
+      }
       
       const result = await request.query(query);
       

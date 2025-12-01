@@ -1,6 +1,8 @@
-const sql = require('mssql');
 const config = require('./config');
 const logger = require('../utils/logger');
+
+const useWindowsAuth = process.env.DB_USE_WINDOWS_AUTH === 'true';
+const sql = useWindowsAuth ? require('mssql/msnodesqlv8') : require('mssql');
 
 // Build database configuration based on authentication method
 const buildDbConfig = () => {
@@ -20,14 +22,26 @@ const buildDbConfig = () => {
   }
 
   // Configure authentication
-  if (process.env.DB_USE_WINDOWS_AUTH === 'true') {
-    // Windows Authentication
-    dbConfig.options.integratedSecurity = true;
-    if (process.env.DB_DOMAIN && process.env.DB_USER) {
-      dbConfig.domain = process.env.DB_DOMAIN;
-      dbConfig.user = process.env.DB_USER;
+  if (useWindowsAuth) {
+    dbConfig.driver = 'msnodesqlv8';
+    dbConfig.options.trustServerCertificate = true;
+
+    if (process.env.DB_DOMAIN || process.env.DB_USER) {
+      // NTLM authentication with explicit credentials
+      dbConfig.authentication = {
+        type: 'ntlm',
+        options: {
+          domain: process.env.DB_DOMAIN || undefined,
+          userName: process.env.DB_USER || undefined,
+          password: process.env.DB_PASSWORD || undefined
+        }
+      };
+    } else {
+      // Use the Windows identity of the process (service account)
+      dbConfig.options.trustedConnection = true;
     }
-    logger.info('Using Windows Authentication');
+
+    logger.info('Using Windows Authentication (msnodesqlv8 driver)');
   } else {
     // SQL Server Authentication
     dbConfig.user = config.db.user;
@@ -58,6 +72,9 @@ module.exports = {
     try {
       const pool = await poolPromise;
       const request = pool.request();
+      
+      // Increase timeout for complex queries
+      request.timeout = 180000; // 3 minutes
       
       // Add parameters to the request
       Object.entries(params).forEach(([key, value]) => {

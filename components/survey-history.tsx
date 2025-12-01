@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, CheckCircle, Eye, Loader2 } from "lucide-react"
-import { authService } from "./services/auth-service"
+import { getAuthToken } from "@/lib/api-client"
 
 interface SurveyHistoryProps {
   businessId: number
@@ -18,22 +18,13 @@ export function SurveyHistory({ businessId }: SurveyHistoryProps) {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  // Función para obtener token de autenticación usando el servicio singleton
-  const getAuthToken = async () => {
-    try {
-      return await authService.getValidToken()
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
-  }
 
   // Cargar historial de encuestas
   useEffect(() => {
     const loadSurveyHistory = async () => {
       setLoading(true)
       try {
-        const token = await getAuthToken()
+        const token = getAuthToken()
         if (!token) {
           setError("No se pudo obtener el token de autenticación")
           return
@@ -82,8 +73,8 @@ export function SurveyHistory({ businessId }: SurveyHistoryProps) {
     }
   }
 
-  const handleViewResponses = (surveyId: number) => {
-    router.push(`/empresas/${businessId}/encuesta/${surveyId}`)
+  const handleViewResponses = (idTestUsuario: number) => {
+    router.push(`/empresas/${businessId}/encuesta/${idTestUsuario}`)
   }
 
   const formatDuration = (minutes: number) => {
@@ -140,7 +131,7 @@ export function SurveyHistory({ businessId }: SurveyHistoryProps) {
       <CardContent>
         <div className="space-y-4">
           {surveyHistory.map((survey, index) => (
-            <div key={survey.idTest} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+            <div key={survey.idTestUsuario} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
               <div className="flex justify-between items-start mb-3">
                 <div className="flex-1">
                   <h3 className="font-semibold text-[#150773] mb-1">{survey.nombreTest}</h3>
@@ -168,7 +159,7 @@ export function SurveyHistory({ businessId }: SurveyHistoryProps) {
                   </div>
                   <Button
                     size="sm"
-                    onClick={() => handleViewResponses(survey.idTest)}
+                    onClick={() => handleViewResponses(survey.idTestUsuario)}
                     className="bg-[#150773] hover:bg-[#150773]/90 text-white"
                   >
                     <Eye className="h-4 w-4 mr-2" />
@@ -177,7 +168,7 @@ export function SurveyHistory({ businessId }: SurveyHistoryProps) {
                 </div>
               </div>
 
-              {index === 0 && surveyHistory.length > 1 && (
+              {index === 0 && surveyHistory.length > 1 && new Date(survey.fechaTermino) >= new Date(surveyHistory[1]?.fechaTermino || 0) && (
                 <div className="mt-3 p-3 bg-blue-50 rounded-lg border-l-4 border-blue-400">
                   <p className="text-sm text-blue-800 font-medium">
                     📈 Evaluación más reciente - Última evaluación completada

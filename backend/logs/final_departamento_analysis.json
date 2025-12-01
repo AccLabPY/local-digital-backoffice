@@ -1,0 +1,1089 @@
+{
+  "finalCounts": [
+    {
+      "DepartamentoMostrado": "Alto Paraguay",
+      "CompanyCount": 8
+    },
+    {
+      "DepartamentoMostrado": "Alto Paraná",
+      "CompanyCount": 5032
+    },
+    {
+      "DepartamentoMostrado": "Amambay",
+      "CompanyCount": 8
+    },
+    {
+      "DepartamentoMostrado": "Boquerón",
+      "CompanyCount": 64
+    },
+    {
+      "DepartamentoMostrado": "Caaguazú",
+      "CompanyCount": 136
+    },
+    {
+      "DepartamentoMostrado": "Capital",
+      "CompanyCount": 432
+    },
+    {
+      "DepartamentoMostrado": "Central",
+      "CompanyCount": 4568
+    },
+    {
+      "DepartamentoMostrado": "Concepción",
+      "CompanyCount": 2216
+    },
+    {
+      "DepartamentoMostrado": "Cordillera",
+      "CompanyCount": 392
+    },
+    {
+      "DepartamentoMostrado": "Guairá",
+      "CompanyCount": 712
+    },
+    {
+      "DepartamentoMostrado": "Itapúa",
+      "CompanyCount": 19288
+    },
+    {
+      "DepartamentoMostrado": "Ñeembucú",
+      "CompanyCount": 6624
+    },
+    {
+      "DepartamentoMostrado": "NULL/Unknown",
+      "CompanyCount": 48
+    },
+    {
+      "DepartamentoMostrado": "Paraguarí",
+      "CompanyCount": 264
+    },
+    {
+      "DepartamentoMostrado": "San Pedro",
+      "CompanyCount": 8
+    }
+  ],
+  "detailedCompanies": [
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 2837,
+      "EmpresaNombre": "Estética by Juan Acosta",
+      "IdTestUsuario": 2704,
+      "IdDepartamento": 17,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraguay",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraguay"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1268,
+      "EmpresaNombre": "Cofín ",
+      "IdTestUsuario": 1159,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1272,
+      "EmpresaNombre": "Cosmeticos",
+      "IdTestUsuario": 1163,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1351,
+      "EmpresaNombre": "SHIRLEY MENDEZ",
+      "IdTestUsuario": 1223,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1352,
+      "EmpresaNombre": "ORTE - ORTI LIBRERIA",
+      "IdTestUsuario": 1224,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1353,
+      "EmpresaNombre": "Comercial 3s la economia",
+      "IdTestUsuario": 1225,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1354,
+      "EmpresaNombre": "Ireneo serafín Vázquez ",
+      "IdTestUsuario": 1226,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1355,
+      "EmpresaNombre": "San Expedito",
+      "IdTestUsuario": 1227,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1356,
+      "EmpresaNombre": "Distribuidora enau",
+      "IdTestUsuario": 1228,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1357,
+      "EmpresaNombre": "Lulu accesorios",
+      "IdTestUsuario": 1229,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1358,
+      "EmpresaNombre": "Maria Auxiladora ",
+      "IdTestUsuario": 1230,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1359,
+      "EmpresaNombre": "J MM bebidas",
+      "IdTestUsuario": 1231,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1360,
+      "EmpresaNombre": "Aladin",
+      "IdTestUsuario": 1232,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1360,
+      "EmpresaNombre": "Aladin",
+      "IdTestUsuario": 1232,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1360,
+      "EmpresaNombre": "Aladin",
+      "IdTestUsuario": 1232,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    },
+    {
+      "IdEmpresa": 1360,
+      "EmpresaNombre": "Aladin",
+      "IdTestUsuario": 1232,
+      "IdDepartamento": 10,
+      "IdLocalidad": null,
+      "DepartamentoNombre": "Alto Paraná",
+      "LocalidadNombre": null,
+      "DepartamentoMostrado": "Alto Paraná"
+    }
+  ],
+  "nullDepartamentos": [],
+  "nullDepByRegion": {},
+  "comparison": {
+    "expectedCounts": {
+      "Capital": 104,
+      "CENTRAL": 163,
+      "ALTO PARANÁ": 140,
+      "AMAMBAY": 1,
+      "BOQUERÓN": 1,
+      "CAAGUAZÚ": 10,
+      "CONCEPCIÓN": 136,
+      "CORDILLERA": 7,
+      "GUAIRÁ": 60,
+      "ITAPÚA": 359,
+      "MISIONES": 1,
+      "PARAGUARÍ": 6,
+      "SAN PEDRO": 1,
+      "ÑEEMBUCÚ": 134
+    },
+    "totalExpected": 1123,
+    "totalActual": 432,
+    "totalDifference": 1347
+  }
+}

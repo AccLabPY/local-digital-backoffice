@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
+import { getAuthToken } from "@/lib/api-client"
 import { 
   FileText, 
   Calendar, 
@@ -26,34 +27,13 @@ export function SurveyResponses() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  // Función para obtener token de autenticación
-  const getAuthToken = async () => {
-    try {
-      const response = await fetch('http://localhost:3001/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          username: "saquino@mic.gov.py", 
-          password: "AXbHxVXNsKK3KYOfmAfezWjwRu7q/ghVofbYUdEk2ak=" 
-        }),
-      })
-      
-      const data = await response.json()
-      return data.token
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
-  }
 
   // Cargar datos de respuestas
   useEffect(() => {
     const loadSurveyData = async () => {
       setLoading(true)
       try {
-        const token = await getAuthToken()
+        const token = getAuthToken()
         if (!token) {
           setError("No se pudo obtener el token de autenticación")
           return

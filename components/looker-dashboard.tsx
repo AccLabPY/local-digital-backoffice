@@ -16,7 +16,7 @@ import {
   RefreshCw,
   Download
 } from "lucide-react"
-import { authService } from "./services/auth-service"
+import { getAuthToken } from "@/lib/api-client"
 
 export function LookerDashboard() {
   const [kpis, setKpis] = useState(null)
@@ -26,21 +26,11 @@ export function LookerDashboard() {
   const [error, setError] = useState(null)
   const [lastUpdated, setLastUpdated] = useState(null)
 
-  // Función para obtener token de autenticación usando el servicio singleton
-  const getAuthToken = async () => {
-    try {
-      return await authService.getValidToken()
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
-  }
-
   // Cargar datos del dashboard
   const loadDashboardData = async () => {
     setLoading(true)
     try {
-      const token = await getAuthToken()
+      const token = getAuthToken()
       if (!token) {
         setError("No se pudo obtener el token de autenticación")
         return
@@ -59,8 +49,8 @@ export function LookerDashboard() {
         setKpis(kpisData)
       }
 
-      // Cargar empresas (top 10)
-      const empresasResponse = await fetch('http://localhost:3001/api/empresas?limit=10', {
+      // Cargar empresas (top 50 para tener más opciones)
+      const empresasResponse = await fetch('http://localhost:3001/api/empresas?limit=50', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json',
@@ -106,8 +96,8 @@ export function LookerDashboard() {
   const getMaturityLevel = (puntaje: number) => {
     if (!puntaje) return "Sin evaluar"
     if (puntaje < 30) return "Inicial"
-    if (puntaje < 60) return "Básico"
-    if (puntaje < 80) return "Intermedio"
+    if (puntaje < 60) return "Novato"
+    if (puntaje < 80) return "Competente"
     return "Avanzado"
   }
 
@@ -147,102 +137,25 @@ export function LookerDashboard() {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="flex items-center justify-between bg-[#150773] text-white p-6 rounded-lg">
-        <div>
-          <h1 className="text-3xl font-bold">Dashboard Looker</h1>
-          <p className="text-blue-100">Panel de control en tiempo real</p>
-        </div>
-        <div className="flex items-center space-x-4">
-          {lastUpdated && (
-            <p className="text-sm text-blue-100 bg-white/20 px-3 py-1 rounded-full">
-              Última actualización: {lastUpdated.toLocaleTimeString()}
-            </p>
-          )}
-          <Button 
-            onClick={handleRefresh} 
-            className="bg-white text-[#150773] hover:bg-gray-100"
-          >
-            <RefreshCw className="h-4 w-4 mr-2" />
-            Actualizar
-          </Button>
-          <Button className="bg-[#f5592b] hover:bg-[#e04a1f] text-white">
-            <Download className="h-4 w-4 mr-2" />
-            Exportar
-          </Button>
-        </div>
-      </div>
-
-      {/* KPIs Principales */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <Card className="border-[#f5592b]/20 shadow-sm">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium text-[#150773]">Total Empresas</CardTitle>
-            <Building2 className="h-5 w-5 text-[#f5592b]" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-[#150773]">{kpis?.totalEmpresas?.toLocaleString() || '0'}</div>
-            <p className="text-xs text-gray-600 mt-1">Empresas registradas</p>
-          </CardContent>
-        </Card>
-        
-        <Card className="border-[#150773]/20 shadow-sm">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium text-[#150773]">Nivel General</CardTitle>
-            <BarChart3 className="h-5 w-5 text-[#150773]" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-[#f5592b]">{kpis?.nivelGeneral || '0'}%</div>
-            <p className="text-xs text-gray-600 mt-1">Promedio de madurez digital</p>
-          </CardContent>
-        </Card>
-        
-        <Card className="border-[#f5592b]/20 shadow-sm">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium text-[#150773]">Empresas Incipientes</CardTitle>
-            <Award className="h-5 w-5 text-[#f5592b]" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-[#150773]">{kpis?.empresasIncipientes?.toLocaleString() || '0'}</div>
-            <p className="text-xs text-gray-600 mt-1">Nivel inicial de madurez</p>
-          </CardContent>
-        </Card>
-        
-        <Card className="border-[#150773]/20 shadow-sm">
-          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-            <CardTitle className="text-sm font-medium text-[#150773]">Total Empleados</CardTitle>
-            <Users className="h-5 w-5 text-[#150773]" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold text-[#f5592b]">{kpis?.totalEmpleados?.toLocaleString() || '0'}</div>
-            <p className="text-xs text-gray-600 mt-1">Empleados en total</p>
-          </CardContent>
-        </Card>
-      </div>
-
-      {/* Distribución por Departamentos */}
-      {filterOptions?.departamentos && (
-        <Card className="border-[#f5592b]/20 shadow-sm">
-          <CardHeader className="bg-[#f5592b] text-white">
-            <CardTitle className="flex items-center text-lg">
-              <Target className="h-5 w-5 mr-2" />
-              Distribución por Departamentos
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              {filterOptions.departamentos.slice(0, 6).map((dept: string) => (
-                <div key={dept} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                  <span className="font-medium text-[#150773]">{dept}</span>
-                  <Badge className="bg-[#f5592b] text-white">
-                    {empresas.filter(e => e.departamento === dept).length}
-                  </Badge>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
+      {/* Dashboard Embebido de Looker Studio */}
+      <Card className="border-[#f5592b]/20 shadow-sm">
+        <CardContent className="p-0">
+          <div className="w-full" style={{ height: '1000px' }}>
+            <iframe 
+              src="https://lookerstudio.google.com/embed/reporting/4b188df0-8581-48c9-bfb7-92563039236a/page/p_0deh8bzymd" 
+              frameBorder="0" 
+              style={{ 
+                border: 0,
+                width: '100%',
+                height: '100%',
+                minHeight: '1000px'
+              }} 
+              allowFullScreen 
+              sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-downloads"
+            />
+          </div>
+        </CardContent>
+      </Card>
 
       {/* Top Empresas por Madurez */}
       <Card className="border-[#150773]/20 shadow-sm">
@@ -257,14 +170,14 @@ export function LookerDashboard() {
             {empresas
               .filter(e => e.puntajeNivelDeMadurezGeneral)
               .sort((a, b) => (b.puntajeNivelDeMadurezGeneral || 0) - (a.puntajeNivelDeMadurezGeneral || 0))
-              .slice(0, 5)
+              .slice(0, 10)
               .map((empresa, index) => (
-                <div key={empresa.IdEmpresa} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                  <div className="flex items-center space-x-3">
+                <div key={`${empresa.IdEmpresa}-${index}`} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+                  <div className="flex items-center space-x-3 flex-1">
                     <div className="flex items-center justify-center w-8 h-8 bg-[#f5592b] text-white rounded-full font-bold">
                       {index + 1}
                     </div>
-                    <div>
+                    <div className="flex-1">
                       <div className="font-semibold text-[#150773]">{empresa.empresa}</div>
                       <div className="text-sm text-gray-600">{empresa.departamento}</div>
                     </div>
@@ -281,36 +194,19 @@ export function LookerDashboard() {
                     <div className="w-24">
                       <Progress value={empresa.puntajeNivelDeMadurezGeneral || 0} className="w-full h-2" />
                     </div>
+                    <Button
+                      onClick={() => window.location.href = `/empresas/${empresa.IdEmpresa}`}
+                      size="sm"
+                      className="bg-[#150773] hover:bg-[#0f0559] text-white"
+                    >
+                      Ver detalle
+                    </Button>
                   </div>
                 </div>
               ))}
           </div>
         </CardContent>
       </Card>
-
-      {/* Distribución por Sectores */}
-      {filterOptions?.sectores && (
-        <Card className="border-[#f5592b]/20 shadow-sm">
-          <CardHeader className="bg-[#f5592b] text-white">
-            <CardTitle className="flex items-center text-lg">
-              <BarChart3 className="h-5 w-5 mr-2" />
-              Distribución por Sectores
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="p-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {filterOptions.sectores.slice(0, 8).map((sector: string) => (
-                <div key={sector} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                  <span className="text-sm font-medium text-[#150773] truncate">{sector}</span>
-                  <Badge className="bg-[#150773] text-white">
-                    {empresas.filter(e => e.sectorActividadDescripcion === sector).length}
-                  </Badge>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      )}
     </div>
   )
 }

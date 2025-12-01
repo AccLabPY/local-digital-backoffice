@@ -1,7 +1,8 @@
 "use client"
 
-import { SidebarProvider } from "@/components/ui/sidebar"
+import { SidebarProvider, SidebarInset } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
+import { ProtectedRoute } from "@/components/protected-route"
 
 export default function EmpresasLayout({
   children,
@@ -9,11 +10,13 @@ export default function EmpresasLayout({
   children: React.ReactNode
 }) {
   return (
-    <SidebarProvider defaultOpen={false}>
-      <AppSidebar />
-      <div className="flex flex-1 flex-col">
-        {children}
-      </div>
-    </SidebarProvider>
+    <ProtectedRoute requiredType="system">
+      <SidebarProvider defaultOpen={false}>
+        <AppSidebar />
+        <SidebarInset className="flex flex-1 flex-col">
+          {children}
+        </SidebarInset>
+      </SidebarProvider>
+    </ProtectedRoute>
   )
 }

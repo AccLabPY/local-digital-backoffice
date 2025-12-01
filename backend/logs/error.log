@@ -85,3 +85,650 @@ RequestError: Invalid object name 'Distritos'.
 2025-09-23 23:54:52 error: Error: Not Found - /api/api/encuestas/empresas/1338/history
 2025-09-23 23:55:20 error: Error: Not Found - /api/api/encuestas/empresas/1338/tests/1/responses?dimension=Todas
 2025-09-24 01:00:39 error: Error getting empresas: Incorrect syntax near the keyword 'AS'.
+2025-09-30 19:39:15 error: Error: Invalid token
+2025-09-30 19:39:18 error: Login error: Invalid credentials
+2025-09-30 19:39:18 error: Error: Invalid credentials
+2025-09-30 19:39:38 error: Login error: Invalid credentials
+2025-09-30 19:39:38 error: Error: Invalid credentials
+2025-09-30 19:47:24 error: Login error: Invalid credentials
+2025-09-30 19:47:24 error: Error: Invalid credentials
+2025-09-30 22:25:09 error: Error: Authentication token is required
+2025-10-03 02:16:45 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:16:45 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:20:11 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:20:11 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:20:14 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:20:14 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:31:09 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:31:09 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:32:16 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:32:16 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:47:41 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:47:41 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:51:33 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 02:51:33 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 03:01:04 error: Error getting empresas: Validation failed for parameter 'sectorActividad'. Invalid string.
+2025-10-03 03:01:04 error: RequestError: Validation failed for parameter 'sectorActividad'. Invalid string.
+2025-10-03 03:05:28 error: Error getting filter options: allParams is not defined
+2025-10-03 03:05:28 error: ReferenceError: allParams is not defined
+2025-10-03 03:09:23 error: Error getting empresas: The multi-part identifier "dep.Nombre" could not be bound.
+2025-10-03 03:09:23 error: RequestError: The multi-part identifier "dep.Nombre" could not be bound.
+2025-10-03 03:20:16 error: Error getting filter options: Invalid object name 'dep'.
+2025-10-03 03:20:16 error: RequestError: Invalid object name 'dep'.
+2025-10-03 09:33:56 error: Error getting empresas: Incorrect syntax near ','.
+2025-10-03 09:33:56 error: RequestError: Incorrect syntax near ','.
+2025-10-03 09:34:04 error: Error getting empresas: Incorrect syntax near ','.
+2025-10-03 09:34:04 error: RequestError: Incorrect syntax near ','.
+2025-10-03 09:51:47 error: Error getting empresas: Invalid column name 'IdSubRegion'.
+2025-10-03 09:51:47 error: RequestError: Invalid column name 'IdSubRegion'.
+2025-10-03 10:58:32 error: Error getting empresas: The multi-part identifier "ei.IdDepartamento" could not be bound.
+2025-10-03 10:58:32 error: RequestError: The multi-part identifier "ei.IdDepartamento" could not be bound.
+2025-10-03 12:05:34 error: Error en el análisis: STRING_AGG aggregation result exceeded the limit of 8000 bytes. Use LOB types to avoid result truncation.
+2025-10-03 12:07:19 error: Error en el análisis: Cannot use an aggregate or a subquery in an expression used for the group by list of a GROUP BY clause.
+2025-10-03 12:07:31 error: Error en el análisis: Invalid column name 'IdDepartamento'.
+2025-10-03 14:10:05 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-10-03 14:10:07 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-03 14:10:34 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-10-03 14:10:34 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-03 22:46:29 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-03 22:46:29 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-03 22:52:20 error: Error getting empresas: Invalid column name 'IdLocalidad'.
+2025-10-03 22:52:20 error: RequestError: Invalid column name 'IdLocalidad'.
+2025-10-03 23:03:52 error: Error getting filter options: activeFilters.distrito.join is not a function
+2025-10-03 23:03:52 error: TypeError: activeFilters.distrito.join is not a function
+2025-10-03 23:04:03 error: Error getting filter options: activeFilters.distrito.join is not a function
+2025-10-03 23:04:03 error: TypeError: activeFilters.distrito.join is not a function
+2025-10-03 23:04:07 error: Error getting filter options: activeFilters.departamento.join is not a function
+2025-10-03 23:04:07 error: TypeError: activeFilters.departamento.join is not a function
+2025-10-03 23:19:44 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-10-03 23:19:44 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-03 23:27:29 error: Error getting empresas: Invalid column name 'IdLocalidad'.
+2025-10-03 23:27:29 error: RequestError: Invalid column name 'IdLocalidad'.
+2025-10-03 23:32:11 error: Error getting empresas: Invalid column name 'IdLocalidad'.
+2025-10-03 23:32:11 error: RequestError: Invalid column name 'IdLocalidad'.
+2025-10-03 23:38:30 error: Error getting empresas: Invalid column name 'IdLocalidad'.
+2025-10-03 23:38:30 error: RequestError: Invalid column name 'IdLocalidad'.
+2025-10-03 23:39:27 error: Error getting empresas: Invalid column name 'IdLocalidad'.
+2025-10-03 23:39:27 error: RequestError: Invalid column name 'IdLocalidad'.
+2025-10-03 23:49:35 error: Error getting empresas: Invalid column name 'IdSubRegion'.
+2025-10-03 23:49:35 error: RequestError: Invalid column name 'IdSubRegion'.
+2025-10-03 23:57:23 error: Error getting empresas: Invalid column name 'IdSubRegion'.
+2025-10-03 23:57:23 error: RequestError: Invalid column name 'IdSubRegion'.
+2025-10-04 14:16:00 error: Error: Not Found - /favicon.ico
+2025-10-04 14:44:18 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-04 14:44:18 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-04 14:44:31 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-04 14:44:31 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-04 14:45:07 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:07 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:11 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:11 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:14 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:14 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:18 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:18 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:23 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:23 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:27 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:45:27 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:46:10 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:46:10 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:46:17 error: Error getting KPIs: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 14:46:17 error: RequestError: The multi-part identifier "f.Test" could not be bound.
+2025-10-04 16:37:57 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-04 16:37:57 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-04 16:39:07 error: Error getting KPIs: Cannot read properties of null (reading 'toFixed')
+2025-10-04 16:39:07 error: TypeError: Cannot read properties of null (reading 'toFixed')
+2025-10-06 01:55:50 error: Error getting empresas: The multi-part identifier "ei.Test" could not be bound.
+2025-10-06 01:55:50 error: RequestError: The multi-part identifier "ei.Test" could not be bound.
+2025-10-06 09:09:10 error: Error getting rechequeos table data: Timeout: Request failed to complete in 120000ms
+2025-10-06 09:09:10 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-06 12:29:53 error: Error: Invalid token
+2025-10-06 12:30:00 error: Login error: Invalid credentials
+2025-10-06 12:30:00 error: Error: Invalid credentials
+2025-10-06 15:00:00 error: Error getting rechequeos KPIs: Column 'TotalChequeosUnicos.TotalEmpresasUnicas' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+2025-10-06 15:00:00 error: RequestError: Column 'TotalChequeosUnicos.TotalEmpresasUnicas' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+2025-10-06 19:16:43 error: Error getting rechequeos KPIs: Invalid column name 'EmpresaNombre'.
+2025-10-06 19:16:43 error: RequestError: Invalid column name 'EmpresaNombre'.
+2025-10-06 19:17:09 error: Error getting rechequeos KPIs: Invalid column name 'EmpresaNombre'.
+2025-10-06 19:17:09 error: RequestError: Invalid column name 'EmpresaNombre'.
+2025-10-06 20:33:15 error: Error getting rechequeos KPIs: Column 'TotalChequeosUnicos.TotalChequeosUnicos' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+2025-10-06 20:33:15 error: RequestError: Column 'TotalChequeosUnicos.TotalChequeosUnicos' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+2025-10-06 20:35:23 error: Error getting rechequeos KPIs: Ambiguous column name 'Puntaje_Primero'.
+2025-10-06 20:35:23 error: RequestError: Ambiguous column name 'Puntaje_Primero'.
+2025-10-06 20:58:23 error: Error getting rechequeos KPIs: Conversion failed when converting the varchar value '_' to data type int.
+2025-10-06 20:58:23 error: RequestError: Conversion failed when converting the varchar value '_' to data type int.
+2025-10-06 20:58:25 error: Error getting rechequeos KPIs: Conversion failed when converting the varchar value '_' to data type int.
+2025-10-06 20:58:25 error: RequestError: Conversion failed when converting the varchar value '_' to data type int.
+2025-10-06 21:05:07 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:05:07 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:07:07 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:07:07 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:07:07 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:07:07 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:42:16 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:42:16 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:42:16 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-06 21:42:16 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:31:08 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:31:08 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:31:08 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:31:08 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:32:38 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:32:38 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:32:38 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:32:38 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:50:15 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:50:15 error: Error fetching data for cache key rechequeos:kpis:{"departamento":[],"distrito":[],"nivelInnovacion":[],"sectorActividad":[],"subSectorActividad":[]}: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:50:15 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:52:46 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-07 00:52:47 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 01:06:19 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-07 01:06:19 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-07 01:07:01 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-10-07 01:07:01 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-09 01:25:26 error: Error: Invalid token
+2025-10-09 01:53:48 error: Error: Not Found - /api/catalogos/ventas-anuales
+2025-10-09 01:55:25 error: Error: Not Found - /api/catalogos/ventas-anuales
+2025-10-09 10:17:08 error: Error: Not Found - /api/empresas/2743/usuarios
+2025-10-09 10:58:10 error: Error getting company users: Invalid column name 'FechaAsignacion'.
+2025-10-09 10:58:10 error: RequestError: Invalid column name 'FechaAsignacion'.
+2025-10-09 14:46:03 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:03 error: ReferenceError: sql is not defined
+2025-10-09 14:46:03 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:03 error: ReferenceError: sql is not defined
+2025-10-09 14:46:05 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:05 error: ReferenceError: sql is not defined
+2025-10-09 14:46:06 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:06 error: ReferenceError: sql is not defined
+2025-10-09 14:46:06 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:06 error: ReferenceError: sql is not defined
+2025-10-09 14:46:11 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:11 error: ReferenceError: sql is not defined
+2025-10-09 14:46:12 error: Error getting usuarios: sql is not defined
+2025-10-09 14:46:12 error: ReferenceError: sql is not defined
+2025-10-10 02:24:51 error: Error: Not Found - /api/encuestas/empresas/2743/testUsuarios
+2025-10-10 02:25:31 error: Error: Not Found - /api/encuestas/empresas/2743/testUsuarios
+2025-10-10 02:30:33 error: Error: Not Found - /api/encuestas/empresas/2743/testUsuarios
+2025-10-10 02:30:33 error: Error: Not Found - /api/encuestas/empresas/2743/testUsuarios
+2025-10-10 02:34:01 error: Error: Not Found - /api/encuestas/empresas/2743/latestTest/2
+2025-10-10 02:39:00 error: Error getting TestUsuarios: Invalid object name 'TestInfo'.
+2025-10-10 02:39:00 error: RequestError: Invalid object name 'TestInfo'.
+2025-10-10 02:39:00 error: Error getting TestUsuarios: Invalid object name 'TestInfo'.
+2025-10-10 02:39:00 error: RequestError: Invalid object name 'TestInfo'.
+2025-10-10 02:44:08 error: Error getting TestUsuario responses: Invalid object name 'Dimensiones'.
+2025-10-10 02:44:08 error: RequestError: Invalid object name 'Dimensiones'.
+2025-10-10 02:44:08 error: Error getting TestUsuario responses: Invalid object name 'Dimensiones'.
+2025-10-10 02:44:08 error: RequestError: Invalid object name 'Dimensiones'.
+2025-10-10 10:49:27 error: Error getting TestUsuario responses: The parameter name testUsuarioId has already been declared. Parameter names must be unique
+2025-10-10 10:49:27 error: RequestError: The parameter name testUsuarioId has already been declared. Parameter names must be unique
+2025-10-10 11:02:38 error: Database Connection Failed! Bad Config:  Failed to connect to FRAN\\MSSQL2022 in 30000ms
+2025-10-10 11:12:56 error: Error getting TestUsuario responses: Timeout: Request failed to complete in 120000ms
+2025-10-10 11:12:56 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-10 14:42:57 error: Error getting TestUsuario responses: Timeout: Request failed to complete in 120000ms
+2025-10-10 14:42:57 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-10-16 01:05:02 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-10-16 01:06:45 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-10-16 01:07:12 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-10-16 01:13:27 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-10-21 15:34:35 error: Error: No responses found for TestUsuario 5770 in company 1423
+2025-11-10 03:40:19 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:19 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:19 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:19 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:28 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:28 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:29 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:29 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:55 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:55 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:55 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:40:55 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:41:06 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:41:06 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 03:41:06 error: Error getting available users for reassignment: Invalid column name 'FechaRegistro'.
+2025-11-10 03:41:06 error: RequestError: Invalid column name 'FechaRegistro'.
+2025-11-10 10:18:25 error: TypeError: exporter.exportToCSV is not a function
+2025-11-10 18:09:46 error: Error getting filter options: ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+2025-11-10 18:09:46 error: RequestError: ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+2025-11-10 18:11:13 error: Error getting filter options: ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+2025-11-10 18:11:13 error: RequestError: ORDER BY items must appear in the select list if SELECT DISTINCT is specified.
+2025-11-13 00:04:00 error: Error: Not Found - /
+2025-11-13 00:04:00 error: Error: Not Found - /favicon.ico
+2025-11-13 00:04:06 error: Error: Not Found - /
+2025-11-13 00:04:06 error: Error: Not Found - /favicon.ico
+2025-11-13 01:07:39 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-11-13 01:11:19 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-11-13 11:09:34 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-13 11:09:34 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-13 16:01:40 error: Error getting heatmap data: Cannot perform an aggregate function on an expression containing an aggregate or a subquery.
+2025-11-13 16:01:40 error: RequestError: Cannot perform an aggregate function on an expression containing an aggregate or a subquery.
+2025-11-13 18:26:53 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-13 18:26:53 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-13 18:27:13 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-13 18:27:13 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-13 19:48:10 error: Error getting empresas: The multi-part identifier "tu.FechaTest" could not be bound.
+2025-11-13 19:48:10 error: RequestError: The multi-part identifier "tu.FechaTest" could not be bound.
+2025-11-13 19:54:45 error: Error getting empresas: The parameter name fechaIni has already been declared. Parameter names must be unique
+2025-11-13 19:54:45 error: RequestError: The parameter name fechaIni has already been declared. Parameter names must be unique
+2025-11-13 20:51:19 error: Error: Authentication token is required
+2025-11-13 20:51:21 error: Error: Not Found - /favicon.ico
+2025-11-13 20:52:30 error: ReferenceError: filters is not defined
+2025-11-13 20:53:09 error: ReferenceError: filters is not defined
+2025-11-13 20:53:34 error: Error: Authentication token is required
+2025-11-13 20:53:34 error: Error: Not Found - /favicon.ico
+2025-11-13 20:58:13 error: ReferenceError: filters is not defined
+2025-11-13 22:00:56 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-13 22:00:56 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-13 22:01:04 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-13 22:01:04 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-13 22:01:22 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-13 22:01:22 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-13 22:07:50 error: Error exporting empresas to PDF: switchToPage(0) out of bounds, current buffer covers pages 1 to 1
+2025-11-13 22:07:50 error: [EXPORT] Error during file generation: switchToPage(0) out of bounds, current buffer covers pages 1 to 1
+2025-11-13 22:07:50 error: [EXPORT] Stack: Error: switchToPage(0) out of bounds, current buffer covers pages 1 to 1
+    at PDFDocument.switchToPage (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\pdfkit\js\pdfkit.js:5845:13)
+    at Exporter.exportEmpresasToPDF (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:376:13)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:366:35
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-13 22:08:28 error: Error exporting empresas to PDF: switchToPage(0) out of bounds, current buffer covers pages 1 to 1
+2025-11-13 22:08:28 error: [EXPORT] Error during file generation: switchToPage(0) out of bounds, current buffer covers pages 1 to 1
+2025-11-13 22:08:28 error: [EXPORT] Stack: Error: switchToPage(0) out of bounds, current buffer covers pages 1 to 1
+    at PDFDocument.switchToPage (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\pdfkit\js\pdfkit.js:5845:13)
+    at Exporter.exportEmpresasToPDF (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:376:13)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:366:35
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-13 22:43:12 error: Error: Authentication token is required
+2025-11-13 22:43:13 error: Error: Not Found - /favicon.ico
+2025-11-13 22:57:43 error: Error: Authentication token is required
+2025-11-13 22:57:43 error: Error: Not Found - /favicon.ico
+2025-11-13 23:03:43 error: [EXPORT FICHA] Error: sql is not defined
+2025-11-13 23:03:43 error: [EXPORT FICHA] Stack: ReferenceError: sql is not defined
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:800:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-13 23:57:03 error: [EXPORT FICHA] Error: No connection is specified for that request.
+2025-11-13 23:57:03 error: [EXPORT FICHA] Stack: RequestError: No connection is specified for that request.
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:493:37)
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\tedious\request.js:363:11)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:460:12)
+    at Request._template (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:94:26)
+    at Object.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\global-connection.js:148:38)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:801:43
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-13 23:58:09 error: [EXPORT FICHA] Error: No connection is specified for that request.
+2025-11-13 23:58:09 error: [EXPORT FICHA] Stack: RequestError: No connection is specified for that request.
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:493:37)
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\tedious\request.js:363:11)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:460:12)
+    at Request._template (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:94:26)
+    at Object.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\global-connection.js:148:38)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:801:43
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-14 00:19:37 error: Error: Authentication token is required
+2025-11-14 00:19:38 error: Error: Not Found - /favicon.ico
+2025-11-14 00:19:38 error: Error: Authentication token is required
+2025-11-14 00:19:38 error: Error: Not Found - /favicon.ico
+2025-11-14 00:43:06 error: [EXPORT FICHA] Error: No connection is specified for that request.
+2025-11-14 00:43:07 error: [EXPORT FICHA] Stack: RequestError: No connection is specified for that request.
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:493:37)
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\tedious\request.js:363:11)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:460:12)
+    at Request._template (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:94:26)
+    at Object.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\global-connection.js:148:38)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:801:43
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-14 00:43:22 error: [EXPORT FICHA] Error: No connection is specified for that request.
+2025-11-14 00:43:22 error: [EXPORT FICHA] Stack: RequestError: No connection is specified for that request.
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:493:37)
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\tedious\request.js:363:11)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:460:12)
+    at Request._template (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:94:26)
+    at Object.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\global-connection.js:148:38)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:801:43
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-14 00:43:30 error: [EXPORT FICHA] Error: No connection is specified for that request.
+2025-11-14 00:43:30 error: [EXPORT FICHA] Stack: RequestError: No connection is specified for that request.
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:493:37)
+    at Request._query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\tedious\request.js:363:11)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:461:12
+    at new Promise (<anonymous>)
+    at Request.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:460:12)
+    at Request._template (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\base\request.js:94:26)
+    at Object.query (C:\Users\fruge\OneDrive\Documents\chequeo\backend\node_modules\mssql\lib\global-connection.js:148:38)
+    at C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:801:43
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-11-14 22:50:07 error: TypeError: exporter.exportToCSV is not a function
+2025-11-14 22:51:01 error: TypeError: exporter.exportToCSV is not a function
+2025-11-14 23:05:36 error: [RECHEQUEOS] Error sending PDF file: Request aborted
+2025-11-14 23:05:36 error: [RECHEQUEOS] Error sending PDF file: Request aborted
+2025-11-14 23:05:36 error: [RECHEQUEOS] Error sending PDF file: Request aborted
+2025-11-17 01:31:06 error: Error getting rechequeos table: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-17 01:31:06 error: RequestError: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-17 01:31:06 error: Error getting rechequeos table: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-17 01:31:06 error: RequestError: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-17 01:43:40 error: Error getting rechequeos table: Timeout: Request failed to complete in 120000ms
+2025-11-17 01:43:40 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-18 00:10:38 error: Error: No responses found for TestUsuario 5672 in company 1418
+2025-11-18 00:12:46 error: Error: No responses found for TestUsuario 5672 in company 1418
+2025-11-18 00:26:58 error: Error: No responses found for TestUsuario 5672 in company 1418
+2025-11-18 00:41:35 error: Error: No responses found for TestUsuario 5672 in company 1418
+2025-11-18 00:45:18 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-18 00:45:18 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-18 00:45:38 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-11-18 00:45:38 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-18 02:02:23 error: Error getting rechequeos table data: The multi-part identifier "e.UltimaFecha" could not be bound.
+2025-11-18 02:02:23 error: [RECHEQUEOS PDF] Error in exportComprehensivePDF: The multi-part identifier "e.UltimaFecha" could not be bound.
+2025-11-18 02:02:23 error: RequestError: The multi-part identifier "e.UltimaFecha" could not be bound.
+2025-11-18 02:04:06 error: Error getting rechequeos table data: The multi-part identifier "e.UltimaFecha" could not be bound.
+2025-11-18 02:04:06 error: RequestError: The multi-part identifier "e.UltimaFecha" could not be bound.
+2025-11-18 02:29:31 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-18 02:29:31 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-18 10:59:48 error: Error getting rechequeos KPIs: The parameter name dep0 has already been declared. Parameter names must be unique
+2025-11-18 10:59:48 error: RequestError: The parameter name dep0 has already been declared. Parameter names must be unique
+2025-11-18 10:59:48 error: Error getting rechequeos evolution series: The parameter name dep0 has already been declared. Parameter names must be unique
+2025-11-18 10:59:48 error: RequestError: The parameter name dep0 has already been declared. Parameter names must be unique
+2025-11-18 10:59:48 error: Error getting rechequeos table data: The parameter name dep0 has already been declared. Parameter names must be unique
+2025-11-18 10:59:48 error: RequestError: The parameter name dep0 has already been declared. Parameter names must be unique
+2025-11-19 00:59:24 error: Login error: Credenciales inválidas
+2025-11-19 00:59:24 error: Error: Credenciales inválidas
+2025-11-19 01:33:28 error: Error: Invalid token
+2025-11-19 01:33:28 error: Error: Invalid token
+2025-11-19 01:33:28 error: Error: Invalid token
+2025-11-19 01:33:28 error: Error: Invalid token
+2025-11-19 01:33:28 error: Error: Invalid token
+2025-11-19 01:33:28 error: Error: Invalid token
+2025-11-19 01:33:34 error: Error: Invalid token
+2025-11-19 01:33:34 error: Error: Invalid token
+2025-11-19 01:33:34 error: Error: Invalid token
+2025-11-19 01:33:34 error: Error: Invalid token
+2025-11-19 01:34:39 error: Error: Token inválido
+2025-11-19 01:34:39 error: Error: Token inválido
+2025-11-19 01:38:40 error: Error: Token inválido
+2025-11-19 01:38:40 error: Error: Token inválido
+2025-11-19 01:39:15 error: Error: Token inválido
+2025-11-19 01:39:15 error: Error: Token inválido
+2025-11-19 01:43:30 error: Error: Token inválido
+2025-11-19 01:43:30 error: Error: Token inválido
+2025-11-19 01:43:30 error: Error: Token inválido
+2025-11-19 01:43:30 error: Error: Token inválido
+2025-11-19 01:43:30 error: Error: Token inválido
+2025-11-19 01:43:30 error: Error: Token inválido
+2025-11-19 01:44:53 error: Error: Token inválido
+2025-11-19 01:44:53 error: Error: Token inválido
+2025-11-19 01:44:53 error: Error: Token inválido
+2025-11-19 01:44:53 error: Error: Token inválido
+2025-11-19 01:45:07 error: Error: Token inválido
+2025-11-19 01:45:07 error: Error: Token inválido
+2025-11-19 01:45:07 error: Error: Token inválido
+2025-11-19 01:45:07 error: Error: Token inválido
+2025-11-19 01:45:07 error: Error: Token inválido
+2025-11-19 01:45:07 error: Error: Token inválido
+2025-11-19 01:45:09 error: Error: Token inválido
+2025-11-19 01:45:09 error: Error: Token inválido
+2025-11-19 01:45:09 error: Error: Token inválido
+2025-11-19 01:45:09 error: Error: Token inválido
+2025-11-19 01:45:15 error: Error: Token inválido
+2025-11-19 01:45:15 error: Error: Token inválido
+2025-11-19 01:45:15 error: Error: Token inválido
+2025-11-19 01:45:15 error: Error: Token inválido
+2025-11-19 01:45:15 error: Error: Token inválido
+2025-11-19 01:45:15 error: Error: Token inválido
+2025-11-19 01:45:19 error: Error: Token inválido
+2025-11-19 01:45:19 error: Error: Token inválido
+2025-11-19 01:45:19 error: Error: Token inválido
+2025-11-19 01:45:19 error: Error: Token inválido
+2025-11-19 01:48:25 error: Error: Token inválido
+2025-11-19 01:48:25 error: Error: Token inválido
+2025-11-19 01:48:25 error: Error: Token inválido
+2025-11-19 01:48:25 error: Error: Token inválido
+2025-11-19 01:49:24 error: Error: Token inválido
+2025-11-19 01:49:24 error: Error: Token inválido
+2025-11-19 01:49:24 error: Error: Token inválido
+2025-11-19 01:49:24 error: Error: Token inválido
+2025-11-19 01:49:28 error: Error: Token inválido
+2025-11-19 01:49:28 error: Error: Token inválido
+2025-11-19 01:49:28 error: Error: Token inválido
+2025-11-19 01:49:28 error: Error: Token inválido
+2025-11-19 01:50:05 error: Error: Token inválido
+2025-11-19 01:50:05 error: Error: Token inválido
+2025-11-19 01:50:05 error: Error: Token inválido
+2025-11-19 01:50:05 error: Error: Token inválido
+2025-11-19 01:50:05 error: Error: Token inválido
+2025-11-19 01:50:05 error: Error: Token inválido
+2025-11-19 01:50:10 error: Error: Token inválido
+2025-11-19 01:50:10 error: Error: Token inválido
+2025-11-19 01:50:10 error: Error: Token inválido
+2025-11-19 01:50:10 error: Error: Token inválido
+2025-11-19 01:50:28 error: [Auth] Token is revoked
+2025-11-19 01:50:28 error: Error: Token revocado
+2025-11-19 01:50:31 error: [Auth] Token is revoked
+2025-11-19 01:50:31 error: Error: Token revocado
+2025-11-19 01:51:19 error: Error: Token inválido
+2025-11-19 01:51:19 error: Error: Token inválido
+2025-11-19 01:51:19 error: Error: Token inválido
+2025-11-19 01:51:19 error: Error: Token inválido
+2025-11-19 02:08:57 error: [Auth] Invalid Authorization header format: Bearer [object Promise]...
+2025-11-19 02:08:57 error: Error: Formato de token inválido
+2025-11-19 02:08:57 error: [Auth] Invalid Authorization header format: Bearer [object Promise]...
+2025-11-19 02:08:57 error: Error: Formato de token inválido
+2025-11-19 02:08:57 error: [Auth] Invalid Authorization header format: Bearer [object Promise]...
+2025-11-19 02:08:57 error: Error: Formato de token inválido
+2025-11-19 02:08:57 error: [Auth] Invalid Authorization header format: Bearer [object Promise]...
+2025-11-19 02:08:57 error: Error: Formato de token inválido
+2025-11-19 02:27:11 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-19 02:27:11 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 02:52:05 error: [RECHEQUEOS OPT] Error getting table data: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-19 02:52:05 error: RequestError: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-19 02:52:05 error: [RECHEQUEOS OPT] Error getting table data: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-19 02:52:05 error: RequestError: Windowed functions, aggregates and NEXT VALUE FOR functions do not support constants as ORDER BY clause expressions.
+2025-11-19 03:00:50 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:00:50 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:01:10 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:01:10 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:14:58 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:14:58 error: [REDIS] Failed to connect to Redis: Connection is closed.
+2025-11-19 03:14:58 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:14:58 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:14:59 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:14:59 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:14:59 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:14:59 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:00 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:00 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:01 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:01 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:02 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:02 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:03 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:04 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:04 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:05 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:06 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:07 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:08 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:09 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:10 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:11 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:12 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:14 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:15 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:16 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:17 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:19 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:20 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:22 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:23 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:25 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:27 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:28 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:30 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:32 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:34 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:36 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:38 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:40 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:42 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:44 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:46 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:48 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:50 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:52 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:54 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:56 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:15:58 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:00 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:02 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:04 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:06 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:08 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:10 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:12 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:14 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:16 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:18 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:20 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:22 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:24 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:26 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:28 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:30 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:32 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:34 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:36 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:38 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:40 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:42 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:44 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:46 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:48 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:50 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:52 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:54 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:56 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:16:58 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:00 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:02 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:04 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:06 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:08 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:10 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:18 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:18 error: [REDIS] Failed to connect to Redis: Connection is closed.
+2025-11-19 03:17:18 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:18 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:18 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:18 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:19 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:19 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:19 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:20 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:20 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:21 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:21 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:22 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:23 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:23 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:24 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:25 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:26 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:27 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:28 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:29 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:30 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:31 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:32 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:33 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:34 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:36 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:37 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:38 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:40 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:41 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:43 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:45 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:46 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:48 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:50 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:52 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:53 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:17:55 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:18:01 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:18:01 error: [REDIS] Failed to connect to Redis: Connection is closed.
+2025-11-19 03:18:01 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:18:01 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:18:01 error: [REDIS] Redis error: connect ECONNREFUSED 127.0.0.1:6379
+2025-11-19 03:50:41 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:50:41 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:50:41 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-19 03:50:41 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 04:08:50 error: ReferenceError: cacheService is not defined
+2025-11-19 04:14:31 error: ReferenceError: cacheService is not defined
+2025-11-19 04:14:31 error: ReferenceError: cacheService is not defined
+2025-11-19 04:15:20 error: ReferenceError: cacheService is not defined
+2025-11-19 04:15:20 error: ReferenceError: cacheService is not defined
+2025-11-19 05:00:21 error: Error getting rechequeos KPIs: Timeout: Request failed to complete in 120000ms
+2025-11-19 05:00:21 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 09:39:42 error: Error: El token ha expirado
+2025-11-19 09:39:42 error: Error: El token ha expirado
+2025-11-19 09:39:42 error: Error: El token ha expirado
+2025-11-19 10:19:01 error: RequestError: Cannot find the object "dbo.TestUsuario" because it does not exist or you do not have permissions.
+2025-11-19 10:22:13 error: RequestError: Cannot find the object "dbo.TestUsuario" because it does not exist or you do not have permissions.
+2025-11-19 10:24:23 error: RequestError: Cannot find the object "dbo.TestUsuario" because it does not exist or you do not have permissions.
+2025-11-19 10:29:00 error: RequestError: Cannot find the object "dbo.TestUsuario" because it does not exist or you do not have permissions.
+2025-11-19 10:30:44 error: RequestError: Cannot find the object "dbo.TestUsuario" because it does not exist or you do not have permissions.
+2025-11-19 11:15:54 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:16:20 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:17:13 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:18:09 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:18:46 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:22:29 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:23:49 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:24:07 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:25:32 error: Database Connection Failed! Bad Config:  [object Object]
+2025-11-19 11:46:26 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'EsConsistente'.
+2025-11-19 11:46:26 error: RequestError: Invalid column name 'EsConsistente'.
+2025-11-19 11:46:26 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'EsConsistente'.
+2025-11-19 11:46:26 error: RequestError: Invalid column name 'EsConsistente'.
+2025-11-19 11:46:31 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'EsConsistente'.
+2025-11-19 11:46:31 error: RequestError: Invalid column name 'EsConsistente'.
+2025-11-19 11:46:57 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-11-19 11:46:57 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-11-19 11:46:57 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-11-19 11:46:57 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-11-19 12:00:31 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'EsConsistente'.
+2025-11-19 12:00:31 error: RequestError: Invalid column name 'EsConsistente'.
+2025-11-19 12:00:31 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'EsConsistente'.
+2025-11-19 12:00:31 error: RequestError: Invalid column name 'EsConsistente'.
+2025-11-19 12:00:37 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'EsConsistente'.
+2025-11-19 12:00:37 error: RequestError: Invalid column name 'EsConsistente'.
+2025-11-19 12:01:02 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-11-19 12:01:02 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-11-19 12:01:02 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-11-19 12:01:02 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-11-19 12:14:56 error: [RECHEQUEOS OPT-VIEWS] Error: Cannot use an aggregate or a subquery in an expression used for the group by list of a GROUP BY clause.
+2025-11-19 12:14:56 error: RequestError: Cannot use an aggregate or a subquery in an expression used for the group by list of a GROUP BY clause.
+2025-11-19 12:15:02 error: [RECHEQUEOS OPT-VIEWS] Error: Cannot use an aggregate or a subquery in an expression used for the group by list of a GROUP BY clause.
+2025-11-19 12:15:02 error: RequestError: Cannot use an aggregate or a subquery in an expression used for the group by list of a GROUP BY clause.
+2025-11-19 15:43:09 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:43:09 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:45:14 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:45:14 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:48:27 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:48:27 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:48:27 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 15:48:27 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 16:01:24 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 16:01:24 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 16:01:24 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 16:01:24 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 16:03:30 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
+2025-11-19 16:03:30 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-11-19 23:49:27 error: Error: El token ha expirado

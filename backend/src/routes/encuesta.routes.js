@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const encuestaController = require('../controllers/encuesta.controller');
-const { authenticateToken } = require('../middlewares/auth.middleware');
+const { authMiddleware } = require('../middlewares/auth-rbac.middleware');
 const { validate, schemas } = require('../utils/validation');
 
 /**
@@ -64,7 +64,7 @@ const { validate, schemas } = require('../utils/validation');
  *       500:
  *         description: Server error
  */
-router.get('/empresas/:idEmpresa/history', authenticateToken, encuestaController.getSurveyHistory);
+router.get('/empresas/:idEmpresa/history', authMiddleware, encuestaController.getSurveyHistory);
 
 /**
  * @swagger
@@ -116,7 +116,7 @@ router.get('/empresas/:idEmpresa/history', authenticateToken, encuestaController
  *       500:
  *         description: Server error
  */
-router.get('/empresas/:idEmpresa/surveys', authenticateToken, encuestaController.getCompanySurveys);
+router.get('/empresas/:idEmpresa/surveys', authMiddleware, encuestaController.getCompanySurveys);
 
 /**
  * @swagger
@@ -175,7 +175,7 @@ router.get('/empresas/:idEmpresa/surveys', authenticateToken, encuestaController
  *       500:
  *         description: Server error
  */
-router.get('/empresas/:idEmpresa/tests/:idTest/responses', authenticateToken, encuestaController.getCompanyTestResponses);
+router.get('/empresas/:idEmpresa/tests/:idTest/responses', authMiddleware, encuestaController.getCompanyTestResponses);
 
 /**
  * @swagger
@@ -225,7 +225,7 @@ router.get('/empresas/:idEmpresa/tests/:idTest/responses', authenticateToken, en
  *       500:
  *         description: Server error
  */
-router.get('/empresas/:idEmpresa/evolution', authenticateToken, encuestaController.getCompanyEvolution);
+router.get('/empresas/:idEmpresa/evolution', authMiddleware, encuestaController.getCompanyEvolution);
 
 /**
  * @swagger
@@ -285,7 +285,7 @@ router.get('/empresas/:idEmpresa/evolution', authenticateToken, encuestaControll
  *         description: Server error
  */
 router.get('/usuarios/:idUsuario/tests/:idTest/responses', 
-  authenticateToken, 
+  authMiddleware, 
   validate(schemas.surveyFilters, 'query'), 
   encuestaController.getSurveyResponses
 );
@@ -317,7 +317,7 @@ router.get('/usuarios/:idUsuario/tests/:idTest/responses',
  *       500:
  *         description: Server error
  */
-router.get('/dimensions', authenticateToken, encuestaController.getDimensions);
+router.get('/dimensions', authMiddleware, encuestaController.getDimensions);
 
 /**
  * @swagger
@@ -369,9 +369,309 @@ router.get('/dimensions', authenticateToken, encuestaController.getDimensions);
  *         description: Server error
  */
 router.get('/usuarios/:idUsuario/tests/:idTest/export', 
-  authenticateToken, 
+  authMiddleware, 
   validate(schemas.exportParams, 'query'), 
   encuestaController.exportResponses
 );
+
+/**
+ * @swagger
+ * /api/encuestas/empresas/{empresaId}/testUsuarios:
+ *   get:
+ *     summary: Get all TestUsuario records for a specific business
+ *     tags: [Surveys]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: empresaId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Company ID
+ *     responses:
+ *       200:
+ *         description: TestUsuario records
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   idTestUsuario:
+ *                     type: integer
+ *                   idUsuario:
+ *                     type: integer
+ *                   test:
+ *                     type: integer
+ *                   nombreTest:
+ *                     type: string
+ *                   fechaInicio:
+ *                     type: string
+ *                     format: date-time
+ *                   fechaTermino:
+ *                     type: string
+ *                     format: date-time
+ *                   finalizado:
+ *                     type: boolean
+ *       404:
+ *         description: Company not found
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Server error
+ */
+router.get('/empresas/:empresaId/testUsuarios', authMiddleware, encuestaController.getTestUsuarios);
+
+/**
+ * @swagger
+ * /api/encuestas/empresas/{empresaId}/testUsuarios/{testUsuarioId}/responses:
+ *   get:
+ *     summary: Get responses for a specific TestUsuario
+ *     tags: [Surveys]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: empresaId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Company ID
+ *       - in: path
+ *         name: testUsuarioId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: TestUsuario ID
+ *     responses:
+ *       200:
+ *         description: Survey responses
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   IdPregunta:
+ *                     type: integer
+ *                   textoPregunta:
+ *                     type: string
+ *                   respuesta:
+ *                     type: string
+ *                   puntajePregunta:
+ *                     type: number
+ *                   dimension:
+ *                     type: string
+ *                   indicadorColor:
+ *                     type: string
+ *                   orden:
+ *                     type: integer
+ *                   TipoDePregunta:
+ *                     type: integer
+ *       404:
+ *         description: TestUsuario not found or doesn't belong to company
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Server error
+ */
+router.get('/empresas/:empresaId/testUsuarios/:testUsuarioId/responses', authMiddleware, encuestaController.getTestUsuarioResponses);
+
+/**
+ * @swagger
+ * /api/encuestas/empresas/{empresaId}/latestTest/{testNumber}:
+ *   get:
+ *     summary: Get the most recent TestUsuario for a specific test number
+ *     tags: [Surveys]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: empresaId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Company ID
+ *       - in: path
+ *         name: testNumber
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Test number
+ *     responses:
+ *       200:
+ *         description: Most recent TestUsuario
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 idTestUsuario:
+ *                   type: integer
+ *                 idUsuario:
+ *                   type: integer
+ *                 test:
+ *                   type: integer
+ *                 nombreTest:
+ *                   type: string
+ *                 fechaInicio:
+ *                   type: string
+ *                   format: date-time
+ *                 fechaTermino:
+ *                   type: string
+ *                   format: date-time
+ *       404:
+ *         description: No completed test found for this company
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Server error
+ */
+router.get('/empresas/:empresaId/latestTest/:testNumber', authMiddleware, encuestaController.getLatestTest);
+
+/**
+ * @swagger
+ * /api/encuestas/empresas/{empresaId}/testUsuarios/{testUsuarioId}/info:
+ *   get:
+ *     summary: Get basic info for a specific TestUsuario
+ *     tags: [Surveys]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: empresaId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Company ID
+ *       - in: path
+ *         name: testUsuarioId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: TestUsuario ID
+ *     responses:
+ *       200:
+ *         description: TestUsuario basic info
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 idTestUsuario:
+ *                   type: integer
+ *                 nombreTest:
+ *                   type: string
+ *                 fechaInicio:
+ *                   type: string
+ *                   format: date-time
+ *                 fechaTermino:
+ *                   type: string
+ *                   format: date-time
+ *       404:
+ *         description: TestUsuario not found or doesn't belong to company
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Server error
+ */
+router.get('/empresas/:empresaId/testUsuarios/:testUsuarioId/info', authMiddleware, encuestaController.getTestUsuarioInfo);
+
+/**
+ * @swagger
+ * /api/encuestas/preguntas/{preguntaId}/respuestas-posibles:
+ *   get:
+ *     summary: Get possible answers for a specific question
+ *     tags: [Surveys]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: preguntaId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Question ID
+ *     responses:
+ *       200:
+ *         description: Possible answers for the question
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   idRespuestaPosible:
+ *                     type: integer
+ *                   textoRespuesta:
+ *                     type: string
+ *                   valorRespuesta:
+ *                     type: string
+ *                   valorVisible:
+ *                     type: integer
+ *                   idPreguntaRespuesta:
+ *                     type: integer
+ *       404:
+ *         description: Question not found
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Server error
+ */
+router.get('/preguntas/:preguntaId/respuestas-posibles', authMiddleware, encuestaController.getPossibleAnswers);
+
+/**
+ * @swagger
+ * /api/encuestas/preguntas/{preguntaId}/subrespuestas-posibles:
+ *   get:
+ *     summary: Get possible answers for sub-questions of a specific question
+ *     tags: [Surveys]
+ *     security:
+ *       - bearerAuth: []
+ *     parameters:
+ *       - in: path
+ *         name: preguntaId
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: Question ID
+ *     responses:
+ *       200:
+ *         description: Possible answers for sub-questions
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   idSubPregunta:
+ *                     type: integer
+ *                   descripcionSubPregunta:
+ *                     type: string
+ *                   tituloSubPregunta:
+ *                     type: string
+ *                   idRespuestaPosible:
+ *                     type: integer
+ *                   textoRespuesta:
+ *                     type: string
+ *                   valorRespuesta:
+ *                     type: string
+ *                   valorVisible:
+ *                     type: integer
+ *                   idSubPreguntaRespuesta:
+ *                     type: integer
+ *       404:
+ *         description: Question not found
+ *       401:
+ *         description: Unauthorized
+ *       500:
+ *         description: Server error
+ */
+router.get('/preguntas/:preguntaId/subrespuestas-posibles', authMiddleware, encuestaController.getPossibleSubAnswers);
 
 module.exports = router;

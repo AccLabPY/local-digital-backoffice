@@ -22,7 +22,7 @@ import {
   Phone,
   User
 } from "lucide-react"
-import { authService } from "./services/auth-service"
+import { getAuthToken } from "@/lib/api-client"
 
 export function BusinessDetail() {
   const { id } = useParams()
@@ -31,22 +31,13 @@ export function BusinessDetail() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  // Función para obtener token de autenticación usando el servicio singleton
-  const getAuthToken = async () => {
-    try {
-      return await authService.getValidToken()
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
-  }
 
   // Cargar datos de la empresa
   useEffect(() => {
     const loadBusinessData = async () => {
       setLoading(true)
       try {
-        const token = await getAuthToken()
+        const token = getAuthToken()
         if (!token) {
           setError("No se pudo obtener el token de autenticación")
           return
@@ -86,8 +77,8 @@ export function BusinessDetail() {
   const getMaturityLevel = (puntaje: number) => {
     if (!puntaje) return "Sin evaluar"
     if (puntaje < 30) return "Inicial"
-    if (puntaje < 60) return "Básico"
-    if (puntaje < 80) return "Intermedio"
+    if (puntaje < 60) return "Novato"
+    if (puntaje < 80) return "Competente"
     return "Avanzado"
   }
 

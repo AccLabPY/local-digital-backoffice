@@ -51,8 +51,9 @@ const encuestaController = {
    */
   getCompanyEvolution: catchAsync(async (req, res) => {
     const idEmpresa = parseInt(req.params.idEmpresa);
+    const idTestUsuario = req.query.idTestUsuario ? parseInt(req.query.idTestUsuario) : null;
     
-    const evolution = await EncuestaModel.getCompanyEvolution(idEmpresa);
+    const evolution = await EncuestaModel.getCompanyEvolution(idEmpresa, idTestUsuario);
     
     res.status(200).json(evolution);
   }),
@@ -106,6 +107,87 @@ const encuestaController = {
     }
     
     res.download(filePath);
+  }),
+
+  /**
+   * Get all TestUsuario records for a specific business
+   */
+  getTestUsuarios: catchAsync(async (req, res) => {
+    const empresaId = parseInt(req.params.empresaId);
+    
+    const testUsuarios = await EncuestaModel.getTestUsuarios(empresaId);
+    
+    res.status(200).json(testUsuarios);
+  }),
+
+  /**
+   * Get responses for a specific TestUsuario
+   */
+  getTestUsuarioResponses: catchAsync(async (req, res) => {
+    const empresaId = parseInt(req.params.empresaId);
+    const testUsuarioId = parseInt(req.params.testUsuarioId);
+    
+    const responses = await EncuestaModel.getTestUsuarioResponses(empresaId, testUsuarioId);
+    
+    if (!responses || responses.length === 0) {
+      throw new NotFoundError(`No responses found for TestUsuario ${testUsuarioId} in company ${empresaId}`);
+    }
+    
+    res.status(200).json(responses);
+  }),
+
+  /**
+   * Get the most recent TestUsuario for a specific test number
+   */
+  getLatestTest: catchAsync(async (req, res) => {
+    const empresaId = parseInt(req.params.empresaId);
+    const testNumber = parseInt(req.params.testNumber);
+    
+    const latestTest = await EncuestaModel.getLatestTest(empresaId, testNumber);
+    
+    if (!latestTest) {
+      throw new NotFoundError(`No completed test ${testNumber} found for company ${empresaId}`);
+    }
+    
+    res.status(200).json(latestTest);
+  }),
+
+  /**
+   * Get basic info for a specific TestUsuario
+   */
+  getTestUsuarioInfo: catchAsync(async (req, res) => {
+    const empresaId = parseInt(req.params.empresaId);
+    const testUsuarioId = parseInt(req.params.testUsuarioId);
+    
+    const testUsuarioInfo = await EncuestaModel.getTestUsuarioInfo(empresaId, testUsuarioId);
+    
+    if (!testUsuarioInfo) {
+      throw new NotFoundError(`TestUsuario ${testUsuarioId} not found or doesn't belong to company ${empresaId}`);
+    }
+    
+    res.status(200).json(testUsuarioInfo);
+  }),
+
+  /**
+   * Get possible answers for a specific question
+   */
+  getPossibleAnswers: catchAsync(async (req, res) => {
+    const preguntaId = parseInt(req.params.preguntaId);
+    
+    const possibleAnswers = await EncuestaModel.getPossibleAnswers(preguntaId);
+    
+    res.status(200).json(possibleAnswers);
+  }),
+
+  /**
+   * Get possible answers for sub-questions of a specific question
+   */
+  getPossibleSubAnswers: catchAsync(async (req, res) => {
+    const preguntaId = parseInt(req.params.preguntaId);
+    
+    const possibleSubAnswers = await EncuestaModel.getPossibleSubAnswers(preguntaId);
+    
+    res.status(200).json(possibleSubAnswers);
   })
 };
 

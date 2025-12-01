@@ -24,7 +24,7 @@ export function LookerDashboardPage() {
         <div className="mb-4">
           <h1 className="text-3xl font-bold text-[#150773]">Dashboard Looker</h1>
           <p className="text-gray-600 mt-2">
-            Panel de control en tiempo real con métricas y análisis de empresas
+            Panel de control con métricas y análisis de empresas
           </p>
         </div>
         <LookerDashboard />

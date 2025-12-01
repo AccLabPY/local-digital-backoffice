@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Building2, MapPin, Calendar, BarChart3, Eye, Search, Users, Award, Target, Loader2 } from "lucide-react"
-import { authService } from "./services/auth-service"
+import { getAuthToken } from "@/lib/api-client"
 
 interface BusinessListProps {
   filters: any
@@ -22,22 +22,13 @@ export function BusinessList({ filters }: BusinessListProps) {
   const [error, setError] = useState(null)
   const router = useRouter()
 
-  // Función para obtener token de autenticación usando el servicio singleton
-  const getAuthToken = async () => {
-    try {
-      return await authService.getValidToken()
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
-  }
 
   // Cargar datos desde la API
   useEffect(() => {
     const loadData = async () => {
       setLoading(true)
       try {
-        const token = await getAuthToken()
+        const token = getAuthToken()
         if (!token) {
           setError("No se pudo obtener el token de autenticación")
           return
@@ -107,8 +98,8 @@ export function BusinessList({ filters }: BusinessListProps) {
   const getMaturityLevel = (puntaje: number) => {
     if (!puntaje) return "Sin evaluar"
     if (puntaje < 30) return "Inicial"
-    if (puntaje < 60) return "Básico"
-    if (puntaje < 80) return "Intermedio"
+    if (puntaje < 60) return "Novato"
+    if (puntaje < 80) return "Competente"
     return "Avanzado"
   }
 

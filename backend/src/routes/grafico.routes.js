@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const graficoController = require('../controllers/grafico.controller');
-const { authenticateToken } = require('../middlewares/auth.middleware');
+const { authMiddleware } = require('../middlewares/auth-rbac.middleware');
 
 /**
  * @swagger
@@ -51,7 +51,7 @@ const { authenticateToken } = require('../middlewares/auth.middleware');
  *       500:
  *         description: Server error
  */
-router.get('/empresas/:idEmpresa/general-evolution', authenticateToken, graficoController.getGeneralEvolution);
+router.get('/empresas/:idEmpresa/general-evolution', authMiddleware, graficoController.getGeneralEvolution);
 
 /**
  * @swagger
@@ -107,6 +107,6 @@ router.get('/empresas/:idEmpresa/general-evolution', authenticateToken, graficoC
  *       500:
  *         description: Server error
  */
-router.get('/empresas/:idEmpresa/dimension-evolution', authenticateToken, graficoController.getDimensionEvolution);
+router.get('/empresas/:idEmpresa/dimension-evolution', authMiddleware, graficoController.getDimensionEvolution);
 
 module.exports = router;

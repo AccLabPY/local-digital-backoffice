@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpiar Sesión - Chequeo Digital</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #fff5f0 0%, #ffffff 50%, #f5f0ff 100%);
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        h1 {
+            color: #f97316;
+            margin-bottom: 1rem;
+        }
+        .status {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            font-weight: 500;
+        }
+        .success {
+            background: #dcfce7;
+            color: #166534;
+        }
+        button {
+            background: #f97316;
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background: #ea580c;
+        }
+        .info {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Limpiar Sesión</h1>
+        <p>Esta herramienta limpiará todos los datos de autenticación almacenados localmente.</p>
+        
+        <div id="status"></div>
+        
+        <button onclick="clearSession()">Limpiar y Reiniciar</button>
+        
+        <div class="info">
+            <strong>💡 Cuándo usar esto:</strong>
+            <ul style="text-align: left; margin: 0.5rem 0;">
+                <li>Después de actualizar el sistema de autenticación</li>
+                <li>Si ves errores de "token inválido"</li>
+                <li>Para cambiar de usuario</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function clearSession() {
+            try {
+                // Limpiar localStorage
+                localStorage.removeItem('auth_token');
+                localStorage.removeItem('user_data');
+                localStorage.removeItem('permissions');
+                
+                // Limpiar sessionStorage
+                sessionStorage.clear();
+                
+                // Mostrar éxito
+                document.getElementById('status').innerHTML = `
+                    <div class="status success">
+                        ✓ Sesión limpiada exitosamente<br>
+                        Redirigiendo al login...
+                    </div>
+                `;
+                
+                // Redirigir después de 2 segundos
+                setTimeout(() => {
+                    window.location.href = '/login';
+                }, 2000);
+            } catch (error) {
+                document.getElementById('status').innerHTML = `
+                    <div class="status" style="background: #fee2e2; color: #991b1b;">
+                        ✗ Error: ${error.message}
+                    </div>
+                `;
+            }
+        }
+        
+        // Mostrar lo que se va a limpiar
+        window.addEventListener('DOMContentLoaded', () => {
+            const hasToken = !!localStorage.getItem('auth_token');
+            const hasUserData = !!localStorage.getItem('user_data');
+            
+            if (hasToken || hasUserData) {
+                document.getElementById('status').innerHTML = `
+                    <div class="info">
+                        Se encontraron datos de sesión antigua que serán limpiados.
+                    </div>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>
+

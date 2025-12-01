@@ -16,6 +16,7 @@ import { ArrowLeft } from "lucide-react"
 import { SurveyResponses } from "@/components/survey-responses"
 import { useState, useEffect } from "react"
 import { ClientOnly } from "@/components/client-only"
+import { getAuthToken } from "@/lib/api-client"
 
 export default function SurveyResponsesDetailPage() {
   const { id, surveyId } = useParams()
@@ -23,42 +24,20 @@ export default function SurveyResponsesDetailPage() {
   const [businessName, setBusinessName] = useState("Empresa")
   const [surveyName, setSurveyName] = useState("Evaluación Digital")
   const [loading, setLoading] = useState(true)
+  const [notFound, setNotFound] = useState(false)
+  const [testUsuarioId, setTestUsuarioId] = useState<number | null>(null)
 
   const handleBack = () => {
     router.push(`/empresas/${id}`)
   }
 
-  // Función para obtener token de autenticación
-  const getAuthToken = async () => {
-    try {
-      const response = await fetch('http://localhost:3001/api/auth/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          username: "saquino@mic.gov.py", 
-          password: "AXbHxVXNsKK3KYOfmAfezWjwRu7q/ghVofbYUdEk2ak=" 
-        }),
-      })
-      
-      if (!response.ok) {
-        return null
-      }
-      
-      const data = await response.json()
-      return data.token
-    } catch (error) {
-      return null
-    }
-  }
 
   // Cargar datos de la empresa y encuesta
   useEffect(() => {
     const loadData = async () => {
       setLoading(true)
       try {
-        const token = await getAuthToken()
+        const token = getAuthToken()
         if (!token) {
           return
         }
@@ -74,25 +53,36 @@ export default function SurveyResponsesDetailPage() {
         if (empresaResponse.ok) {
           const empresaData = await empresaResponse.json()
           setBusinessName(empresaData.empresa || "Empresa")
+        } else {
+          // Si no existe la empresa, mostrar 404
+          setNotFound(true)
+          return
         }
 
-        // Obtener datos de la encuesta
-        const surveyResponse = await fetch(`http://localhost:3001/api/encuestas/empresas/${id}/surveys`, {
+        // Obtener información básica del TestUsuario
+        const testUsuarioResponse = await fetch(`http://localhost:3001/api/encuestas/empresas/${id}/testUsuarios/${surveyId}/info`, {
           headers: {
             'Authorization': `Bearer ${token}`,
             'Content-Type': 'application/json',
           },
         })
         
-        if (surveyResponse.ok) {
-          const surveysData = await surveyResponse.json()
-          const currentSurvey = surveysData.find(s => s.idTest.toString() === surveyId)
-          if (currentSurvey) {
-            setSurveyName(currentSurvey.nombreTest || "Evaluación Digital")
-          }
+        if (testUsuarioResponse.ok) {
+          const testUsuarioData = await testUsuarioResponse.json()
+          setTestUsuarioId(Number(surveyId))
+          setSurveyName(testUsuarioData.nombreTest || "Evaluación Digital")
+        } else if (testUsuarioResponse.status === 404) {
+          // TestUsuario no encontrado o no pertenece a la empresa
+          setNotFound(true)
+          return
+        } else {
+          // Otro error
+          setNotFound(true)
+          return
         }
       } catch (error) {
         console.error('Error loading data:', error)
+        setNotFound(true)
       } finally {
         setLoading(false)
       }
@@ -102,6 +92,26 @@ export default function SurveyResponsesDetailPage() {
       loadData()
     }
   }, [id, surveyId])
+
+  // Mostrar 404 si la empresa o encuesta no existen
+  if (notFound) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-gray-100">
+        <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
+          <h1 className="text-4xl font-bold text-red-500 mb-4">404</h1>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Encuesta no encontrada</h2>
+          <p className="text-gray-600 mb-6">La encuesta solicitada no existe para esta empresa o ha sido eliminada.</p>
+          <Button 
+            onClick={handleBack}
+            className="bg-[#150773] hover:bg-[#150773]/90 text-white"
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Volver a la empresa
+          </Button>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>
@@ -148,7 +158,9 @@ export default function SurveyResponsesDetailPage() {
         </div>
 
         <ClientOnly>
-          <SurveyResponses businessId={Number(id)} testId={Number(surveyId)} />
+          {testUsuarioId && (
+            <SurveyResponses businessId={Number(id)} testUsuarioId={testUsuarioId} />
+          )}
         </ClientOnly>
       </div>
     </>

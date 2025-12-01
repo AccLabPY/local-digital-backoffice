@@ -20,10 +20,26 @@ const schemas = {
     page: Joi.number().integer().min(1).default(1),
     limit: Joi.number().integer().min(1).max(100).default(10),
     searchTerm: Joi.string().allow('').optional(),
-    departamento: Joi.string().allow('').optional(),
-    distrito: Joi.string().allow('').optional(),
-    nivelInnovacion: Joi.string().allow('').optional(),
-    sectorActividad: Joi.string().allow('').optional(),
+    departamento: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    distrito: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    nivelInnovacion: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    sectorActividad: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    subSectorActividad: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
     estadoEncuesta: Joi.boolean().optional(),
     finalizado: Joi.number().integer().valid(0, 1).default(1)
   }),
@@ -35,10 +51,26 @@ const schemas = {
   
   // Company filter parameters
   companyFilters: Joi.object({
-    departamento: Joi.string().allow('').optional(),
-    distrito: Joi.string().allow('').optional(),
-    nivelInnovacion: Joi.string().allow('').optional(),
-    sectorActividad: Joi.string().allow('').optional(),
+    departamento: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    distrito: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    nivelInnovacion: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    sectorActividad: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    subSectorActividad: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
     estadoEncuesta: Joi.boolean().optional()
   }),
   
@@ -60,8 +92,58 @@ const schemas = {
   
   // KPI filters
   kpiFilters: Joi.object({
+    departamento: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    distrito: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    nivelInnovacion: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    sectorActividad: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
+    subSectorActividad: Joi.alternatives().try(
+      Joi.string().allow(''),
+      Joi.array().items(Joi.string().allow(''))
+    ).optional(),
     estadoEncuesta: Joi.boolean().optional(),
     finalizado: Joi.number().integer().valid(0, 1).default(1)
+  }),
+  
+  // User creation validation
+  createUsuario: Joi.object({
+    nombreCompleto: Joi.string().required(),
+    email: Joi.string().email().required(),
+    contraseña: Joi.string().min(6).required(),
+    idEmpresa: Joi.number().integer().required(),
+    rutEmpresa: Joi.string().optional(),
+    nombreEmpresa: Joi.string().optional(),
+    cargoEmpresa: Joi.string().optional()
+  }),
+  
+  // User update validation
+  updateUsuario: Joi.object({
+    nombreCompleto: Joi.string().optional(),
+    email: Joi.string().email().optional(),
+    idEmpresa: Joi.number().integer().optional(),
+    cargoEmpresa: Joi.string().optional(),
+    isConnected: Joi.string().valid('Si', 'No').optional()
+  }),
+  
+  // Password update validation
+  updatePassword: Joi.object({
+    newPassword: Joi.string().min(6).required()
+  }),
+  
+  // User deletion validation
+  deleteUsuario: Joi.object({
+    deleteType: Joi.string().valid('partial', 'complete').required()
   })
 };
 

@@ -1,0 +1,11 @@
+.rectangle {
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.rectangle:hover {
+  opacity: 0.7;
+  stroke: #150773;
+  stroke-width: 2;
+}
+

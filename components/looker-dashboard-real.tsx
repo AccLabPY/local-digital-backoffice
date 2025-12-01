@@ -16,7 +16,7 @@ import {
   RefreshCw,
   Download
 } from "lucide-react"
-import { authService } from "./services/auth-service"
+import { getAuthToken } from "@/lib/api-client"
 
 export function LookerDashboard() {
   const [kpis, setKpis] = useState(null)
@@ -26,21 +26,12 @@ export function LookerDashboard() {
   const [error, setError] = useState(null)
   const [lastUpdated, setLastUpdated] = useState(null)
 
-  // Función para obtener token de autenticación usando el servicio singleton
-  const getAuthToken = async () => {
-    try {
-      return await authService.getValidToken()
-    } catch (error) {
-      console.error('Error getting auth token:', error)
-      return null
-    }
-  }
 
   // Cargar datos del dashboard
   const loadDashboardData = async () => {
     setLoading(true)
     try {
-      const token = await getAuthToken()
+      const token = getAuthToken()
       if (!token) {
         setError("No se pudo obtener el token de autenticación")
         return
@@ -106,8 +97,8 @@ export function LookerDashboard() {
   const getMaturityLevel = (puntaje: number) => {
     if (!puntaje) return "Sin evaluar"
     if (puntaje < 30) return "Inicial"
-    if (puntaje < 60) return "Básico"
-    if (puntaje < 80) return "Intermedio"
+    if (puntaje < 60) return "Novato"
+    if (puntaje < 80) return "Competente"
     return "Avanzado"
   }
 

@@ -1,0 +1,145 @@
+==== ESTRUCTURA DE LA TABLA SUBREGION ====
+
+Columna: IdSubRegion, Tipo: int, Longitud: null, Nullable: NO
+Columna: IdRegion, Tipo: int, Longitud: null, Nullable: NO
+Columna: Nombre, Tipo: varchar, Longitud: 100, Nullable: YES
+
+
+==== ESTRUCTURA DE LA TABLA DEPARTAMENTOS ====
+
+Columna: Nombre, Tipo: varchar, Longitud: 100, Nullable: YES
+Columna: IdDepartamento, Tipo: int, Longitud: null, Nullable: YES
+
+
+==== ESTRUCTURA DE LA TABLA EMPRESAINFO ====
+
+Columna: IdEmpresaInfo, Tipo: int, Longitud: null, Nullable: NO
+Columna: IdDepartamento, Tipo: int, Longitud: null, Nullable: YES
+Columna: IdSectorActividad, Tipo: int, Longitud: null, Nullable: YES
+Columna: IdSubSectorActividad, Tipo: int, Longitud: null, Nullable: YES
+Columna: IdVentas, Tipo: int, Longitud: null, Nullable: YES
+Columna: TotalEmpleados, Tipo: int, Longitud: null, Nullable: YES
+Columna: IdUsuario, Tipo: int, Longitud: null, Nullable: YES
+Columna: Test, Tipo: int, Longitud: null, Nullable: YES
+Columna: AnnoCreacion, Tipo: int, Longitud: null, Nullable: YES
+Columna: SexoPropietarioPrincipal, Tipo: varchar, Longitud: 50, Nullable: YES
+Columna: SexoGerenteGeneral, Tipo: varchar, Longitud: 50, Nullable: YES
+Columna: IdEmpresa, Tipo: int, Longitud: null, Nullable: NO
+Columna: IdLocalidad, Tipo: int, Longitud: null, Nullable: YES
+
+
+==== MUESTRA DE REGISTROS DE SUBREGION ====
+
+{
+  "IdSubRegion": 1,
+  "IdRegion": 1,
+  "Nombre": "ARROYITO"
+}
+
+{
+  "IdSubRegion": 2,
+  "IdRegion": 1,
+  "Nombre": "AZOTE'Y"
+}
+
+{
+  "IdSubRegion": 3,
+  "IdRegion": 1,
+  "Nombre": "BELÉN"
+}
+
+{
+  "IdSubRegion": 4,
+  "IdRegion": 1,
+  "Nombre": "CONCEPCIÓN"
+}
+
+{
+  "IdSubRegion": 5,
+  "IdRegion": 1,
+  "Nombre": "HORQUETA"
+}
+
+
+
+==== MUESTRA DE REGISTROS DE DEPARTAMENTOS ====
+
+{
+  "Nombre": "Capital",
+  "IdDepartamento": 0
+}
+
+{
+  "Nombre": "Capital",
+  "IdDepartamento": 0
+}
+
+{
+  "Nombre": "Capital",
+  "IdDepartamento": 0
+}
+
+{
+  "Nombre": "Capital",
+  "IdDepartamento": 0
+}
+
+{
+  "Nombre": "Capital",
+  "IdDepartamento": 0
+}
+
+
+
+==== MUESTRA DE REGISTROS DE EMPRESAINFO CON RELACIONES ====
+
+{
+  "IdEmpresa": 142,
+  "IdUsuario": 38,
+  "Test": 1,
+  "IdDepartamento": 13,
+  "NombreDepartamento": "Amambay",
+  "IdLocalidad": null,
+  "NombreLocalidad": null
+}
+
+{
+  "IdEmpresa": 142,
+  "IdUsuario": 38,
+  "Test": 1,
+  "IdDepartamento": 13,
+  "NombreDepartamento": "Amambay",
+  "IdLocalidad": null,
+  "NombreLocalidad": null
+}
+
+{
+  "IdEmpresa": 142,
+  "IdUsuario": 38,
+  "Test": 1,
+  "IdDepartamento": 13,
+  "NombreDepartamento": "Amambay",
+  "IdLocalidad": null,
+  "NombreLocalidad": null
+}
+
+{
+  "IdEmpresa": 142,
+  "IdUsuario": 38,
+  "Test": 1,
+  "IdDepartamento": 13,
+  "NombreDepartamento": "Amambay",
+  "IdLocalidad": null,
+  "NombreLocalidad": null
+}
+
+{
+  "IdEmpresa": 142,
+  "IdUsuario": 38,
+  "Test": 1,
+  "IdDepartamento": 13,
+  "NombreDepartamento": "Amambay",
+  "IdLocalidad": null,
+  "NombreLocalidad": null
+}
+

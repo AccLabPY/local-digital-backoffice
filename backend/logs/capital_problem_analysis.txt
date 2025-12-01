@@ -1,0 +1,51 @@
+
+Capital Region (Asunción) Discrepancy Analysis
+=============================================
+
+Summary:
+- Expected Capital companies: 104
+- Found in backoffice: 56
+- Missing: 48
+
+Identified Issues:
+1. Records where distrito = 'ASUNCIÓN' but departamento is not correctly set to 20: 0
+2. Records with NULL or 0 departamento: 1768
+
+Department Counts:
+- Amambay: 16
+- NULL: 59
+- Central: 9480
+- Capital: 2576
+- Alto Paraná: 7536
+- Itapúa: 33720
+- Caaguazú: 336
+- Ñeembucú: 10696
+- Concepción: 4264
+- Cordillera: 712
+- Canindeyú: 24
+- Alto Paraguay: 144
+- Guairá: 1184
+- San Pedro: 8
+- Paraguarí: 584
+- Misiones: 320
+- Boquerón: 64
+- Caazapá: 128
+- Presidente Hayes: 64
+
+Problem Analysis:
+The discrepancy appears to be due to incorrect mapping between IdDepartamento and IdLocalidad.
+When IdLocalidad points to ASUNCIÓN (distrito), the IdDepartamento should be 20 (Capital),
+but many records have either NULL, 0, or incorrect IdDepartamento values.
+
+The frontend filter for Capital is looking for records where:
+EXISTS (SELECT 1 FROM SubRegion sr_cap WHERE sr_cap.IdSubRegion = ei.IdLocalidad AND sr_cap.Nombre = 'ASUNCIÓN')
+
+But the display logic is using:
+CASE WHEN sr.Nombre = 'ASUNCIÓN' THEN 'Capital' ELSE dep.Nombre END
+
+When IdDepartamento is NULL or incorrect, this causes inconsistencies.
+
+Recommended Fix:
+Update all records where distrito = 'ASUNCIÓN' to have IdDepartamento = 20 (Capital).
+A SQL script for this fix has been generated in logs/capital_problem_fix.sql.
+    
