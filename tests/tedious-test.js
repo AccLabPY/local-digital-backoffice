@@ -9,7 +9,7 @@ console.log('🔍 Testing with tedious driver...');
 
 const config = {
   server: process.env.DB_SERVER || 'FRAN\\MSSQL2022',
-  database: process.env.DB_NAME || 'BID_stg_copy',
+  database: process.env.DB_NAME || 'BID_v2_22122025',
   options: {
     encrypt: false,
     trustServerCertificate: true,

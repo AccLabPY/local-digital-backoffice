@@ -7,7 +7,7 @@ Este script ejecuta todos los pasos necesarios para configurar la base de datos
 desde cero. Ejecutar en SQL Server Management Studio (SSMS) o sqlcmd.
 
 Compatible con: SQL Server 2012+
-Base de datos: BID_stg_copy (cambiar si es diferente)
+Base de datos: BID_v2_22122025 (cambiar si es diferente)
 
 ORDEN DE EJECUCIÓN:
 1. Tablas de autenticación (RolesSistema, UsuariosSistema, Resources, etc.)
@@ -21,7 +21,7 @@ ORDEN DE EJECUCIÓN:
 -- CONFIGURACIÓN INICIAL
 -- ============================================================================
 
-USE BID_stg_copy;  -- ⚠️ CAMBIAR POR TU BASE DE DATOS SI ES DIFERENTE
+USE BID_v2_22122025;  -- ⚠️ CAMBIAR POR TU BASE DE DATOS SI ES DIFERENTE
 GO
 
 SET NOCOUNT ON;
@@ -708,6 +708,21 @@ PRINT 'VISTAS OPTIMIZADAS:';
 PRINT '  - vw_RechequeosBase: ' + CAST(@CountBase AS NVARCHAR(10)) + ' registros';
 PRINT '  - vw_RechequeosKPIs: ' + CAST(@CountKPIs AS NVARCHAR(10)) + ' registros';
 PRINT '  - vw_RechequeosTabla: ' + CAST(@CountTabla AS NVARCHAR(10)) + ' registros';
+PRINT '';
+
+-- ============================================================================
+-- PARTE 4: VISTAS AGREGADAS PARA REPORTES PDF (OPCIONAL PERO RECOMENDADO)
+-- ============================================================================
+
+PRINT '============================================================================';
+PRINT 'PARTE 4: CREANDO VISTAS AGREGADAS PARA REPORTES PDF';
+PRINT '============================================================================';
+GO
+
+-- Ejecutar script de vistas agregadas
+:r 10-create-rechequeos-aggregated-views.sql
+GO
+
 PRINT '';
 PRINT '================================================================================';
 PRINT 'INSTALACIÓN COMPLETADA EXITOSAMENTE';

@@ -7,7 +7,7 @@
   de consulta de KPIs y datos de tabla de rechequeos.
   
   Compatible con: SQL Server 2012+
-  Base de datos: BID_stg_copy
+  Base de datos: BID_v2_22122025
   
   Vistas creadas:
   1. vw_RechequeosBase - Datos base con validación de 6 meses
@@ -20,7 +20,7 @@
   ============================================================================
 */
 
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 PRINT '============================================================================';

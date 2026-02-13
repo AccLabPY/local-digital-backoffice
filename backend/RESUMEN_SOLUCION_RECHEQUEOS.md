@@ -80,7 +80,7 @@ node diagnostico-distritos-rechequeos.js
 ### Paso 3: Verificar permisos (si aún no está hecho)
 
 ```sql
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GRANT ALTER ON SCHEMA::dbo TO [ChequeoApp];
 ```
 

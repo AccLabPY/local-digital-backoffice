@@ -61,7 +61,7 @@ Consultas SQL simplificadas que:
 
 ```bash
 # 1. Abrir SQL Server Management Studio o Azure Data Studio
-# 2. Conectarse a la base de datos BID_stg_copy
+# 2. Conectarse a la base de datos BID_v2_22122025
 # 3. Ejecutar en orden:
 
 # Primero: Crear índices (2-5 minutos)
@@ -124,7 +124,7 @@ SELECT
     s.last_user_seek
 FROM sys.dm_db_index_usage_stats s
 INNER JOIN sys.indexes i ON s.object_id = i.object_id AND s.index_id = i.index_id
-WHERE s.database_id = DB_ID('BID_stg_copy')
+WHERE s.database_id = DB_ID('BID_v2_22122025')
   AND i.name LIKE 'IX_%'
 ORDER BY s.user_seeks + s.user_scans DESC;
 ```

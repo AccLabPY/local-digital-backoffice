@@ -1111,3 +1111,147 @@ Require stack:
     at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
     at Module.load (node:internal/modules/cjs/loader:1288:32)
     at Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-12-23 04:09:08 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 04:09:23 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 04:09:43 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 04:10:28 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 04:11:58 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 04:12:18 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 05:06:50 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 05:07:44 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+2025-12-23 05:07:52 error: uncaughtException: Identifier 'cobertura' has already been declared
+C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\utils\exporter.js:1990
+      const cobertura = kpis.cobertura || {};
+            ^
+
+SyntaxError: Identifier 'cobertura' has already been declared
+    at wrapSafe (node:internal/modules/cjs/loader:1378:20)
+    at Module._compile (node:internal/modules/cjs/loader:1428:41)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (C:\Users\fruge\OneDrive\Documents\chequeo\backend\src\controllers\empresa.controller.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)

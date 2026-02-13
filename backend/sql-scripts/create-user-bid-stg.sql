@@ -1,28 +1,28 @@
--- Script para crear el usuario ChequeoApp en la base de datos BID_stg_copy
+-- Script para crear el usuario ChequeoApp en la base de datos BID_v2_22122025
 -- Ejecutar este script como administrador de SQL Server
 
-USE [BID_stg_copy];
+USE [BID_v2_22122025];
 GO
 
 -- Verificar si el usuario ya existe
 IF EXISTS (SELECT * FROM sys.database_principals WHERE name = 'ChequeoApp')
 BEGIN
-    PRINT 'El usuario ChequeoApp ya existe en BID_stg_copy';
+    PRINT 'El usuario ChequeoApp ya existe en BID_v2_22122025';
     -- Eliminar el usuario existente si quieres recrearlo
     -- DROP USER [ChequeoApp];
 END
 GO
 
--- Crear el usuario ChequeoApp en la base de datos BID_stg_copy
+-- Crear el usuario ChequeoApp en la base de datos BID_v2_22122025
 -- Nota: El login debe existir primero a nivel de servidor
 -- Si el login no existe, ejecuta primero:
--- CREATE LOGIN [ChequeoApp] WITH PASSWORD = 'AppPassword123!', DEFAULT_DATABASE = [BID_stg_copy];
+-- CREATE LOGIN [ChequeoApp] WITH PASSWORD = 'AppPassword123!', DEFAULT_DATABASE = [BID_v2_22122025];
 
 -- Crear el usuario en la base de datos
 IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'ChequeoApp')
 BEGIN
     CREATE USER [ChequeoApp] FOR LOGIN [ChequeoApp];
-    PRINT 'Usuario ChequeoApp creado en BID_stg_copy';
+    PRINT 'Usuario ChequeoApp creado en BID_v2_22122025';
 END
 GO
 

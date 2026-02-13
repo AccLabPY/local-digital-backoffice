@@ -3,7 +3,7 @@
 -- después del fix de normalización
 -- =========================================================
 
-USE [BID_stg_copy];  -- << Cambiar si corresponde
+USE [BID_v2_22122025];  -- << Cambiar si corresponde
 GO
 
 -- 1) Verificar empresas que deberían tener múltiples Tests después del fix

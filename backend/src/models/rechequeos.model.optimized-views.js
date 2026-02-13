@@ -60,18 +60,20 @@ class RechequeosModelOptimizedViews {
 
   /**
    * Build WHERE clause for filtered queries on views
+   * @param {Object} filters - Filter object
+   * @param {string} dateColumn - Column name for date filtering (default: 'FechaTerminoTest' for vw_RechequeosBase)
    */
-  static buildWhereClause(filters) {
+  static buildWhereClause(filters, dateColumn = 'FechaTerminoTest') {
     const conditions = [];
     const params = [];
 
     // Date filters
     if (filters.fechaIni) {
-      conditions.push('UltimaFecha >= @fechaIni');
+      conditions.push(`${dateColumn} >= @fechaIni`);
       params.push({ name: 'fechaIni', type: sql.Date, value: filters.fechaIni });
     }
     if (filters.fechaFin) {
-      conditions.push('UltimaFecha <= @fechaFin');
+      conditions.push(`${dateColumn} <= @fechaFin`);
       params.push({ name: 'fechaFin', type: sql.Date, value: filters.fechaFin });
     }
 
@@ -166,15 +168,54 @@ class RechequeosModelOptimizedViews {
       logger.info(`[RECHEQUEOS OPT-VIEWS] Getting KPIs with filters`);
 
       const pool = await poolPromise;
-      const { conditions, params } = this.buildWhereClause(filters);
+      
+      // Separar condiciones de fecha de otras condiciones
+      const dateConditions = [];
+      const otherConditions = [];
+      const allParams = [];
+      
+      if (filters.fechaIni) {
+        dateConditions.push('MAX(FechaTerminoTest) >= @fechaIni');
+        allParams.push({ name: 'fechaIni', type: sql.Date, value: filters.fechaIni });
+      }
+      if (filters.fechaFin) {
+        dateConditions.push('MAX(FechaTerminoTest) <= @fechaFin');
+        allParams.push({ name: 'fechaFin', type: sql.Date, value: filters.fechaFin });
+      }
+      
+      // Obtener otras condiciones (sin fecha)
+      const filtersWithoutDate = { ...filters };
+      delete filtersWithoutDate.fechaIni;
+      delete filtersWithoutDate.fechaFin;
+      const { conditions: otherConds, params: otherParams } = this.buildWhereClause(filtersWithoutDate, 'FechaTerminoTest');
+      otherConditions.push(...otherConds);
+      allParams.push(...otherParams);
 
       const req = pool.request();
       req.timeout = 60000; // 60 seconds for filtered queries
 
       // Add parameters
-      params.forEach(p => req.input(p.name, p.type, p.value));
+      allParams.forEach(p => req.input(p.name, p.type, p.value));
 
-      const whereClause = conditions.length > 0 ? 'WHERE ' + conditions.join(' AND ') : '';
+      // Construir WHERE clauses
+      const dateWhereClause = dateConditions.length > 0 ? 'HAVING ' + dateConditions.join(' AND ') : '';
+      const otherWhereClause = otherConditions.length > 0 ? 'WHERE ' + otherConditions.join(' AND ') : '';
+      
+      // Construir WHERE clause para vw_RechequeosKPIs
+      const kpisConditions = [];
+      // Agregar condiciones no-fecha (reemplazando FechaTerminoTest por Fecha_Ultimo)
+      if (otherConditions.length > 0) {
+        const otherCondsForKPIs = otherConditions.map(c => c.replace(/FechaTerminoTest/g, 'Fecha_Ultimo'));
+        kpisConditions.push(...otherCondsForKPIs);
+      }
+      // Agregar condiciones de fecha (usando Fecha_Ultimo directamente)
+      if (filters.fechaIni) {
+        kpisConditions.push('Fecha_Ultimo >= @fechaIni');
+      }
+      if (filters.fechaFin) {
+        kpisConditions.push('Fecha_Ultimo <= @fechaFin');
+      }
+      const kpisWhereClause = kpisConditions.length > 0 ? 'WHERE ' + kpisConditions.join(' AND ') : '';
 
       // Query using pre-calculated view
       // IMPORTANTE: Distribución desde vw_RechequeosBase (incluye 1+ chequeos)
@@ -185,10 +226,12 @@ class RechequeosModelOptimizedViews {
         ConteosBase AS (
           SELECT 
             ClaveEntidad,
-            MAX(TotalChequeosValidos) AS TotalChequeos
+            MAX(TotalChequeosValidos) AS TotalChequeos,
+            MAX(FechaTerminoTest) AS UltimaFecha
           FROM dbo.vw_RechequeosBase WITH (NOLOCK)
-          ${whereClause}
+          ${otherWhereClause}
           GROUP BY ClaveEntidad
+          ${dateWhereClause}
         ),
         Distribucion AS (
           SELECT
@@ -218,11 +261,12 @@ class RechequeosModelOptimizedViews {
             AVG(CAST(TasaMejoraMensual AS FLOAT)) AS TasaMejoraMensual,
             AVG(CAST(EsConsistente AS FLOAT)) AS IndiceConsistencia
           FROM dbo.vw_RechequeosKPIs WITH (NOLOCK)
-          ${whereClause}
+          ${kpisWhereClause}
         )
         SELECT
           -- Cobertura y distribución (CON FILTROS - responden a filtros activos)
           d.TotalEmpresasUnicas,
+          d.TotalChequeos,
           d.Dist1,
           d.Dist2_3,
           d.DistGt3,
@@ -245,7 +289,7 @@ class RechequeosModelOptimizedViews {
           kpi.IndiceConsistencia
         FROM Distribucion d
         CROSS JOIN KPIsRechequeos kpi
-        OPTION (RECOMPILE, MAXDOP 0, USE HINT('ENABLE_PARALLEL_PLAN_PREFERENCE'));
+        OPTION (RECOMPILE);
       `;
 
       const result = await req.query(KPI_QUERY);
@@ -256,12 +300,24 @@ class RechequeosModelOptimizedViews {
 
       const empresasConRechequeos = row.EmpresasConRechequeos || 0;
       const totalEmpresas = row.TotalEmpresasUnicas || 0;
+      const totalChequeos = row.TotalChequeos || 0;
       const tasaReincidencia = totalEmpresas > 0
         ? (empresasConRechequeos / totalEmpresas)
         : 0;
+      
+      // Calcular total de rechequeos:
+      // Cada empresa tiene al menos 1 chequeo (el primero no es rechequeo)
+      // Los rechequeos son los chequeos adicionales después del primero
+      // Fórmula: TotalChequeos - TotalEmpresasUnicas
+      // Ejemplo: 3 empresas con 2, 3, 1 chequeos = 6 chequeos - 3 empresas = 3 rechequeos
+      const totalRechequeos = Math.max(0, totalChequeos - totalEmpresas);
 
       return {
         cobertura: {
+          totalEmpresasUnicas: row.TotalEmpresasUnicas || 0,
+          totalChequeos: row.TotalChequeos || 0,
+          empresasConRechequeos: empresasConRechequeos,
+          totalRechequeos: totalRechequeos,
           tasaReincidencia: tasaReincidencia,
           promChequeosPorEmpresa: row.PromChequeosPorEmpresa || 0,
           tiempoPromEntreChequeosDias: row.TiempoPromEntreChequeosDias || 0,
@@ -312,7 +368,7 @@ class RechequeosModelOptimizedViews {
 
       const offset = (page - 1) * limit;
       const pool = await poolPromise;
-      const { conditions, params } = this.buildWhereClause(filters);
+      const { conditions, params } = this.buildWhereClause(filters, 'UltimaFecha');
 
       const req = pool.request();
       req.timeout = 60000; // 60 seconds for filtered queries
@@ -378,7 +434,7 @@ class RechequeosModelOptimizedViews {
         ${whereClause}
         ORDER BY ${sortColumn} ${sortOrder}
         OFFSET @offset ROWS FETCH NEXT @limit ROWS ONLY
-        OPTION (RECOMPILE, MAXDOP 0, USE HINT('ENABLE_PARALLEL_PLAN_PREFERENCE'));
+        OPTION (RECOMPILE);
       `;
 
       const result = await req.query(TABLE_QUERY);
@@ -410,7 +466,7 @@ class RechequeosModelOptimizedViews {
       logger.info(`[RECHEQUEOS OPT-VIEWS] Getting evolution series for: ${category}`);
 
       const pool = await poolPromise;
-      const { conditions, params } = this.buildWhereClause(filters);
+      const { conditions, params } = this.buildWhereClause(filters, 'UltimaFecha');
 
       const req = pool.request();
       req.timeout = 30000;
@@ -469,7 +525,7 @@ class RechequeosModelOptimizedViews {
       logger.info('[RECHEQUEOS OPT-VIEWS] Getting heatmap data');
 
       const pool = await poolPromise;
-      const { conditions, params } = this.buildWhereClause(filters);
+      const { conditions, params } = this.buildWhereClause(filters, 'Fecha_Ultimo');
 
       const req = pool.request();
       req.timeout = 30000;
@@ -533,6 +589,76 @@ class RechequeosModelOptimizedViews {
     } catch (error) {
       logger.error(`Error getting filter options: ${error.message}`);
       throw error;
+    }
+  }
+
+  /**
+   * Get aggregated data by category (departamento, distrito, sector, subsector)
+   * Returns top N with count, percentage, average score growth, and maturity leaps
+   * OPTIMIZED: Usa vistas pre-calculadas para máximo rendimiento
+   */
+  static async getAggregatedDataByCategory(filters = {}, category = 'departamento', topN = 10) {
+    const startTime = Date.now();
+    
+    try {
+      logger.info(`[RECHEQUEOS OPT-VIEWS] Getting aggregated data by ${category} (top ${topN})`);
+
+      const pool = await poolPromise;
+      
+      // Mapeo de categorías a vistas pre-calculadas
+      const viewMapping = {
+        'departamento': 'vw_RechequeosAgregadoPorDepartamento',
+        'distrito': 'vw_RechequeosAgregadoPorDistrito',
+        'sector': 'vw_RechequeosAgregadoPorSector',
+        'subsector': 'vw_RechequeosAgregadoPorSubSector'
+      };
+      
+      const viewName = viewMapping[category] || 'vw_RechequeosAgregadoPorDepartamento';
+      
+      const req = pool.request();
+      req.timeout = 10000; // Solo 10 segundos - debe ser muy rápido con vistas pre-calculadas
+
+      // Consulta simple a vista pre-calculada (sin filtros dinámicos - las vistas ya están pre-calculadas)
+      const AGGREGATE_QUERY = `
+        SELECT TOP ${topN}
+          Categoria,
+          Cantidad,
+          CrecimientoPromedio,
+          SaltosBajoMedio,
+          SaltosMedioAlto
+        FROM dbo.${viewName} WITH (NOLOCK)
+        ORDER BY Cantidad DESC;
+      `;
+
+      const result = await req.query(AGGREGATE_QUERY);
+      
+      // Calcular total para porcentajes
+      const total = result.recordset.reduce((sum, row) => sum + (row.Cantidad || 0), 0) || 1;
+
+      const elapsed = Date.now() - startTime;
+      logger.info(`[RECHEQUEOS OPT-VIEWS] Aggregated data by ${category} retrieved in ${elapsed}ms ⚡`);
+
+      return result.recordset.map(row => ({
+        categoria: row.Categoria || 'N/A',
+        cantidad: row.Cantidad || 0,
+        porcentaje: total > 0 ? ((row.Cantidad / total) * 100) : 0,
+        crecimientoPromedio: row.CrecimientoPromedio || 0,
+        saltosBajoMedio: row.SaltosBajoMedio || 0,
+        saltosMedioAlto: row.SaltosMedioAlto || 0
+      }));
+
+    } catch (error) {
+      logger.error(`[RECHEQUEOS OPT-VIEWS] Error getting aggregated data: ${error.message}`);
+      
+      // Si las vistas no existen, retornar array vacío
+      if (error.message && (error.message.includes('Invalid object name') || error.message.includes('does not exist'))) {
+        logger.warn(`[RECHEQUEOS OPT-VIEWS] Aggregated view not found for ${category}. Run: 10-create-rechequeos-aggregated-views.sql`);
+        return [];
+      }
+      
+      // Retornar array vacío en lugar de fallar completamente el PDF
+      logger.warn(`[RECHEQUEOS OPT-VIEWS] Returning empty data for ${category} due to error`);
+      return [];
     }
   }
 }

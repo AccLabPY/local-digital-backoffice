@@ -14,7 +14,7 @@
    Compatible SQL Server 2014+
    ========================================================= */
 
-USE [BID_stg_copy_copy];  -- << Cambiar según corresponda
+USE [BID_v2_22122025_copy];  -- << Cambiar según corresponda
 GO
 SET NOCOUNT ON;
 SET XACT_ABORT ON;

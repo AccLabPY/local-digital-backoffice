@@ -17,7 +17,7 @@
 -- - Capital después del patch: 515 empresas
 -- ====================================================================
 
-USE [BID_stg_copy];
+USE [BID_v2_22122025];
 GO
 
 PRINT 'Iniciando patch para corregir registros perdidos de ASUNCIÓN...';

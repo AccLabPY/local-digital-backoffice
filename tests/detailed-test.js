@@ -2,7 +2,7 @@ const sql = require('mssql/msnodesqlv8');
 
 const config = {
   server: 'FRAN\\MSSQL2022',
-  database: 'BID_stg_copy',
+  database: 'BID_v2_22122025',
   options: {
     trustedConnection: true,
     trustServerCertificate: true,

@@ -5,7 +5,7 @@
 -- ================================================================
 
 -- Cambiar ChequeoDigital por tu nombre de base de datos si es diferente
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 -- ================================================================

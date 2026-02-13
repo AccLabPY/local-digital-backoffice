@@ -87,14 +87,14 @@ SELECT local_tcp_port FROM sys.dm_exec_connections WHERE session_id = @@SPID;
 -- =============================================
 -- Script: Crear Usuario ChequeoApp
 -- Descripción: Crea usuario específico para la aplicación Chequeo Digital 2.0
--- Base de datos: BID_stg_copy
+-- Base de datos: BID_v2_22122025
 -- =============================================
 
 -- 1. Crear login para la aplicación
 CREATE LOGIN [ChequeoApp] WITH PASSWORD = 'AppPassword123!';
 
 -- 2. Usar la base de datos específica
-USE [BID_stg_copy];
+USE [BID_v2_22122025];
 
 -- 3. Crear usuario en la base de datos
 CREATE USER [ChequeoApp] FOR LOGIN [ChequeoApp];
@@ -185,7 +185,7 @@ pnpm install
    # Database Configuration
    DB_SERVER=TU_SERVIDOR\MSSQL2022
    DB_PORT=1433
-   DB_NAME=BID_stg_copy
+   DB_NAME=BID_v2_22122025
    DB_INSTANCE=MSSQL2022
 
    # SQL Server Authentication
@@ -225,7 +225,7 @@ node test-db-connection.js
 ```
 🔍 Testing database connection...
 Server: TU_SERVIDOR\MSSQL2022
-Database: BID_stg_copy
+Database: BID_v2_22122025
 Instance: MSSQL2022
 Authentication: SQL Server Authentication
 User: ChequeoApp
@@ -412,10 +412,10 @@ sqlcmd -S "TU_SERVIDOR\MSSQL2022" -U "ChequeoApp" -P "AppPassword123!" -Q "SELEC
 
 ```sql
 -- Backup de base de datos
-BACKUP DATABASE [BID_stg_copy] TO DISK = 'C:\Backup\BID_stg_copy.bak';
+BACKUP DATABASE [BID_v2_22122025] TO DISK = 'C:\Backup\BID_v2_22122025.bak';
 
 -- Restaurar base de datos
-RESTORE DATABASE [BID_stg_copy] FROM DISK = 'C:\Backup\BID_stg_copy.bak';
+RESTORE DATABASE [BID_v2_22122025] FROM DISK = 'C:\Backup\BID_v2_22122025.bak';
 ```
 
 ---

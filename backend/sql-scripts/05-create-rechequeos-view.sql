@@ -3,7 +3,7 @@
   Precalcula los datos más pesados para mejorar el rendimiento inicial
 */
 
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 PRINT '========================================';

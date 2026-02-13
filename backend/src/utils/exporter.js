@@ -1902,17 +1902,17 @@ class Exporter {
       
       // Helper: Draw section header with modern style
       const drawSectionHeader = (title, icon = null) => {
-        // Orange accent bar
-        doc.rect(50, doc.y, 5, 20)
+        // Orange accent bar (más compacto)
+        doc.rect(50, doc.y, 4, 16) // Reducido de 5x20 a 4x16
            .fill(colors.primaryOrange);
         
-        // Title
+        // Title (más compacto)
         doc.fillColor(colors.primaryBlue)
-           .fontSize(14)
+           .fontSize(12) // Reducido de 14 a 12
            .font('Helvetica-Bold')
-           .text(title, 65, doc.y + 3);
+           .text(title, 62, doc.y + 2); // Ajustado posición
         
-        doc.y += 22;
+        doc.y += 18; // Reducido de 22 a 18
       };
       
       // Helper: Draw KPI card
@@ -1986,13 +1986,11 @@ class Exporter {
       const deltaPorDimension = magnitud.deltaPorDimension || {};
       const saltosNivel = magnitud.saltosNivel || {};
       
-      // Contar empresas en la tabla de datos
-      const totalEmpresas = summaryData.tableData ? summaryData.tableData.length : 0;
-      
-      // Calcular total de chequeos sumando TotalChequeos de cada empresa
-      const totalChequeos = summaryData.tableData 
-        ? summaryData.tableData.reduce((sum, row) => sum + (row.TotalChequeos || 0), 0)
-        : 0;
+      // Usar valores correctos de KPIs para rechequeos
+      // Total de empresas con rechequeos (2+ chequeos)
+      const totalEmpresasConRechequeos = cobertura.empresasConRechequeos || 0;
+      // Total de rechequeos (chequeos adicionales después del primero)
+      const totalRechequeos = cobertura.totalRechequeos || 0;
       
       // Row 1: 4 KPIs principales en fila horizontal uniforme
       const cardWidth = 115;
@@ -2003,15 +2001,15 @@ class Exporter {
       
       drawKPICard(startX, baseY, cardWidth, cardHeight, 
         'Total Empresas', 
-        formatNumber(totalEmpresas),
-        'con 2+ chequeos',
+        formatNumber(totalEmpresasConRechequeos),
+        'con rechequeos',
         colors.primaryBlue
       );
       
       drawKPICard(startX + cardWidth + cardGap, baseY, cardWidth, cardHeight, 
-        'Total Chequeos', 
-        formatNumber(totalChequeos),
-        'completados',
+        'Total Rechequeos', 
+        formatNumber(totalRechequeos),
+        'realizados',
         colors.primaryOrange
       );
       
@@ -2404,6 +2402,185 @@ class Exporter {
            .font('Helvetica')
            .text('No hay datos disponibles para el período seleccionado.', 
                  50, doc.y + 50, { align: 'center', width: doc.page.width - 100 });
+      }
+      
+      // === PAGE 3+: ANÁLISIS POR CATEGORÍAS ===
+      const aggregatedData = summaryData.aggregatedData || {};
+      
+      // Helper: Draw analysis table
+      const drawAnalysisTable = (title, data, categoryLabel) => {
+        // Check if we need a new page (más estricto para evitar cortes)
+        // Calculamos espacio necesario: header sección (18) + header tabla (18) + filas (12 cada una) + espacio final (8) + margen (30)
+        const espacioNecesario = 18 + 18 + (data.length * 12) + 8 + 30;
+        if (doc.y + espacioNecesario > doc.page.height - 30) {
+          doc.addPage();
+          drawHeader();
+          doc.y = 165;
+        }
+        
+        drawSectionHeader(title);
+        
+        if (!data || data.length === 0) {
+          doc.fillColor(colors.textSecondary)
+             .fontSize(10)
+             .font('Helvetica')
+             .text('No hay datos disponibles', 50, doc.y, { align: 'left' });
+          doc.y += 20;
+          return;
+        }
+        
+        const tableStartX = 50;
+        const tableWidth = doc.page.width - 100;
+        const rowHeight = 12; // Reducido de 18 a 12
+        const headerHeight = 18; // Reducido de 25 a 18
+        
+        // Column widths (optimizados para mejor uso del espacio)
+        const colWidths = {
+          categoria: 170,
+          cantidad: 60,
+          porcentaje: 65,
+          crecimiento: 80,
+          saltos: 75
+        };
+        
+        // Header background
+        doc.rect(tableStartX, doc.y, tableWidth, headerHeight)
+           .fill(colors.primaryBlue);
+        
+        // Header text (más compacto)
+        doc.fillColor(colors.white)
+           .fontSize(7) // Reducido de 8 a 7
+           .font('Helvetica-Bold');
+        
+        let headerX = tableStartX + 3; // Reducido padding de 5 a 3
+        const headerY = doc.y + 6; // Ajustado para centrado vertical
+        
+        doc.text(categoryLabel, headerX, headerY, { width: colWidths.categoria - 5 });
+        headerX += colWidths.categoria;
+        doc.text('CANTIDAD', headerX, headerY, { width: colWidths.cantidad - 5, align: 'center' });
+        headerX += colWidths.cantidad;
+        doc.text('PORCENTAJE', headerX, headerY, { width: colWidths.porcentaje - 5, align: 'center' });
+        headerX += colWidths.porcentaje;
+        doc.text('CRECIMIENTO', headerX, headerY, { width: colWidths.crecimiento - 5, align: 'center' });
+        headerX += colWidths.crecimiento;
+        doc.text('SALTOS', headerX, headerY, { width: colWidths.saltos - 5, align: 'center' });
+        
+        doc.y += headerHeight;
+        
+        // Data rows
+        data.forEach((row, index) => {
+          // Check if we need a new page (más estricto para evitar cortes)
+          if (doc.y + rowHeight + 5 > doc.page.height - 30) {
+            doc.addPage();
+            drawHeader();
+            doc.y = 165;
+            drawSectionHeader(`${title} (continuación)`);
+            
+            // Redibujar header
+            doc.rect(tableStartX, doc.y, tableWidth, headerHeight)
+               .fill(colors.primaryBlue);
+            doc.fillColor(colors.white)
+               .fontSize(7) // Reducido de 8 a 7
+               .font('Helvetica-Bold');
+            headerX = tableStartX + 3; // Reducido padding
+            const headerYPos = doc.y + 6; // Ajustado para centrado
+            doc.text(categoryLabel, headerX, headerYPos, { width: colWidths.categoria - 3 });
+            headerX += colWidths.categoria;
+            doc.text('CANTIDAD', headerX, headerYPos, { width: colWidths.cantidad - 3, align: 'center' });
+            headerX += colWidths.cantidad;
+            doc.text('PORCENTAJE', headerX, headerYPos, { width: colWidths.porcentaje - 3, align: 'center' });
+            headerX += colWidths.porcentaje;
+            doc.text('CRECIMIENTO', headerX, headerYPos, { width: colWidths.crecimiento - 3, align: 'center' });
+            headerX += colWidths.crecimiento;
+            doc.text('SALTOS', headerX, headerYPos, { width: colWidths.saltos - 3, align: 'center' });
+            doc.y += headerHeight;
+          }
+          
+          const bgColor = index % 2 === 0 ? colors.white : colors.lightGray;
+          const rowY = doc.y;
+          
+          // Row background
+          doc.rect(tableStartX, rowY, tableWidth, rowHeight)
+             .fill(bgColor);
+          
+          // Row border (más delgado)
+          doc.rect(tableStartX, rowY, tableWidth, rowHeight)
+             .lineWidth(0.2) // Reducido de 0.3 a 0.2
+             .strokeColor(colors.mediumGray)
+             .stroke();
+          
+          // Row text (más compacto)
+          doc.fillColor(colors.textPrimary)
+             .fontSize(6.5) // Reducido de 7.5 a 6.5
+             .font('Helvetica');
+          
+          const textY = rowY + (rowHeight / 2) - 1.5; // Ajustado para mejor centrado
+          let currentX = tableStartX + 3; // Reducido padding de 5 a 3
+          
+          // Categoría (truncar si es muy largo, más agresivo)
+          const categoria = (row.categoria || 'N/A').trim();
+          const categoriaTruncada = categoria.length > 40 ? categoria.substring(0, 37) + '...' : categoria;
+          doc.text(categoriaTruncada, currentX, textY, { width: colWidths.categoria - 3 });
+          currentX += colWidths.categoria;
+          
+          // Cantidad
+          doc.font('Helvetica-Bold')
+             .text(formatNumber(row.cantidad || 0), currentX, textY, { 
+               width: colWidths.cantidad - 3, 
+               align: 'center' 
+             });
+          currentX += colWidths.cantidad;
+          
+          // Porcentaje
+          doc.font('Helvetica')
+             .text(formatPercentage(row.porcentaje || 0), currentX, textY, { 
+               width: colWidths.porcentaje - 3, 
+               align: 'center' 
+             });
+          currentX += colWidths.porcentaje;
+          
+          // Crecimiento promedio
+          const crecimiento = row.crecimientoPromedio || 0;
+          const crecimientoColor = crecimiento > 0 ? colors.successGreen : 
+                                   crecimiento < 0 ? colors.dangerRed : colors.darkGray;
+          doc.fillColor(crecimientoColor)
+             .font('Helvetica-Bold')
+             .text(formatPercentage(crecimiento), currentX, textY, { 
+               width: colWidths.crecimiento - 3, 
+               align: 'center' 
+             });
+          doc.fillColor(colors.textPrimary);
+          currentX += colWidths.crecimiento;
+          
+          // Saltos (Bajo->Medio / Medio->Alto)
+          const saltosText = `${row.saltosBajoMedio || 0} / ${row.saltosMedioAlto || 0}`;
+          doc.font('Helvetica')
+             .text(saltosText, currentX, textY, { 
+               width: colWidths.saltos - 3, 
+               align: 'center' 
+             });
+          
+          doc.y += rowHeight;
+        });
+        
+        doc.y += 8; // Reducido espacio después de la tabla de 15 a 8
+      };
+      
+      // Draw analysis tables
+      if (aggregatedData.departamentos && aggregatedData.departamentos.length > 0) {
+        drawAnalysisTable('ANÁLISIS POR DEPARTAMENTO', aggregatedData.departamentos, 'DEPARTAMENTO');
+      }
+      
+      if (aggregatedData.distritos && aggregatedData.distritos.length > 0) {
+        drawAnalysisTable('ANÁLISIS POR DISTRITO', aggregatedData.distritos, 'DISTRITO');
+      }
+      
+      if (aggregatedData.sectores && aggregatedData.sectores.length > 0) {
+        drawAnalysisTable('ANÁLISIS POR SECTOR', aggregatedData.sectores, 'SECTOR DE ACTIVIDAD');
+      }
+      
+      if (aggregatedData.subsectores && aggregatedData.subsectores.length > 0) {
+        drawAnalysisTable('ANÁLISIS POR SUBSECTOR', aggregatedData.subsectores, 'SUBSECTOR DE ACTIVIDAD');
       }
       
       // Draw footer on all pages

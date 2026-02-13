@@ -14,6 +14,7 @@ import { RechequeosCharts } from "@/components/rechequeos-charts"
 import { RechequeosTable } from "@/components/rechequeos-table"
 import { getAuthToken } from "@/lib/api-client"
 import { ServiceWorkerRegister } from "@/components/service-worker-register"
+import { useToast } from "@/hooks/use-toast"
 
 export function RechequeosPage() {
   const [filters, setFilters] = useState({
@@ -32,6 +33,8 @@ export function RechequeosPage() {
   const [activeDateFilter, setActiveDateFilter] = useState('todos')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false)
+  const { toast } = useToast()
   
   // Lazy loading states
   const [loadKPIs, setLoadKPIs] = useState(true) // KPIs se cargan inmediatamente
@@ -195,11 +198,27 @@ export function RechequeosPage() {
   // Función para exportar datos PDF
   const handleExportPDF = async () => {
     try {
+      setIsGeneratingPDF(true)
+      setError(null)
+      
+      // Mostrar toast de inicio
+      toast({
+        title: "Generando reporte PDF",
+        description: "Por favor espere, esto puede tomar unos momentos...",
+        duration: 0, // No se cierra automáticamente
+      })
+      
       console.log('[PDF Export] Starting PDF export...')
       const token = getAuthToken()
       if (!token) {
         console.error('[PDF Export] No token available')
         setError("No se pudo obtener el token de autenticación")
+        setIsGeneratingPDF(false)
+        toast({
+          title: "Error",
+          description: "No se pudo obtener el token de autenticación",
+          variant: "destructive",
+        })
         return
       }
 
@@ -244,9 +263,23 @@ export function RechequeosPage() {
       
       console.log('[PDF Export] PDF downloaded successfully')
       
+      // Mostrar toast de éxito
+      toast({
+        title: "Reporte generado exitosamente",
+        description: "El PDF se ha descargado correctamente",
+      })
+      
     } catch (error) {
       console.error('[PDF Export] Error:', error)
-      setError(`Error al exportar PDF: ${error instanceof Error ? error.message : 'Error desconocido'}`)
+      const errorMessage = error instanceof Error ? error.message : 'Error desconocido'
+      setError(`Error al exportar PDF: ${errorMessage}`)
+      toast({
+        title: "Error al generar reporte",
+        description: errorMessage,
+        variant: "destructive",
+      })
+    } finally {
+      setIsGeneratingPDF(false)
     }
   }
 
@@ -345,10 +378,20 @@ export function RechequeosPage() {
                 </Badge>
                 <Button
                   onClick={handleExportPDF}
-                  className="bg-[#f5592b] hover:bg-[#e04a1f] text-white border-0"
+                  disabled={isGeneratingPDF}
+                  className="bg-[#f5592b] hover:bg-[#e04a1f] text-white border-0 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  <Download className="h-4 w-4 mr-2" />
-                  Exportar PDF
+                  {isGeneratingPDF ? (
+                    <>
+                      <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                      Generando PDF...
+                    </>
+                  ) : (
+                    <>
+                      <Download className="h-4 w-4 mr-2" />
+                      Exportar PDF
+                    </>
+                  )}
                 </Button>
                 <Button
                   onClick={handleExportCSV}

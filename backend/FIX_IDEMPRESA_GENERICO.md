@@ -171,7 +171,7 @@ Todas las consultas que antes agrupaban/contaban por `IdEmpresa` ahora usan `Cla
 ### Paso 2: Otorgar permisos
 
 ```sql
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GRANT ALTER ON SCHEMA::dbo TO [ChequeoApp];
 ```
 

@@ -74,7 +74,7 @@ Los scripts deben ejecutarse en el siguiente orden:
 
 1. **Conectarse a la base de datos:**
    ```sql
-   USE [BID_stg_copy_copy];  -- o la base de datos que corresponda
+   USE [BID_v2_22122025_copy];  -- o la base de datos que corresponda
    ```
 
 2. **Ejecutar Script 1 en modo preview:**

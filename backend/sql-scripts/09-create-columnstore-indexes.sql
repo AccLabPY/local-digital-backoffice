@@ -7,14 +7,14 @@
   drásticamente las consultas con filtros (departamento, sector, tamaño, etc.)
   
   Compatible con: SQL Server 2012+
-  Base de datos: BID_stg_copy
+  Base de datos: BID_v2_22122025
   
   MEJORA ESPERADA: De 120+ segundos → 3-8 segundos con filtros
   
   ============================================================================
 */
 
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 PRINT '============================================================================';

@@ -29,7 +29,7 @@ Este script ejecuta automáticamente:
 
 **Verificar** que se crearon las 3 vistas:
 ```sql
-USE BID_stg_copy;
+USE BID_v2_22122025;
 SELECT name FROM sys.views WHERE name LIKE 'vw_Rechequeos%';
 -- Debe mostrar 3 filas:
 -- vw_RechequeosBase

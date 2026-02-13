@@ -1,7 +1,7 @@
 -- =============================================
--- Script: Configurar Usuario ChequeoApp para BID_stg_copy
+-- Script: Configurar Usuario ChequeoApp para BID_v2_22122025
 -- Descripción: Crea login y usuario para la aplicación Chequeo Digital 2.0
--- Base de datos: BID_stg_copy
+-- Base de datos: BID_v2_22122025
 -- =============================================
 
 -- IMPORTANTE: Ejecutar este script como administrador de SQL Server
@@ -11,7 +11,7 @@ IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'ChequeoApp')
 BEGIN
     PRINT 'Creando login ChequeoApp a nivel de servidor...';
     CREATE LOGIN [ChequeoApp] WITH PASSWORD = 'AppPassword123!', 
-        DEFAULT_DATABASE = [BID_stg_copy],
+        DEFAULT_DATABASE = [BID_v2_22122025],
         CHECK_EXPIRATION = OFF,
         CHECK_POLICY = OFF;
     PRINT 'Login ChequeoApp creado exitosamente.';
@@ -22,22 +22,22 @@ BEGIN
 END
 GO
 
--- 2. Usar la base de datos BID_stg_copy
-USE [BID_stg_copy];
+-- 2. Usar la base de datos BID_v2_22122025
+USE [BID_v2_22122025];
 GO
 
 -- 3. Verificar si el usuario existe en la base de datos
 IF EXISTS (SELECT * FROM sys.database_principals WHERE name = 'ChequeoApp')
 BEGIN
-    PRINT 'El usuario ChequeoApp ya existe en BID_stg_copy. Eliminándolo para recrearlo...';
+    PRINT 'El usuario ChequeoApp ya existe en BID_v2_22122025. Eliminándolo para recrearlo...';
     DROP USER [ChequeoApp];
 END
 GO
 
--- 4. Crear usuario en la base de datos BID_stg_copy
-PRINT 'Creando usuario ChequeoApp en BID_stg_copy...';
+-- 4. Crear usuario en la base de datos BID_v2_22122025
+PRINT 'Creando usuario ChequeoApp en BID_v2_22122025...';
 CREATE USER [ChequeoApp] FOR LOGIN [ChequeoApp];
-PRINT 'Usuario ChequeoApp creado en BID_stg_copy.';
+PRINT 'Usuario ChequeoApp creado en BID_v2_22122025.';
 GO
 
 -- 5. Otorgar permisos necesarios
@@ -69,7 +69,7 @@ FROM sys.server_principals
 WHERE name = 'ChequeoApp';
 
 SELECT 
-    'Usuario en BID_stg_copy' as Tipo,
+    'Usuario en BID_v2_22122025' as Tipo,
     name as Nombre,
     type_desc as TipoUsuario,
     default_schema_name as SchemaDefault,
@@ -91,7 +91,7 @@ PRINT '';
 PRINT '=== CONFIGURACIÓN COMPLETADA ===';
 PRINT 'Usuario: ChequeoApp';
 PRINT 'Contraseña: AppPassword123!';
-PRINT 'Base de datos: BID_stg_copy';
+PRINT 'Base de datos: BID_v2_22122025';
 PRINT '';
 PRINT 'NOTA: Si cambiaste la contraseña, actualiza el archivo .env con la nueva contraseña.';
 GO

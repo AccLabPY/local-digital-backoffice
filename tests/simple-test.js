@@ -9,7 +9,7 @@ console.log('🔍 Testing msnodesqlv8 connection...');
 
 const config = {
   server: process.env.DB_SERVER || 'localhost',
-  database: process.env.DB_NAME || 'BID_stg_copy',
+  database: process.env.DB_NAME || 'BID_v2_22122025',
   options: {
     trustedConnection: true,
     trustServerCertificate: true

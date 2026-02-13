@@ -61,7 +61,7 @@ REDIS_DB=0
 ✅ **Instrucciones de instalación**:
 ```sql
 -- Ejecutar en SQL Server Management Studio
--- Base de datos: BID_stg_copy
+-- Base de datos: BID_v2_22122025
 
 :r C:\Users\fruge\OneDrive\Documents\chequeo\backend\sql-scripts\06-create-rechequeos-optimized-views.sql
 GO
@@ -149,7 +149,7 @@ REDIS_DB=0
 
 En SQL Server Management Studio:
 ```sql
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 -- Ejecutar el script de vistas optimizadas
@@ -225,7 +225,7 @@ redis-cli ping
 ### 2. Verificar Vistas SQL
 
 ```sql
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 -- Ver registros en cada vista

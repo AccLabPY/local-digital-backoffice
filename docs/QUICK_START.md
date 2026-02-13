@@ -17,7 +17,7 @@ Una vez instalado, solo necesita:
 ### 1️⃣ Ejecutar Script SQL
 
 ```powershell
-sqlcmd -S localhost\INSTANCIA -d BID_stg_copy -E -i "backend\sql-scripts\INSTALACION-COMPLETA.sql"
+sqlcmd -S localhost\INSTANCIA -d BID_v2_22122025 -E -i "backend\sql-scripts\INSTALACION-COMPLETA.sql"
 ```
 
 ### 2️⃣ Configurar Backend
@@ -37,8 +37,11 @@ npm install
 
 # Frontend (desde raíz)
 cd ..
-npm install
+npm install --legacy-peer-deps
+# O usar: npm run install:legacy
 ```
+
+> **Nota:** Si obtiene error ERESOLVE con `vaul`, use `--legacy-peer-deps`. Es seguro y necesario para React 19.
 
 ### 4️⃣ Iniciar Sistema
 

@@ -13,7 +13,7 @@ Mejora del **70-80%** → Tiempo reducido a **15-25 segundos**.
 ### Paso 1: Ejecutar Script SQL (3-5 minutos)
 
 1. Abrir **SQL Server Management Studio** o **Azure Data Studio**
-2. Conectarse a la base de datos `BID_stg_copy`
+2. Conectarse a la base de datos `BID_v2_22122025`
 3. Ejecutar el script maestro:
 
 ```sql

@@ -321,18 +321,56 @@ const rechequeosController = {
       
       logger.info(`[RECHEQUEOS PDF] Starting export with filters:`, filters);
       
-      // Ejecutar consultas en paralelo para mejorar rendimiento
+      // Usar modelo optimizado si está disponible
+      await checkOptimizedViews();
+      const Model = USE_OPTIMIZED_VIEWS ? RechequeosModelOptimizedViews : RechequeosModel;
+      
+      // Ejecutar KPIs y tabla en paralelo (consultas rápidas)
       const [kpis, tableResult] = await Promise.all([
-        RechequeosModel.getKPIs(filters),
-        RechequeosModel.getTableData({ 
+        Model.getKPIs(filters),
+        Model.getTableData({ 
           page: 1, 
           limit: 50, // Reducido para PDF (suficiente para primera página)
           filters 
         })
       ]);
       
+      // Ejecutar consultas agregadas secuencialmente para evitar problemas de memoria
+      // Estas consultas pueden ser pesadas, especialmente sin filtros de fecha
+      let departamentos = [];
+      let distritos = [];
+      let sectores = [];
+      let subsectores = [];
+      
+      if (Model.getAggregatedDataByCategory) {
+        try {
+          departamentos = await Model.getAggregatedDataByCategory(filters, 'departamento', 10);
+        } catch (err) {
+          logger.warn(`[RECHEQUEOS PDF] Error getting departamentos: ${err.message}`);
+        }
+        
+        try {
+          distritos = await Model.getAggregatedDataByCategory(filters, 'distrito', 10);
+        } catch (err) {
+          logger.warn(`[RECHEQUEOS PDF] Error getting distritos: ${err.message}`);
+        }
+        
+        try {
+          sectores = await Model.getAggregatedDataByCategory(filters, 'sector', 10);
+        } catch (err) {
+          logger.warn(`[RECHEQUEOS PDF] Error getting sectores: ${err.message}`);
+        }
+        
+        try {
+          subsectores = await Model.getAggregatedDataByCategory(filters, 'subsector', 10);
+        } catch (err) {
+          logger.warn(`[RECHEQUEOS PDF] Error getting subsectores: ${err.message}`);
+        }
+      }
+      
       logger.info(`[RECHEQUEOS PDF] KPIs retrieved:`, kpis);
       logger.info(`[RECHEQUEOS PDF] Table data retrieved: ${tableResult.data?.length || 0} rows`);
+      logger.info(`[RECHEQUEOS PDF] Aggregated data retrieved: ${departamentos.length} dept, ${distritos.length} dist, ${sectores.length} sect, ${subsectores.length} subsect`);
       
       if (!kpis && (!tableResult.data || tableResult.data.length === 0)) {
         throw new NotFoundError('No hay datos para exportar con los filtros seleccionados');
@@ -344,7 +382,13 @@ const rechequeosController = {
         tableData: tableResult.data || [],
         fechaIni: filters.fechaIni || null,
         fechaFin: filters.fechaFin || null,
-        filters: filters // Pasar todos los filtros para mostrarlos en el header
+        filters: filters, // Pasar todos los filtros para mostrarlos en el header
+        aggregatedData: {
+          departamentos: departamentos || [],
+          distritos: distritos || [],
+          sectores: sectores || [],
+          subsectores: subsectores || []
+        }
       };
       
       logger.info(`[RECHEQUEOS PDF] Generating PDF with ${summaryData.tableData.length} rows`);

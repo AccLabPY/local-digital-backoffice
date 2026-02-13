@@ -90,7 +90,8 @@ Write-Success "Dependencias del backend OK"
 # Frontend
 if (-not (Test-Path "$ScriptDir\node_modules")) {
     Write-Info "Instalando dependencias del frontend..."
-    npm install --silent
+    Write-Info "Usando --legacy-peer-deps para compatibilidad con React 19..."
+    npm install --legacy-peer-deps --silent
 }
 Write-Success "Dependencias del frontend OK"
 

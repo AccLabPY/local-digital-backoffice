@@ -1619,8 +1619,8 @@ caches.keys().then(keys => keys.forEach(k => caches.delete(k)))
 
 | Paso | Acción | Comando / Archivo | Notas |
 |------|--------|--------------------|-------|
-| 1 | **Crear vistas e índices** | `backend/sql-scripts/00-OPTIMIZE-RECHEQUEOS.sql` | Ejecutar completo en **SQL Server Management Studio** conectado a `BID_stg_copy`. Incluye vistas + índices base + índices adicionales. |
-| 2 | **Verificar vistas** | ```sql<br>USE BID_stg_copy;<br>SELECT name FROM sys.views WHERE name LIKE 'vw_Rechequeos%';``` | Deben aparecer `vw_RechequeosBase`, `vw_RechequeosKPIs`, `vw_RechequeosTabla`. |
+| 1 | **Crear vistas e índices** | `backend/sql-scripts/00-OPTIMIZE-RECHEQUEOS.sql` | Ejecutar completo en **SQL Server Management Studio** conectado a `BID_v2_22122025`. Incluye vistas + índices base + índices adicionales. |
+| 2 | **Verificar vistas** | ```sql<br>USE BID_v2_22122025;<br>SELECT name FROM sys.views WHERE name LIKE 'vw_Rechequeos%';``` | Deben aparecer `vw_RechequeosBase`, `vw_RechequeosKPIs`, `vw_RechequeosTabla`. |
 | 3 | **Reiniciar backend** | `cd backend && npm run dev` | El log debe mostrar `✅ Optimized SQL views found`. |
 | 4 | **Instalar Redis (opcional)** | Memurai/Redis 7+ | Si no se instala, el backend usa cache en memoria automáticamente. |
 | 5 | **Registrar Service Worker (prod)** | `components/service-worker-register.tsx` | Solo se activa en producción (HTTPS). |

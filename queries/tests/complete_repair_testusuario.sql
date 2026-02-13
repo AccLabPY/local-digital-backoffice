@@ -3,7 +3,7 @@
 -- para los Tests que fueron cambiados de 1 a 2
 -- =========================================================
 
-USE [BID_stg_copy];  -- << Cambiar si corresponde
+USE [BID_v2_22122025];  -- << Cambiar si corresponde
 GO
 SET NOCOUNT ON;
 SET XACT_ABORT ON;

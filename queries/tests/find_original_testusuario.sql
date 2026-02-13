@@ -3,7 +3,7 @@
 -- que correspondían a los IdEmpresaInfo antes del cambio
 -- =========================================================
 
-USE [BID_stg_copy];  -- << Cambiar si corresponde
+USE [BID_v2_22122025];  -- << Cambiar si corresponde
 GO
 SET NOCOUNT ON;
 

@@ -732,3 +732,37 @@ RequestError: Invalid object name 'Distritos'.
 2025-11-19 16:03:30 error: [RECHEQUEOS OPT-VIEWS] Error: Timeout: Request failed to complete in 120000ms
 2025-11-19 16:03:30 error: RequestError: Timeout: Request failed to complete in 120000ms
 2025-11-19 23:49:27 error: Error: El token ha expirado
+2025-12-04 09:33:24 error: Error: El token ha expirado
+2025-12-23 03:15:26 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoApp'.
+2025-12-23 03:17:18 error: Database Connection Failed! Bad Config:  Login failed for user 'ChequeoReader'.
+2025-12-23 03:20:38 error: Error getting user by email: Invalid object name 'UsuariosSistema'.
+2025-12-23 03:20:38 error: Login error: Invalid object name 'UsuariosSistema'.
+2025-12-23 03:20:38 error: RequestError: Invalid object name 'UsuariosSistema'.
+2025-12-23 03:37:53 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-12-23 03:37:53 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-12-23 03:37:58 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-12-23 03:37:58 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-12-23 03:37:58 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-12-23 03:37:58 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-12-23 03:38:37 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-12-23 03:38:37 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-12-23 03:38:42 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-12-23 03:38:42 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-12-23 03:39:29 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'UltimaFecha'.
+2025-12-23 03:39:29 error: RequestError: Invalid column name 'UltimaFecha'.
+2025-12-23 03:50:17 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'FechaTerminoTest'.
+2025-12-23 03:50:17 error: RequestError: Invalid column name 'FechaTerminoTest'.
+2025-12-23 03:50:23 error: [RECHEQUEOS OPT-VIEWS] Error: Invalid column name 'FechaTerminoTest'.
+2025-12-23 03:50:23 error: RequestError: Invalid column name 'FechaTerminoTest'.
+2025-12-23 05:28:46 error: [RECHEQUEOS OPT-VIEWS] Error getting aggregated data: Could not get the memory grant of 397392 KB because it exceeds the maximum configuration limit in workload group 'default' (2) and resource pool 'default' (2).  Contact the server administrator to increase the memory usage limit.
+2025-12-23 05:28:46 error: [RECHEQUEOS PDF] Error in exportComprehensivePDF: Could not get the memory grant of 397392 KB because it exceeds the maximum configuration limit in workload group 'default' (2) and resource pool 'default' (2).  Contact the server administrator to increase the memory usage limit.
+2025-12-23 05:28:46 error: RequestError: Could not get the memory grant of 397392 KB because it exceeds the maximum configuration limit in workload group 'default' (2) and resource pool 'default' (2).  Contact the server administrator to increase the memory usage limit.
+2025-12-23 05:52:53 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-12-23 05:52:53 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-12-23 05:53:13 error: Error getting empresas: Timeout: Request failed to complete in 120000ms
+2025-12-23 05:53:13 error: RequestError: Timeout: Request failed to complete in 120000ms
+2025-12-23 05:54:08 error: [Auth] Token is revoked
+2025-12-23 05:54:08 error: Error: Token revocado
+2025-12-23 05:54:08 error: [Auth] Token is revoked
+2025-12-23 05:54:08 error: Error: Token revocado
+2026-02-12 23:19:34 error: Error: El token ha expirado

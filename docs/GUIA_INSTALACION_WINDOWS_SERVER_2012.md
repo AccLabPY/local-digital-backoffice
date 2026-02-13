@@ -169,7 +169,7 @@ CREATE LOGIN ChequeoApp WITH PASSWORD = 'TuPasswordSeguro123!';
 GO
 
 -- Dar permisos en la base de datos
-USE BID_stg_copy;  -- O el nombre de tu base de datos
+USE BID_v2_22122025;  -- O el nombre de tu base de datos
 GO
 
 CREATE USER ChequeoApp FOR LOGIN ChequeoApp;
@@ -197,7 +197,7 @@ Ejecutar los scripts en el siguiente orden **exacto** usando SSMS o sqlcmd:
 
 **Ejecutar:**
 ```powershell
-sqlcmd -S SERVIDOR\INSTANCIA -d BID_stg_copy -E -i "backend\sql-scripts\01-create-auth-tables.sql"
+sqlcmd -S SERVIDOR\INSTANCIA -d BID_v2_22122025 -E -i "backend\sql-scripts\01-create-auth-tables.sql"
 ```
 
 ### 5.2 Insertar Datos Iniciales
@@ -210,7 +210,7 @@ sqlcmd -S SERVIDOR\INSTANCIA -d BID_stg_copy -E -i "backend\sql-scripts\01-creat
 
 **Ejecutar:**
 ```powershell
-sqlcmd -S SERVIDOR\INSTANCIA -d BID_stg_copy -E -i "backend\sql-scripts\02-seed-auth-data.sql"
+sqlcmd -S SERVIDOR\INSTANCIA -d BID_v2_22122025 -E -i "backend\sql-scripts\02-seed-auth-data.sql"
 ```
 
 ### 5.3 Crear Vistas Optimizadas de Rechequeos
@@ -222,7 +222,7 @@ sqlcmd -S SERVIDOR\INSTANCIA -d BID_stg_copy -E -i "backend\sql-scripts\02-seed-
 
 **Ejecutar:**
 ```powershell
-sqlcmd -S SERVIDOR\INSTANCIA -d BID_stg_copy -E -i "backend\sql-scripts\06-create-rechequeos-optimized-views.sql"
+sqlcmd -S SERVIDOR\INSTANCIA -d BID_v2_22122025 -E -i "backend\sql-scripts\06-create-rechequeos-optimized-views.sql"
 ```
 
 ### 5.4 (Opcional) Crear Índices de Rendimiento
@@ -243,13 +243,20 @@ Solo ejecutar si experimentas lentitud:
 
 ```powershell
 cd C:\Apps  # o tu directorio preferido
-git clone https://github.com/tu-organizacion/chequeo-digital.git
+git clone https://github.com/franciscoraguilera/chequeo-atlas.git
 cd chequeo-digital
 ```
 
 ### 6.2 Instalar Dependencias del Backend
 
+**En PowerShell:**
 ```powershell
+cd backend
+npm install
+```
+
+**En Git Bash / Linux / macOS:**
+```bash
 cd backend
 npm install
 ```
@@ -289,7 +296,7 @@ JWT_REFRESH_EXPIRATION=7d
 # ============================================
 DB_SERVER=localhost
 DB_PORT=1433
-DB_NAME=BID_stg_copy
+DB_NAME=BID_v2_22122025
 DB_INSTANCE=MSSQL2022
 
 # --- OPCIÓN 1: Autenticación Windows (Recomendado para desarrollo) ---
@@ -361,10 +368,31 @@ sql.connect(config).then(() => {
 
 ### 7.1 Instalar Dependencias
 
+**En PowerShell:**
 ```powershell
 cd ..  # Volver al directorio raíz del proyecto
-npm install
+npm install --legacy-peer-deps
 ```
+
+**En Git Bash / Linux / macOS:**
+```bash
+cd ..  # Volver al directorio raíz del proyecto
+npm install --legacy-peer-deps
+```
+
+**O usar el script automático:**
+```bash
+# Desde la raíz del proyecto
+bash install-dependencies.sh
+```
+
+> **⚠️ Nota sobre `--legacy-peer-deps`:**
+> 
+> El paquete `vaul` aún no tiene soporte oficial para React 19. Usar `--legacy-peer-deps` es necesario y seguro. No afecta la funcionalidad de la aplicación.
+> 
+> **Advertencias sobre Node.js 18:**
+> 
+> Si ve advertencias sobre paquetes que requieren Node.js 20, puede ignorarlas. Son solo warnings y la aplicación funciona correctamente con Node.js 18.
 
 ### 7.2 Configurar API URL
 
@@ -574,6 +602,48 @@ npm install bcryptjs
 # Por:     const bcrypt = require('bcryptjs');
 ```
 
+### Error: "ERESOLVE could not resolve" con vaul y React 19
+
+Este es un conflicto conocido entre `vaul@0.9.x` y React 19. **Solución:**
+
+**En PowerShell:**
+```powershell
+# Opción 1: Usar --legacy-peer-deps (recomendado)
+npm install --legacy-peer-deps
+
+# Opción 2: Usar el script incluido
+npm run install:legacy
+
+# Opción 3: Limpiar e instalar
+npm cache clean --force
+rmdir /s /q node_modules
+del package-lock.json
+npm install --legacy-peer-deps
+```
+
+**En Git Bash / Linux / macOS:**
+```bash
+# Opción 1: Usar --legacy-peer-deps
+npm install --legacy-peer-deps
+
+# Opción 2: Usar script incluido
+bash install-dependencies.sh
+
+# Opción 3: Limpiar e instalar
+bash clean-install.sh
+```
+
+**Nota:** Esto es seguro. `vaul` funciona correctamente con React 19, solo falta actualizar los peer dependencies en el paquete.
+
+### Advertencias sobre Node.js 18 vs 20
+
+Si ve advertencias como:
+```
+npm warn EBADENGINE package: '@azure/...' required: { node: '>=20.0.0' }
+```
+
+**Esto es normal y seguro.** Son solo advertencias, no errores. La aplicación funciona correctamente con Node.js 18. Si desea eliminar las advertencias, puede actualizar a Node.js 20, pero no es necesario.
+
 ### Frontend no carga datos
 
 1. Verificar que el backend esté corriendo en puerto 3001
@@ -587,7 +657,7 @@ npm install bcryptjs
 SELECT HAS_PERMS_BY_NAME('dbo', 'SCHEMA', 'CREATE VIEW');
 
 -- Si retorna 0, otorgar permisos:
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GRANT CREATE VIEW TO ChequeoApp;
 GRANT ALTER ON SCHEMA::dbo TO ChequeoApp;
 ```

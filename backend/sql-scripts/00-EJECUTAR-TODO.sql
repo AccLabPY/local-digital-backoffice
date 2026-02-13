@@ -1,9 +1,9 @@
 -- ================================================================
 -- SCRIPT COMPLETO - Ejecutar TODO de una vez
--- Base de datos: BID_stg_copy
+-- Base de datos: BID_v2_22122025
 -- ================================================================
 
-USE BID_stg_copy;
+USE BID_v2_22122025;
 GO
 
 PRINT '';

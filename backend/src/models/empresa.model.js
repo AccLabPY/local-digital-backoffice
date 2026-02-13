@@ -809,9 +809,21 @@ OPTION (RECOMPILE);
       }
 
       // ejecuta (SOLO una query ahora)
-      const dataReq = pool.request(); 
+      const startTime = Date.now();
+      const dataReq = pool.request();
+      dataReq.timeout = 180000; // 3 minutos para consultas complejas
       addBasicParams(dataReq);
-      const dataRs = await dataReq.query(finalQuery);
+      
+      // Agregar hints de optimización SQL al final de la query
+      const optimizedQuery = finalQuery.replace(
+        'OPTION (RECOMPILE);',
+        'OPTION (RECOMPILE, MAXDOP 1, OPTIMIZE FOR UNKNOWN);'
+      );
+      
+      logger.info(`[EMPRESAS] Executing query with timeout: 180s, filters: ${JSON.stringify(Object.keys(filters))}`);
+      const dataRs = await dataReq.query(optimizedQuery);
+      const elapsed = Date.now() - startTime;
+      logger.info(`[EMPRESAS] Query completed in ${elapsed}ms, returned ${dataRs.recordset.length} rows`);
 
       const totalCount = dataRs.recordset[0]?.TotalRows ?? 0;
       const totalPages = Math.ceil(totalCount / limit);

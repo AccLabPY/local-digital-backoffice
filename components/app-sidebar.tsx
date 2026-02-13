@@ -1,6 +1,6 @@
 "use client"
 
-import { Building2, BarChart3, Settings, Home, TestTube, RotateCcw, Users, Shield, UserCog } from "lucide-react"
+import { Building2, BarChart3, Settings, Home, TestTube, RotateCcw, Users, Shield, UserCog, BookOpen } from "lucide-react"
 import { usePathname } from "next/navigation"
 import Link from "next/link"
 import { useAuth } from "@/contexts/auth-context"
@@ -38,6 +38,11 @@ const menuItems = [
     title: "Dashboard Looker",
     path: "/dashboard",
     icon: BarChart3,
+  },
+  {
+    title: "Documentación",
+    path: "/documentacion",
+    icon: BookOpen,
   },
   {
     title: "Testing",

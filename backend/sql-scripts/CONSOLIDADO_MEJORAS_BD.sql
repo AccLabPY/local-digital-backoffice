@@ -2,13 +2,13 @@
 -- 📋 CONSOLIDADO DE MEJORAS Y CAMBIOS EN BASE DE DATOS
 -- ================================================================
 -- Este archivo contiene TODOS los cambios, mejoras e índices
--- aplicados a la base de datos BID_stg_copy a lo largo del proyecto
+-- aplicados a la base de datos BID_v2_22122025 a lo largo del proyecto
 -- 
 -- Fecha de consolidación: 2025-11-13
--- Base de datos: BID_stg_copy
+-- Base de datos: BID_v2_22122025
 -- ================================================================
 
-USE [BID_stg_copy];
+USE [BID_v2_22122025];
 GO
 SET NOCOUNT ON;
 SET XACT_ABORT ON;
