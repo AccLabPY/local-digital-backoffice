@@ -1,4 +1,4 @@
-# Chequeo Digital 2.0
+# Backoffice Chequeo Digital 2.0 
 
 **Sistema integral de seguimiento de encuestas de innovación empresarial** para el monitoreo y análisis de métricas de nivel digital en empresas de Paraguay.
 
