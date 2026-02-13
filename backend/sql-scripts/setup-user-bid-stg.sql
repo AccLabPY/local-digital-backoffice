@@ -11,7 +11,7 @@ IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'ChequeoApp')
 BEGIN
     PRINT 'Creando login ChequeoApp a nivel de servidor...';
     CREATE LOGIN [ChequeoApp] WITH PASSWORD = 'AppPassword123!', 
-        DEFAULT_DATABASE = [BID_v2_22122025],
+        DEFAULT_DATABASE = [BID_v2],
         CHECK_EXPIRATION = OFF,
         CHECK_POLICY = OFF;
     PRINT 'Login ChequeoApp creado exitosamente.';
@@ -23,7 +23,7 @@ END
 GO
 
 -- 2. Usar la base de datos BID_v2_22122025
-USE [BID_v2_22122025];
+USE [BID_v2];
 GO
 
 -- 3. Verificar si el usuario existe en la base de datos
@@ -69,7 +69,7 @@ FROM sys.server_principals
 WHERE name = 'ChequeoApp';
 
 SELECT 
-    'Usuario en BID_v2_22122025' as Tipo,
+    'Usuario en BID_v2' as Tipo,
     name as Nombre,
     type_desc as TipoUsuario,
     default_schema_name as SchemaDefault,

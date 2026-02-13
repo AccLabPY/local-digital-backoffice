@@ -4,7 +4,7 @@
   Tiempo estimado de ejecución: 2-5 minutos dependiendo del tamaño de los datos
 */
 
-USE BID_v2_22122025;
+USE BID_v2;
 GO
 
 PRINT '========================================';
